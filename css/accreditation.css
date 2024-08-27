@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.accreditationComponent {
+    width: 1280px;
+    height: 408px;
+    margin-top: 91px;
+}
+
+.accreditationComponentHeader {
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.accreditationComponentContent {
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.accreditationComponentDescription {
+    width: 172px;
+    height: 220px;
+    font-family: "Familjen Grotesk";
+}
+
+.accreditationComponentContentaccreditationdetailscontainer {
+    width: 994px;
+    height: 298px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.accreditationbadges {
+    width: 298px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.accreditationComponentContentNBAContainer {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.accreditationComponentContentDSIRContainer {
+    border: 1px solid black;
+}
+
+.accreditationComponentContentNAACContainer {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.accreditationbadgesImg {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+
+}
+
+.accreditationbadgesName {
+    width: 236px;
+    align-self: center;
+    height: 66px;
+    /* Sans-Serif/Body/SS Body */
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    /* 22.4px */
+}
+
+.accreditationbadgesLink {
+    color: #992E00;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #992E00;
+    width: fit-content;
+    align-self: center;
+}
+
+.accreditationbadgesMiniArrow {
+    width: 16px;
+    height: 16px;
+    transform: translateY(2px);
+}
+
+@media (max-width: 800px) {
+    .accreditationComponentContent {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .accreditationComponentContentaccreditationdetailscontainer {
+        flex-direction: column;
+        width: 350px;
+        height: 543px;
+        row-gap: 16px;
+        margin-top: 39px;
+    }
+
+    .accreditationComponent {
+        width: 348px;
+        height: 716px;
+        margin-top: 49px;
+    }
+
+    .accreditationComponentHeaderValue {
+        width: 259px;
+        height: 37px;
+        font-family: "DM Serif Display";
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .accreditationComponentDescription {
+        width: 348px;
+        height: 72px;
+        font-family: "Familjen Grotesk";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .accreditationbadgesName {
+        font-family: "Familjen Grotesk";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        height: fit-content;
+    }
+    .accreditationbadgesLink{
+        display: none;
+    }
+    .accreditationbadgesImg{
+        width: 72px;
+        height: 72px;
+    }
+    .accreditationComponentContentNBAContainer{
+        border-radius: 300px;
+    }
+    .accreditationComponentContentNAACContainer{
+        border-radius: 300px;
+    }
+    .accreditationbadges{
+        width: 100%;
+    }
+}

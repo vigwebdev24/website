@@ -1,0 +1,139 @@
+.container1 {
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+  }
+  .title-section {
+    align-self: start;
+    color: var(--Colors-Text-Color, #000);
+    text-transform: uppercase;
+    font: 400 20px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .title-section {
+      max-width: 100%;
+    }
+  }
+  .main-title {
+    align-self: start;
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 25px;
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .main-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  .content-section {
+    /* padding-bottom: 30px; */
+    /* border-color: rgba(204, 204, 204, 1); */
+    /* border-style: solid; */
+    /* border-bottom-width: 1px; */
+    display: flex;
+    margin-top: 48px;
+    width: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .content-section {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .content-wrapper {
+    align-items: start;
+    /* display: flex; */
+    width: 100%;
+    gap: 53px;
+    justify-content: space-between;
+    padding: 20px 20px 12px 4px;
+  }
+  @media (max-width: 991px) {
+    .content-wrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .collapsible {
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .collapsible-content {
+    display: none;
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .block-title-secondary {
+    font: 500 25px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  .description {
+    color: #000;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    
+    flex: 1;
+    padding:0 52px;
+  }
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+     
+    }
+  }
+  .primary-content, .collapsible-content {
+    color: #000;
+
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-top:52px;
+    padding-left:140px;
+    
+  }
+  .eachgap{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+  }
+  .gap-seperator{
+      border-bottom: 1px solid var(--Colors-Neutral-Neutral-40, #CCC);  
+      
+      align-self: center;
+      width: 100%;
+      height: 1px;
+    
+  }
+  @media(min-width:320px) and (max-width:576px){
+    .description{
+      padding-left: 12px;
+    }
+    .collapsible-content{
+      padding-left: 20%;
+    }
+    
+      .block-title-secondary {
+        font-weight: 450;
+        width:15%;
+        padding-right:0px;
+        font-size: 20px;
+        line-height: 100%;
+        font-family: 'Familjen Grotesk', -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      
+    
+  }
+ 

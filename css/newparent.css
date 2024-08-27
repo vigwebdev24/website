@@ -1,0 +1,108 @@
+.whr_do_stu_go{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.whr_do_stu_go_upperdiv{
+    display: flex;
+    width: 1230px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.whr_do_stu_go_upperdiv_leftsec{
+    display: flex;
+    width: 647px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+}
+
+.whr_do_stu_go_title{
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+     font-size: 61px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 100%; /* 61px */
+}
+
+.whr_do_stu_go_desc{
+    /* width: 603px; */
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.whr_do_stu_go_cmpnydiv{
+    display: flex;
+width: 649px;
+justify-content: flex-start;
+align-items: center;
+align-content: center;
+gap: var(--Spacing-Spacing-xs, 8px) var(--Spacing-Spacing-Mega, 25px);
+flex-wrap: wrap;
+}
+
+.whr_do_stu_go_cmpnyimg{
+    width: 120px;height: 94px;flex-shrink: 0;
+}
+
+.whr_do_stu_go_upperdiv_rghtsec{
+    display: flex;
+    width: 397px;
+    height: 506px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;border: 1px solid var(--Colors-Text-Color, #000);
+}
+
+
+
+.whr_do_stu_go_upper_rgt_innrdiv{
+    display: flex;
+    width: 403px;
+    height: 506px;
+    padding: var(--Numbers-10, 39px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--Numbers-11, 49px);
+    flex-shrink: 0;
+}
+
+
+
+
+.whr_do_stu_go_upper_rgt_txt{
+    display:flex;flex-direction:column;gap:5px;
+}
+
+
+.whr_do_stu_go_joincmpny{
+    color: var(--Colors-Text-Color, #000);font-family: DM Serif Display;
+    font-size: 25px;font-style: normal;font-weight: 400;line-height: 120%; /* 30px */
+}
+
+.whr_do_stu_go_lowerdiv{
+    display: flex;width: 1269px;align-items: flex-start;gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.whr_do_stu_go_crd_outrdiv{
+    display: flex;width: 393px;height: 400px;
+justify-content: center;align-items: center;flex-shrink: 0;border: 1px solid var(--Colors-Text-Color, #000);
+}
+
+.whr_do_stu_go_crd_innrdiv{
+    display: flex;width: 393px;height: 400px;padding: var(--Numbers-10, 39px);flex-direction: column;
+justify-content: center;align-items: flex-start;gap: var(--Numbers-9, 31px);flex-shrink: 0;
+}

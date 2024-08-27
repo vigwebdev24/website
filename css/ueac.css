@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+.ueac-div1 {
+    width: 100vw;
+    max-width: 1270px;
+}
+
+/*-----------------SECTION----------------------*/
+.ueac-intro{
+    display: flex;
+    width: 100%;
+}
+.ueac-column{
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    /* margin-left: 0px; */
+}
+.ueac-column-1{
+    width: 57%;
+}
+.ueac-column-2{
+    width: 55%;
+}
+.ueac-div-inner-column-1{
+    z-index: 10;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    font-weight: 400;
+}
+.ueac-div-title{
+    color: var(--Colors-Primary, #992e00);
+    font: 80px / 95px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+    width: 130%;
+}
+.ueac-div-desc{
+    color: var(--Color-Text-Color-def, #000);
+    margin-top: 40px;
+    font: 31px / 31px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+    width: 100%;
+}
+.ueac-div-inner-column-2{
+    justify-content: center;
+    background-color: #f2f1ed;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+}
+.ueac-img-1{
+    aspect-ratio: 0.78;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+/*-----------------SECTION----------------------*/
+.ueac-overview{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    margin-top: 180px;
+}
+.ueac-overview-left{
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 34px);
+    flex-shrink: 0;
+}
+.ueac-overview-title{
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.ueac-overview-desc{
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify;
+}
+.ueac-overview-right{
+    width: 30%;
+    height: 100% !important;
+    border: 1px #C57654 solid;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+/*-----------------SECTION----------------------*/
+.ueac-team{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 40px);
+    width: 100%;
+    margin-top: 180px;
+}
+.ueac-team-top{
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    display: flex;
+    font-size: 61px;
+    justify-content: space-between;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+}
+.search-filter-container{
+    padding-right: 10px;
+    align-self: center;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: end;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #707073;
+    font-weight: 400;
+    line-height: 140%;
+}
+.search-input-container{
+    width: 100%;
+    align-self: start;
+    display: flex;
+    gap: 11px;
+    align-items: end;
+}
+.search-input{
+    padding: 0px 0px 0px 5px;
+    background: transparent;
+}
+.search-divider{
+    height: 1px;
+    margin-top: 9px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.ueac-team-bottom{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    justify-content: space-around;
+    gap: 8px;
+}
+.ueac-team-btn{
+    width: 22%;
+    margin-left: 78%;
+}
+.member-content{
+    display: flex;
+    padding: var(--Numbers-6, 16px) var(--Numbers-5, 13px);
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--Colors-Text-Color, #000);
+    font-family: "Familjen Grotesk";
+    gap: 10px;
+    align-self: stretch;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.member-name{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.member-role{
+    font-size: 16px;
+}
+
+/*-----------------SECTION----------------------*/
+.ueac-about{
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 180px 25px;
+}
+.ueac-about-card-title{
+    text-align: center;
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.ueac-about-card{
+    text-align: center;
+    border: 1px #C57654 solid;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ueac-about-card-desc{
+    height: 70%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*-----------------SECTION----------------------*/
+.ueac-event{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+    margin-top: 180px;
+}
+.ueac-event-title{
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.ueac-event-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ueac-event-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 20px);
+}
+.ueac-event-desc{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+.ueac-event-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 10px;
+}
+.content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta_button_primary {height: auto !important;}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .section-title{ font-size: 31px !important;}
+    .ueac-intro{ flex-direction: column-reverse;}
+    .ueac-column-1{width: 100%;}
+    .ueac-column-2{width: 100%; margin-left: 0px;}
+    .ueac-team-bottom{ grid-template-columns: repeat(2,1fr);}
+    .ueac-about{ grid-template-columns: 1fr;}
+    .ueac-overview,.ueac-event,.ueac-event-btn{ flex-direction: column; gap: 25px; width: 100%; align-items: center;}
+    .ueac-overview-left,.ueac-overview-right{width: 100% ;}
+    .search-container,.filter_button_secondary{display: none !important;}
+    .member-card img,.ueac-event-left,.ueac-event-right{width: 100%;}
+    .ueac-team-btn {width: auto; margin-left: 30%;}
+    .ueac-div-title {font: 31px / 30px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;width: 100%;}
+    .ueac-div-desc {font: 20px / 25px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;}
+    .non-clk_card_innrdiv{height:200px !important; padding: 10px 0px !important;}
+    .non-clk_card_txtdiv,.non-clk_title{width: auto !important;}
+    .ueac-about-card-title {font-size: 31px;} 
+    .member-name{font-size: 16px;}
+    .ueac-about-card-desc,.ueac-overview-desc,.ueac-event-desc,.member-role {font-size: 13px;}
+}
+  
+  
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .ueac-team-bottom{ grid-template-columns: repeat(2, 1fr);}
+    .ueac-div-title {font: 65px / 70px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;}
+    .ueac-column-2 { width: 40%;}
+    .ueac-overview-left{width: 100%;}
+    .ueac-overview-right{ width: 60%;}
+    .search-container,.filter_button_secondary{ display: none !important;}
+    .ueac-event-btn{flex-direction: column;}
+    .content-center{padding: 10px;}
+    .ueac-div-inner-column-1 {margin-top: 40px;}
+    .ueac-about-card-desc{font-size: 12px;}
+    .ueac-overview { flex-direction: column;}
+    .non-clk_card_innrdiv{height:200px !important; padding: 10px 0px !important;}
+    .non-clk_card_txtdiv,.non-clk_title{width: auto !important;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1260px){
+    .ueac-overview{gap: 2%;}
+    .ueac-team-bottom{grid-template-columns: repeat(4,1fr);}
+    .ueac-overview-right {width: 38%;}
+    .ueac-event-btn {flex-direction: column;}
+    .member-card img{height: 300px;}
+}

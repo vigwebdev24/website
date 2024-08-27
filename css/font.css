@@ -1,0 +1,391 @@
+
+/*Font-Family: Serif  (DM Serif Display)*/
+
+/*styleName: Serif/Display/Se Display 1*/
+.Se-Display1{
+    
+    color: black;
+     font-size: 291px;
+     font-family: 'DM Serif Display', serif;
+     font-weight: 400;
+     line-height: 291px;
+     word-wrap: break-word;
+     width:auto;
+}
+
+/*styleName: Serif/Display/Se Display 2*/
+.Se-Display2{
+    
+    color: black;
+     font-size: 149px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 149px;
+     word-wrap: break-word;
+}
+
+/*styleName: Serif/Display/Se Display 3*/
+.Se-Display3{
+color: black;
+ font-size: 119px;
+ font-family: DM Serif Display;
+ font-weight: 400;
+ line-height: 119px;
+ word-wrap: break-word;
+}
+
+/*styleName: Serif/Display/Se Display 4*/
+.Se-Display4{
+    color: black;
+     font-size: 95px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 95px;
+     word-wrap: break-word;
+    }
+
+ /*styleName: Serif/Display/Se H1*/
+.Se-H1{
+    color: black;
+     font-size: 76px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 76px;
+     word-wrap: break-word;
+    }
+
+ /*styleName: Serif/Display/Se H2*/
+.Se-H2{
+    color: black;
+     font-size: 61px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 61px;
+     word-wrap: break-word;
+    }
+
+ /*styleName: Serif/Display/Se H3*/
+ .Se-H3{
+color: black;
+ font-size: 49px;
+ font-family: 'DM Serif Display', serif;
+ font-weight: 400;
+ line-height: 49px;
+ word-wrap: break-word;
+    }
+
+/*styleName: Serif/Display/Se H4*/
+ .Se-H4{
+    color: black;
+     font-size: 39px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 39px;
+     word-wrap: break-word;
+        }
+
+/*styleName: Serif/Display/Se Sub-Heading1*/
+.Se-Sub-Heading1{
+    color: black;
+     font-size: 31px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 37.20px;
+     word-wrap: break-word;
+        }
+
+/*styleName: Serif/Display/Se Sub-Heading2  For quotes*/
+.Se-Sub-Heading2{
+    color: black;
+     font-size: 25px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 30px;
+     word-wrap: break-word;
+        }
+
+/*styleName: Serif/Display/Se Body-Big*/
+.Se-Body-Big{
+    color: black;
+     font-size: 20px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     line-height: 20px;
+     word-wrap: break-word;
+            }
+
+/*styleName: Serif/Display/Se Body-Big*/
+.Se-Body{
+color: black;
+ font-size: 16px;
+ font-family: DM Serif Display;
+ font-weight: 400;
+ line-height: 16px;
+ word-wrap: break-word;
+            }
+
+/*styleName: Serif/Display/Se Underline1*/
+.Se-Underline1{
+    color: black;
+     font-size: 31px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     text-decoration: underline;
+     line-height: 38.75px;
+     word-wrap: break-word;
+                }
+
+/*styleName: Serif/Display/Se Underline2*/
+.Se-Underline2{
+    color: black;
+     font-size: 25px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     text-decoration: underline;
+     line-height: 31.25px;
+     word-wrap: break-word;
+                }
+
+/*styleName: Serif/Display/Se Underline3*/
+.Se-Underline3{
+    color: black;
+     font-size: 20px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     text-decoration: underline;
+     line-height: 25px;
+     word-wrap: break-word;
+                }
+
+/*styleName: Serif/Display/Se Underline4*/
+.Se-Underline4{
+    color: black;
+     font-size: 16px;
+     font-family: DM Serif Display;
+     font-weight: 400;
+     text-decoration: underline;
+     line-height: 20px;
+     word-wrap: break-word;
+                }
+
+
+
+/*Font-Family: Sans-Serif  (Familjen Grotesk)*/
+
+/*styleName: Sans-Serif/Display/Ss Display1*/
+.Ss-Display1{
+color: black;
+ font-size: 291px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 700;
+ line-height: 363.75px;
+ word-wrap: break-word;
+                }
+
+/*styleName: Sans-Serif/Display/Ss Display2*/
+.Ss-Display2{
+color: black;
+ font-size: 149px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 700;
+ line-height: 186.25px;
+ word-wrap: break-word;
+                    }
+
+/*styleName: Sans-Serif/Display/Ss Display3*/
+.Ss-Display3{
+    color: black;
+     font-size: 119px;
+     font-family:'Familjen Grotesk', sans-serif;
+     font-weight: 700;
+     line-height: 119px;
+     word-wrap: break-word;
+                        }
+
+/*styleName: Sans-Serif/Display/Ss Display4*/
+.Ss-Display4{
+    color: black;
+     font-size: 95px;
+     font-family:'Familjen Grotesk', sans-serif;
+     font-weight: 700;
+     line-height: 95px;
+     word-wrap: break-word;
+                        }
+
+ /*styleName: Sans-Serif/Display/Ss H1*/
+ .Ss-H1{
+    color: black;
+     font-size: 76px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 700;
+     line-height: 76px;
+     word-wrap: break-word;
+    }
+
+ /*styleName: Sans-Serif/Display/Ss H2*/
+.Ss-H2{
+    color: black;
+     font-size: 61px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 600;
+     line-height: 61px;
+     word-wrap: break-word;
+    }
+
+ /*styleName: Sans-Serif/Display/Ss H3*/
+ .Ss-H3{
+    color: black;
+     font-size: 49px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 600;
+     line-height: 49px;
+     word-wrap: break-word;
+    }
+
+/*styleName: Sans-Serif/Display/Ss H4*/
+ .Ss-H4{
+color: black;
+ font-size: 39px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 600;
+ line-height: 39px;
+ word-wrap: break-word;
+        }
+
+/*styleName: Sans-Serif/Display/Se Sub-Heading1*/
+.Ss-Sub-Heading1{
+color: black;
+ font-size: 31px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 500;
+ line-height: 31px;
+ word-wrap: break-word;
+        }
+
+/*styleName: Sans-Serif/Display/Ss Sub-Heading2  For quotes*/
+.Ss-Sub-Heading2{
+    color: black;
+     font-size: 25px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 500;
+     line-height: 25px;
+     word-wrap: break-word;
+        }
+
+/*styleName: Sans-Serif/Display/Ss Body-Big*/
+.Ss-Body-Big{
+color: black;
+ font-size: 20px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 400;
+ line-height: 28px;
+ word-wrap: break-word;
+            }
+
+/*styleName: Sans-Serif/Display/Ss Body*/
+.Ss-Body{
+    color: black;
+     font-size: 16px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 400;
+     line-height: 22.40px;
+     word-wrap: break-word;
+            }
+
+/*styleName: Sans-Serif/Display/Ss Bodysmall*/
+.Ss-Bodysmall{
+    color: black;
+     font-size: 13px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 400;
+     line-height: 18.20px;
+     word-wrap: break-word;
+            }
+
+/*styleName: Sans-Serif/Display/Ss Caption*/
+.Ss-Caption{
+            color: black;
+             font-size: 10px;
+             font-family: 'Familjen Grotesk', sans-serif;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word;
+}
+
+
+/*styleName: Sans-Serif/Display/Ss UpperCase 5*/
+.Ss-UC5{
+                color: black;
+                font-size: 31px;
+                font-family: 'Familjen Grotesk', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 31px;
+                word-wrap: break-word;
+}
+
+/*styleName: Sans-Serif/Display/Ss UpperCase 4*/
+.Ss-UC4{
+    color: black;
+     font-size: 25px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 500;
+     text-transform: uppercase;
+     line-height: 25px;
+     word-wrap: break-word;
+}
+
+/*styleName: Sans-Serif/Display/Ss UpperCase 3*/
+.Ss-UC3{
+    color: black;
+     font-size: 20px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 400;
+     text-transform: uppercase;
+     line-height: 28px;
+     word-wrap: break-word;
+}
+
+/*styleName: Sans-Serif/Display/Ss UpperCase 2*/
+.Ss-UC2{
+color: black;
+ font-size: 16px;
+ font-family: 'Familjen Grotesk', sans-serif;
+ font-weight: 400;
+ text-transform: uppercase;
+ line-height: 22.40px;
+ word-wrap: break-word;
+}
+
+/*styleName: Sans-Serif/Display/Ss UpperCase 1*/
+.Ss-UC1{
+    color: black;
+     font-size: 10px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 400;
+     text-transform: uppercase;
+     line-height: 14px;
+     word-wrap: break-word;
+}
+
+/*styleName: Sans-Serif/Display/Ss Button Text*/
+.Ss-btn_txt{
+    color: #F2F1ED;
+    font-size: 20px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: 400;
+    line-height: 17px;
+    word-wrap: break-word;
+}
+
+
+/*styleName: Sans-Serif/Display/Ss T Button Text*/
+.Ss-t_btn_txt{
+    color: #F2F1ED;
+     font-size: 16px;
+     font-family: 'Familjen Grotesk', sans-serif;
+     font-weight: 400;
+     line-height: 22.40px;
+     word-wrap: break-word;
+}
+

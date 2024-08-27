@@ -1,0 +1,431 @@
+/** dont combine css of this file with other css files, let it be linked to only admissions page**/
+
+body {
+    margin: 0;
+    --Main-Background-Color: #f2f1ed;
+    --Maroon-Text: #992E00;
+    background-color: #f2f1ed;
+}
+
+
+/********        PART 1 STARTS HERE           ********/
+
+.BillboardTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.BillboardTab .BillboardTabplane1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.BillboardTab .BillboardTabplane2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 29px;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    top: 0;
+}
+
+.BillboardTabplane2DiscriptionTextCont {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.BillboardTabplane2DiscriptionText {
+    width: 55%;
+    font-size: x-large;
+    font-family: 'DM Serif Display';
+    /* display: none; */
+}
+
+.BillboardTabplane2TitleText {
+    color: var(--Maroon-Text);
+    font-size: 90px;
+    font-family: 'DM Serif Display';
+    line-height: 90px;
+}
+
+.BillboardTabplane2Hyperlinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.BillboardTabplane2Hyperlinks1 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Maroon-Text);
+    font-size: large;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.BillboardTabplane2Hyperlinks2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Main-Background-Color);
+    font-size: large;
+    color: var(--Maroon-Text);
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: 'DM Serif Display';
+    /* Name of your custom font */
+    src: url('path/to/your-font.ttf') format('truetype');
+    /* Path to your TTF file */
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    .div-32 {
+        zoom: 0.85;
+    }
+
+    .div-109 {
+        zoom: 0.75;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .BillboardTab {
+        width: 90%;
+        zoom: 0.92;
+        align-self: center;
+    }
+
+    .div-32 {
+        zoom: 0.65;
+    }
+
+    .div-109 {
+        zoom: 0.55;
+    }
+
+}
+
+@media only screen and (max-width: 840px) {
+
+
+    .BillboardTab {
+        width: 90%;
+        zoom: 0.9;
+        align-self: center;
+    }
+
+    .div-32 {
+        zoom: 0.55;
+    }
+
+    .div-109 {
+        zoom: 0.55;
+    }
+
+}
+
+
+.Billboardimage {
+    width: 100%;
+    aspect-ratio: 1;
+
+}
+
+:root {
+    --serif-sub-heading-se-sub-heading-1-font-family: "DM Serif Display", Helvetica;
+    --serif-sub-heading-se-sub-heading-1-font-weight: 400;
+    --serif-sub-heading-se-sub-heading-1-font-size: 31px;
+    --serif-sub-heading-se-sub-heading-1-letter-spacing: 0px;
+    --serif-sub-heading-se-sub-heading-1-line-height: 120.00000476837158%;
+    --serif-sub-heading-se-sub-heading-1-font-style: normal;
+    --serif-body-se-body-font-family: "DM Serif Display", Helvetica;
+    --serif-body-se-body-font-weight: 400;
+    --serif-body-se-body-font-size: 16px;
+    --serif-body-se-body-letter-spacing: 0px;
+    --serif-body-se-body-line-height: 100%;
+    --serif-body-se-body-font-style: normal;
+    --sans-serif-body-SS-body-small-font-family: "Familjen Grotesk", Helvetica;
+    --sans-serif-body-SS-body-small-font-weight: 400;
+    --sans-serif-body-SS-body-small-font-size: 13px;
+    --sans-serif-body-SS-body-small-letter-spacing: 0px;
+    --sans-serif-body-SS-body-small-line-height: 139.9999976158142%;
+    --sans-serif-body-SS-body-small-font-style: normal;
+    --serif-sub-heading-se-sub-heading-2-font-family: "DM Serif Display", Helvetica;
+    --serif-sub-heading-se-sub-heading-2-font-weight: 400;
+    --serif-sub-heading-se-sub-heading-2-font-size: 25px;
+    --serif-sub-heading-se-sub-heading-2-letter-spacing: 0px;
+    --serif-sub-heading-se-sub-heading-2-line-height: 120.00000476837158%;
+    --serif-sub-heading-se-sub-heading-2-font-style: normal;
+    --primitives-numbers-10: 39px;
+    --primitives-colors-neutral-neutral-100-black: rgba(0, 0, 0, 1);
+    --primitives-colors-tone-warm-1: rgba(242, 241, 237, 1);
+    --primitives-numbers-1: 0px;
+    --primitives-numbers-9: 31px;
+    --primitives-numbers-8: 25px;
+    --primitives-numbers-3: 8px;
+    --primitives-numbers-5: 13px;
+    --primitives-numbers-6: 16px;
+    --primitives-numbers-12: 61px;
+    --primitives-colors-rust-rust-70: rgba(153, 46, 0, 1);
+    --primitives-numbers-7: 20px;
+    --primitives-numbers-4: 10px;
+    --tokens-spacing-spacing-xxxl: var(--primitives-numbers-10);
+    --tokens-colors-text-color: var(--primitives-colors-neutral-neutral-100-black);
+    --tokens-colors-buttons-primary-button-text: var(--primitives-colors-tone-warm-1);
+    --tokens-spacing-spacing-none: var(--primitives-numbers-1);
+    --tokens-spacing-spacing-xl: var(--primitives-numbers-8);
+    --tokens-colors-buttons-primary-button: var(--primitives-colors-rust-rust-70);
+    --tokens-spacing-spacing-l: var(--primitives-numbers-7);
+    --tokens-spacing-spacing-m: var(--primitives-numbers-6);
+    --tokens-colors-background: var(--primitives-colors-tone-warm-1);
+    --tokens-colors-primary: var(--primitives-colors-rust-rust-70);
+}
+
+
+
+.frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--tokens-spacing-spacing-xxxl);
+    position: relative;
+    margin-top: 15%;
+}
+
+.frame .div-wrapper-d23db {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--tokens-spacing-spacing-xl);
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+.frame .text-wrapper-d23db {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--serif-sub-heading-se-sub-heading-1-font-family);
+    font-weight: var(--serif-sub-heading-se-sub-heading-1-font-weight);
+    color: #000000;
+    font-size: var(--serif-sub-heading-se-sub-heading-1-font-size);
+    letter-spacing: var(--serif-sub-heading-se-sub-heading-1-letter-spacing);
+    line-height: var(--serif-sub-heading-se-sub-heading-1-line-height);
+    font-style: var(--serif-sub-heading-se-sub-heading-1-font-style);
+}
+
+.frame .div-d23db {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--tokens-spacing-spacing);
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.frame .image-card-d23db {
+    position: relative;
+    width: 90%;
+    aspect-ratio: 16/9;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.frame .pexels-photo-by-d23db {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+}
+
+.frame .div-2-d23db {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    /* gap: var(--tokens-spacing-spacing-m); */
+    gap: 10vw;
+    /* row-gap:10%; */
+    position: relative;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.frame .department-card-d23db {
+    position: relative;
+    width: 45vw;
+    height: 45vw;
+    border: 1px solid;
+    border-color: var(--tokens-colors-text-color);
+}
+@media only screen and (max-width: 600px) {
+    .divMaster {
+        zoom: 1.3;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+
+    /* Your CSS styles for screens between 600px and 699px */
+    .divMaster {
+        zoom: 1.6;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .divMaster {
+        zoom: 1;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .divMaster {
+        zoom: 0.8;
+    }
+}
+.frame .div-3-d23db {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--primitives-numbers-7) 0px var(--primitives-numbers-5) var(--tokens-spacing-spacing-l);
+    position: relative;
+}
+
+.frame .department-d23db {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--serif-body-se-body-font-family);
+    font-weight: var(--serif-body-se-body-font-weight);
+    color: var(--tokens-colors-text-color);
+    font-size: var(--serif-body-se-body-font-size);
+    letter-spacing: var(--serif-body-se-body-letter-spacing);
+    line-height: var(--serif-body-se-body-line-height);
+    font-style: var(--serif-body-se-body-font-style);
+}
+
+.frame .div-4-d23db {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 0px var(--primitives-numbers-9) var(--tokens-spacing-spacing-none) var(--tokens-spacing-spacing-none);
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -6.5px;
+    margin-right: -6.5px;
+    gap: var(--primitives-numbers-1);
+}
+
+.frame .icons-d23db {
+    position: relative;
+    width: 31px;
+    height: 31px;
+}
+
+.frame .line-d23db {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 1px;
+    object-fit: cover;
+}
+
+.frame .CTA-button-d23db {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: var(--primitives-numbers-3);
+    padding: var(--primitives-numbers-5) var(--primitives-numbers-6) var(--primitives-numbers-5) var(--primitives-numbers-9);
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--tokens-colors-buttons-primary-button);
+    border-radius: var(--primitives-numbers-12);
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+.frame .button-d23db {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    font-family: var(--sans-serif-body-SS-body-small-font-family);
+    font-weight: var(--sans-serif-body-SS-body-small-font-weight);
+    color: var(--tokens-colors-buttons-primary-button-text);
+    font-size: var(--sans-serif-body-SS-body-small-font-size);
+    letter-spacing: var(--sans-serif-body-SS-body-small-letter-spacing);
+    line-height: var(--sans-serif-body-SS-body-small-line-height);
+    font-style: var(--sans-serif-body-SS-body-small-font-style);
+}
+
+.frame .button-icons-d23db {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.panel-default,
+.panel-heading {
+    background-color: transparent;
+}

@@ -1,0 +1,228 @@
+
+.line {
+    border: 1px solid #000;
+    
+
+    margin-top: 61px;
+    margin-bottom: 61px;
+  }
+
+  .academics-subtitle {
+    margin-top: 5px !important;
+  }
+
+
+
+  /* .admission-container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .title-section {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    line-height: 100%;
+    padding: 0 20px;
+  }
+
+  .admission-title {
+    text-transform: uppercase;
+    font: 500 25px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .fee-structure-title {
+    margin-top: 25px;
+    font: 400 61px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .fee-structure-title {
+      font-size: 40px;
+    }
+  }
+
+
+ 
+
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-title {
+    text-align: center;
+  }
+
+
+
+  .admission-notice {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 70px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: Familjen Grotesk, sans-serif;
+    color: var(--Colors-Primary, #000000);
+    font-weight: 400;
+    text-align: left;
+   
+  }
+
+  @media (max-width: 991px) {
+    .admission-notice {
+      margin-top: 40px;
+    }
+  }
+
+  .fee-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--Colors-Neutral-Neutral-70, #000000);
+    font-weight: 400;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 140%;
+  
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 49px;
+  }
+
+  @media (max-width: 991px) {
+    .fee-details {
+      margin-left:30%;
+    }
+  }
+.fee-item{
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;
+}
+
+  .course-fee-details {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    color: var(--Colors-Neutral-Neutral-70, #707073);
+    font-weight: 400;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 140%;
+    
+  }
+
+  @media (max-width: 991px) {
+    .course-fee-details {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+  }
+
+  .course-item {
+    color: #000;
+    margin: 0;
+
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+
+  }
+
+  .fee-amount {
+    color: #000;
+    margin: 0;
+
+    font-family: Familjen Grotesk;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: left;
+
+  }
+  @media (max-width: 991px) {
+    .fee-amount  {
+      font-size: 16px;
+    }
+  }
+
+ 
+
+  .note {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 18px;
+    font-size: 16px;
+    color: var(--Colors-Neutral-Neutral-70, #000000);
+    line-height: 140%;
+   
+  }
+
+  .download-section {
+    justify-content: flex-start;
+    border-radius: var(--Numbers-12, 61px);
+    
+    display: flex;
+    gap: 8px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #992e00);
+    line-height: 100%;
+    margin-top: 40px;
+    
+  }
+
+  @media (max-width: 991px) {
+    .download-section {
+      white-space: initial;
+     
+    }
+  }
+
+  .download-label {
+    font-size: 16px;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Familjen Grotesk, sans-serif;
+    margin: auto 0;
+  }
+
+  .download-icon {
+    aspect-ratio: 1;
+   
+    width: 14px;
+    height: 14px;
+  }
+
+
+
+
+.borderline{
+  margin-top: 5px;
+  border:1px solid var(--Colors-Buttons-Primary-Button-Text, #992e00);
+  width: 90px;
+}

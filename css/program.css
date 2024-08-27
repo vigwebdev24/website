@@ -1,0 +1,399 @@
+.a{
+    text-decoration: none !important; 
+    color:#992e00 !important;
+    
+  }
+  .a:hover{
+    text-decoration: none !important; 
+    color:#992e00 !important; 
+  }
+.academics-container {
+    /* padding-right: 20px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    white-space: nowrap;
+	  max-width:1150px;
+	
+  }
+  
+  @media (max-width: 991px) {
+    .academics-container {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  
+  .academics-info {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    line-height: 100%;
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .academics-info {
+      white-space: initial;
+    }
+  }
+  
+  .academics-title {
+    text-transform: uppercase;
+    font: 500 25px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .academics-subtitle {
+    margin-top: 25px;
+    font: 400 61px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .academics-subtitle {
+      font-size: 40px;
+    }
+  }
+  
+  .search-filter-container {
+    padding-right: 10px;
+    align-self: center;
+    display: flex;
+    margin-top: 43px;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: end;
+  }
+  
+  @media (max-width: 991px) {
+    .search-filter-container {
+    
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      white-space: initial;
+      /* margin-right:20px; */
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #707073;
+    font-weight: 400;
+
+    line-height: 140%;
+  }
+  
+  @media (max-width: 991px) {
+    .search-container {
+      width: 100%;
+      padding: 0 20px;
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  
+  .search-input-container {
+    width: 100%;
+    align-self: start;
+    display: flex;
+    gap: 11px;
+    padding: 0;
+    align-items: end;
+  }
+  
+  @media (max-width: 991px) {
+    .search-input-container {
+      width: 100%;
+      white-space: initial;
+      margin: 0 5px 0 0;
+    }
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: var(--Colors-Neutral-Neutral-70, #707073);
+    font-weight: 400;
+    line-height: 140%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+	      background: transparent;
+  }
+  
+
+  .prog-search-icon {
+    width: 48px;
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+  
+  }
+  
+  .search-label {
+    font-family: Familjen Grotesk, sans-serif;
+    margin: auto 0;
+  }
+  
+  .search-divider {
+    height: 1px;
+    margin-top: 9px;
+    background-color: #000;
+    border: 1px solid #000;
+  }
+  
+  @media (max-width: 991px) {
+    .search-divider {
+      max-width: 100%;
+    }
+  }
+  
+  .filter-button {
+    leading-trim: both;
+    text-edge: cap;
+    margin:0 auto;
+    width: 155px;
+    height: 52px;
+    border: none;
+    font-family: Familjen Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    flex-grow: 1;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    /* padding: 20px 31px; */
+  }
+  
+  @media (max-width: 991px) {
+    .filter-button {
+      white-space: initial;
+      padding: 8px 20px;
+    }
+  }
+  
+  .filter-icon {
+    width: 24px;
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+  }
+  
+  .filter-text {
+    margin: auto 0;
+    font-family: Familjen Grotesk, sans-serif;
+    text-edge: cap;
+    leading-trim: both;
+  }
+    
+  .sep {
+    background-color: var(--Colors-Neutral-Neutral-40, #ccc);
+    margin-top: 61px;
+    width: 100%;
+    max-width: 1150px;
+    height: 1px;
+    margin-bottom: 61px;
+  }
+  @media (max-width: 991px) {
+    .sep {
+      margin-top: 40px;
+    }
+  }
+  .margin-top{
+    margin-top: 49px;
+  }
+ .footer-margin-top{
+  margin-top:180px;
+ }
+
+.course-cards-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    max-width: 1278px;
+  }
+
+  .course-card {
+   
+    border: 1px solid rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    padding: 21px 25px;
+    width: calc(33.33% - 40px);
+    width: 30%;
+    height: 180px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .course-name {
+    text-align: center;
+    font: 25px/120% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .course-details {
+    text-align: center;
+    margin-top: 13px;
+    font: 20px/28px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .course-cta {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-top: 13px;
+    width: 159px;
+    max-width: 100%;
+    gap: 0;
+    font-size: 16px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    line-height: 140%;
+  }
+
+  .course-cta-text {
+    font-family: Familjen Grotesk, sans-serif;
+  }
+
+  .course-cta-icon {
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+
+  .course-cta-divider {
+    /*border: 1px solid rgba(153, 46, 0, 1);*/
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: center;
+    width: 159px;
+    height: 1px;
+  }
+
+  @media (max-width: 991px) {
+    .course-cards {
+        padding: 0 20px; 
+    }
+    .course-card {
+        width: 100%; 
+        padding: 21px; 
+        box-sizing: border-box;
+    }
+}
+
+.program-div-36 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 61px;
+    width: 100%;
+    max-width: 1150px;
+    gap: 20px;
+    font-weight: 400;
+    padding: 0 5px;
+  }
+  @media (max-width: 991px) {
+    .program-div-36 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+  .program-div-37 {
+    color: #000;
+    flex-grow: 1;
+    margin: auto 0;
+    margin-left:-5px;
+    font: 31px/120% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .program-div-37 {
+      max-width: 100%;
+      margin-left:15px;
+    }
+  }
+  .program-div-38 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+    white-space: nowrap;
+    line-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .program-div-38 {
+      white-space: initial;
+      margin: 0 15px;
+    }
+  }
+  .program-div-39 {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Familjen Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: var(--Numbers-12, 61px);
+    border: 1px solid var(--Colors-Buttons-Secondary-Button, #992e00);
+    flex-grow: 1;
+    color: var(--Colors-Buttons-Secondary-Button-Text, #992e00);
+    padding: 20px 31px;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .program-div-39 {
+      white-space: initial;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+  .program-div-40 {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Familjen Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    flex-grow: 1;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    padding: 20px 31px;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .program-div-40 {
+      white-space: initial;
+    padding: 8px 20px;
+    }
+  }
+  .program-div-40:hover {
+    background-color: #772400;
+    border:none;
+    cursor: pointer;
+  }
+
+
+  @media(min-width:320px) and (max-width:576px){
+    .search-input-container {
+      width:100%;
+      max-width: 100%;
+    }
+	  
+	  .program-div-39{
+	  font-size:15px;
+	  }
+	   .program-div-40{
+	  font-size:15px;
+	  }
+	  
+	  .search-filter-container{
+	  margin-top:unset;
+	  }
+  }

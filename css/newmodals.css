@@ -1,0 +1,305 @@
+
+  /* Career Modal CSS */
+  .modal-container {
+    display: flex;
+    gap: 53px; /* Gap between the two columns */
+}
+  .content{
+    display: inline-flex !important;
+align-items: flex-start !important;
+gap: 53px !important;
+margin-bottom: 69px !important;
+margin-left: 69px !important;
+margin-right: -68px !important;
+  }
+
+  .bell-icon{
+    width: 48px;
+height: 48px;
+  }
+
+  .first-text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-12, 61px);
+  }
+
+  .second-text{
+    display: flex;
+align-items: center;
+gap: 14px;
+  }
+
+  .second-subtext{
+    display: flex;
+width: 517px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-2, 4px);
+  }
+
+  .second-subtext1{
+    color: #000;
+
+/* Sans-Serif/Upper Case/SS UC 2 */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+text-transform: uppercase;
+  }
+
+  .second-subtext2{
+    color: #000;
+
+/* Sans-Serif/Body/SS Body Big Bold */
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 28px */
+  }
+
+  .first-subtext1{
+    color: #000;
+
+/* Sans-Serif/Upper Case/SS UC 4 */
+font-family: "Familjen Grotesk";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
+text-transform: uppercase;
+  }
+
+  .first-text1{
+    display: flex;
+width: 484px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-8, 25px);
+  }
+
+  .first-subtext2 .heading{
+    color: #000;
+
+/* Sans-Serif/Body/SS Body Big Bold */
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 28px */
+  }
+
+  .first-subtext2 .body-text{
+    color: #000;
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+  }
+
+  .first-subtext3{
+    color: #000;
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+  }
+
+  .first-text2{
+    display: flex;
+width: 599px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-10, 39px);
+  }
+
+  .first-text3{
+    display: flex;
+width: 484px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-8, 25px);
+  }
+
+  .content-inside{
+    display: flex;
+width: 441px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-7, 20px);
+flex-shrink: 0;
+  }
+  .content-inside1{
+    display: flex;
+width: 458px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: var(--Numbers-12, 61px);
+  }
+  .content-inside2{
+    display: flex;
+width: 484px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-8, 25px);
+  }
+  .content-inside3{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-10, 39px);
+  }
+  .content-inside4{
+    display: flex;
+width: 484px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-8, 25px);
+  }
+  .content-inside5{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-10, 39px);
+  }
+  .content-inside6{
+    display: flex;
+width: 484px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Numbers-8, 25px);
+  }
+
+  .email-button {
+    color: var(--Colors-Buttons-Primary-Button, #992E00);
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+}
+  .steps-no{
+    color: #000 !important;
+
+/* Sans-Serif/Upper Case/SS UC 3 */
+font-family: "Familjen Grotesk" !important;
+font-size: 20px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: 140% !important; /* 28px */
+text-transform: uppercase !important;
+  }
+  
+  .steps-text{
+    color: #000;
+
+/* Serif/Heading/Se H3 */
+font-family: "DM Serif Display";
+font-size: 49px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 49px */
+  }
+
+  .steps-subtext{
+    color: #000;
+
+/* Sans-Serif/Upper Case/SS UC 4 */
+font-family: "Familjen Grotesk";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
+text-transform: uppercase;
+  }
+
+  .steps-subtext1{
+    color: #000;
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.filter-modal_content {
+  position: relative;
+  background-color: #F2F1ED !important;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0 !important;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  height:1000px;
+}
+
+.modal-body {
+  background: #F2F1ED;
+  position: relative !important;
+  padding: 15px !important;
+  margin-left: 250px;
+}
+
+.overlay-dialog{
+  width: 1247px !important;
+  margin: 13px 20px;
+  max-height: calc(100vh - 160px);
+  float: right;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.overlaymodal-body {
+  position: relative;
+  padding: 20px 25px;
+  max-height: calc(106vh - 154px);
+  flex-shrink: 0;
+  height: 100vh;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+
+.overlaymodal-header {
+  padding: 25px;
+  border-bottom: 0px solid #e5e5e5;
+}
+
+
+.overlay-dialog{
+  width: 1247px !important;
+  margin: 13px 20px;
+  max-height: calc(100vh - 160px);
+  float: right;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.modal-header{
+  padding: 20px;
+  border-bottom: none !important;
+  background-color: #F2F1ED;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+}

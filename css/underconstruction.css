@@ -1,0 +1,38 @@
+.underconst-outrdiv{
+    display:flex;background: #992E00; flex-direction: row;
+}
+
+.underconst-innrrdiv{
+    display:flex;flex-direction: column;
+}
+
+.regrt{
+    width: 656px;color: #FFF;
+font-family: DM Serif Display;
+font-size: 76px;
+font-style: normal;
+font-weight: 400;     margin-top: 17%;
+    margin-left: 7%;
+line-height: 100%; /* 76px */
+}
+
+.wrking{
+    width: 460px;
+color: #FFF;
+font-family: Familjen Grotesk;
+font-size: 39px;
+font-style: normal;
+font-weight: 600;     margin-top: 5%;
+    margin-left: 7%;
+
+line-height: 100%; /* 39px */
+}
+
+.underconst-img{
+    width: 621px;
+    height: 596px;
+    flex-shrink: 0;
+    margin: 2%;
+    object-fit: contain;
+    object-position: right;
+}

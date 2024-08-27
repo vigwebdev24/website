@@ -1,0 +1,881 @@
+.CoExAMMPCCont {
+    background-color: #F2F1ED;
+    height: fit-content;
+}
+
+@media (max-width: 1200px) {
+    .CoExAMMPCCont {
+        zoom: 0.8;
+    }
+}
+
+@media (max-width: 1300px) {
+    .CoExAMMPCCont {
+        zoom: 0.97;
+    }
+}
+
+@media (max-width: 1000px) {
+    .CoExAMMPCCont {
+        zoom: 0.6;
+    }
+}
+
+.MainAlignerForCoExAMMPC {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #F2F1ED;
+    height: fit-content;
+    margin-top: 80px;
+    row-gap: 180px;
+}
+
+@media (max-width: 800px) {
+    .CoExAMMPCCont {
+        zoom: normal;
+    }
+
+    .MainAlignerForCoExAMMPC {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .MainAlignerForCoExAMMPC {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .BillboardTab {
+        max-width: 349px;
+        margin-top: 25px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .MainAlignerForCoExAMMPC {
+        align-self: center;
+    }
+}
+
+
+.footer-cover {
+    width: 1260px;
+}
+
+
+/*BillBoard*/
+
+.BillboardTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1260px;
+    height: 830px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .BillboardTab {
+        max-width: 349px;
+        margin-top: 25px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .MainAlignerForCoExAMMPC {
+        align-self: center;
+    }
+}
+
+.BillboardTab .BillboardTabplane1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.BillboardTab .BillboardTabplane2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 29px;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    top: 0;
+}
+
+.BillboardTabplane1Child {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.BillboardTabplane1ChildImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: right;
+}
+
+.BillboardTabplane2DiscriptionTextCont {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.BillboardTabplane2DiscriptionText {
+    width: 36%;
+    font-size: 31px;
+    font-family: 'DM Serif Display';
+    width: 555px;
+    /* display: none; */
+}
+
+.BillboardTabplane2DiscriptionTextWCU {
+    width: 543px;
+    color: var(--Color-Text-Color-def, #000);
+    /* Serif/Sub-heading/Se Sub-Heading 1 */
+    font-family: "DM Serif Display";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.BillboardTabplane2TitleText {
+    color: var(--Colors-Primary, #992E00);
+    /* Serif/Heading/Se H3 */
+    font-family: "DM Serif Display";
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 769px;
+}
+
+.BillboardTabplane2Hyperlinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.BillboardTabplane2Hyperlinks1 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Maroon-Text);
+    font-size: large;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 61px;
+    cursor: pointer;
+}
+
+.BillboardTabplane2HyperlinksImg {
+    width: 20px;
+    height: 20px;
+}
+
+.BillboardTabplane2Hyperlinks2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Main-Background-Color);
+    font-size: large;
+    color: var(--Maroon-Text);
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 61px;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: 'DM Serif Display';
+    /* Name of your custom font */
+    src: url('path/to/your-font.ttf') format('truetype');
+    /* Path to your TTF file */
+}
+
+.Billboardimage {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+
+.BillBoardHeader {
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+    height: fit-content;
+    color: #992E00;
+    /* 39px */
+}
+
+.BillBoardBottom {
+    width: 350px;
+    height: 599px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+
+}
+
+.BillBoardImg {
+    width: 350px;
+    height: 350px;
+}
+
+.BillBoardDescription {
+    font-family: "DM Serif Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.BillBoardNavButtons {
+    display: flex;
+    width: 350px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardNavButtons button {
+    display: flex;
+    border-radius: 61px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Familjen Grotesk";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-left: 31px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 16px;
+    border: none;
+}
+
+.BillBoardNavButtons button:nth-child(1) {
+    background-color: #992E00;
+    color: #f2f1ed;
+    width: 140px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardNavButtons button:nth-child(2) {
+    border: 1px solid #992E00;
+    width: 100px;
+    box-sizing: content-box;
+    color: #992E00;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardButtonArrows {
+    width: 16px;
+    height: 16px;
+}
+
+.BillBoardTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BillBoardBottom {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .BillBoardTop {
+        display: none;
+    }
+
+    .BillBoardBottom {
+        display: flex;
+        height: fit-content;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .BillBoardHeader {
+        font-size: 39px;
+    }
+}
+
+
+.BillBoardImgimg {
+    width: 349px;
+    height: 349px;
+    object-fit: cover;
+}
+
+.text-20-m {
+    font-size: 20px;
+}
+
+
+/**wedcCommitteeMemberssection*/
+
+.wedcCommitteeMemberssection {
+    width: 1260px;
+    height: 825px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wedcCommitteeMemberssectionh122 {
+    height: 122px;
+    width: 100%;
+    color: var(--Colors-Text-Color, #000);
+    /* Serif/Heading/Se H2 */
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.wedcCommitteeMemberssectionh44 {
+    height: 44px;
+    width: 100%;
+    color: var(--Colors-Text-Color, #000);
+    /* Sans-Serif/Body/SS Body */
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.wedcCommitteeMemberssectionh484 {
+    height: 484px;
+    width: fit-content;
+}
+
+.wedcCommitteeMemberssectionh52 {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.CommitteeMembersSectionh52 {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .wedcCommitteeMemberssection {
+        width: 349px;
+        height: fit-content;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .wedcCommitteeMemberssectionh44 {
+        height: fit-content;
+    }
+
+    .wedcCommitteeMemberssectionh122 {
+        font-size: 39px;
+        height: fit-content;
+    }
+}
+
+
+/** imported from coexammpc contributors */
+
+.CoexmmpcContributorsSection {
+    width: 1260px;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 61px;
+}
+
+.CoexmmpcContributorsSectionTitle {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.aboutus-div-56-designation {
+    font-size: 16px;
+}
+
+.aboutus-div-56,
+.aboutus-div-58,
+.aboutus-div-60,
+.aboutus-div-62 {
+    font-size: 20px;
+    width: 250px;
+}
+
+.CoexmmpcContributorsSectionh484 {
+    width: 1260px;
+        height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	flex-wrap:wrap;
+	gap: 46px;
+}
+
+.CoexmmpcContributorsSectionh484w280 {
+    width: 280px;
+    height: 484px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CoexmmpcContributorsSectionh484w280img {
+    width: 280px;
+    height: 392px;
+    object-fit: cover;
+}
+
+.CoexmmpcContributorsSectionh484w280Detailsh92 {
+    width: 265px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.CoexmmpcContributorsSectionh484w280h92h281 {
+    width: 265px;
+    height: 28px;
+    text-align: start;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.CoexmmpcContributorsSectionh484w280h92h222 {
+    width: 265px;
+    height: 22px;
+    text-align: start;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.CoexmmpcContributorsSectionh52 {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.CoexmmpcContributorsSection2 {
+    height: 744px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-btn-20-16 {
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .txt-btn-20-16 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px) {
+    .CoexmmpcContributorsSection {
+        height: fit-content;
+        flex-direction: column;
+        width: 349px;
+
+    }
+
+    .CoexmmpcContributorsSectionh484 {
+        flex-wrap: wrap;
+        width: 349px;
+        height: fit-content;
+    }
+
+    .CoexmmpcContributorsSectionh484w280 {
+        zoom: 0.6;
+    }
+
+    .CoexmmpcContributorsSectionTitle {
+        width: 349px;
+        font-size: 39px;
+    }
+
+    .CoexmmpcContributorsSectionh52 {
+        width: 349px;
+        height: 52px;
+
+    }
+}
+
+/***ends*/
+
+
+/**WedcCategoriesSection**/
+
+.WedcCategoriesSection {
+    width: 1260px;
+    height: 356px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WedcCategoriesSectionw398 {
+    width: 398px;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 49px;
+}
+
+.WedcCategoriesSectionw398h61 {
+    width: 100%;
+    height: 61px;
+    /* Serif/Heading/Se H2 */
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.WedcCategoriesSectionw398h122 {
+    width: 100%;
+    height: 122px;
+    /* Serif/Heading/Se H2 */
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.WedcCategoriesSectionw398h246 {
+    width: 100%;
+    height: 246px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.WedcCategoriesSectionw398h246h198 {
+    width: 100%;
+    height: fit-content;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000;
+}
+
+.WedcCategoriesSectionw398h246h24 {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .WedcCategoriesSection {
+        flex-direction: column;
+        height: fit-content;
+        width: 349px;
+        row-gap: 30px;
+    }
+
+    .WedcCategoriesSectionw398 {
+        width: 349px;
+        height: fit-content;
+        row-gap: 20px;
+    }
+
+    .WedcCategoriesSectionw398h61 {
+        height: fit-content;
+        font-size: 39px;
+    }
+
+    .WedcCategoriesSectionw398h246h198 {
+        height: fit-content;
+    }
+
+    .WedcCategoriesSectionw398h246 {
+        height: fit-content;
+    }
+
+    .WedcCategoriesSectionw398h122 {
+        font-size: 39px;
+        height: fit-content;
+    }
+}
+
+/** Committee Members **/
+
+.CommitteeMembersSection {
+    width: 1260px;
+    /* height: 2246px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 80px;
+}
+
+.CommitteeMembersSectionh61 {
+    width: 90%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.CommitteeMembersSectionh2011 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .CommitteeMembersSection {
+        width: 349px;
+        height: fit-content;
+        row-gap: 30px;
+        column-gap: 5px;
+    }
+
+    .CommitteeMembersSectionh61 {
+        font-size: 39px;
+        height: fit-content;
+        width: 349px;
+    }
+
+    .CommitteeMembersSectionh2011 {
+        height: fit-content;
+    }
+}
+
+.CommitteeMembersSection1 {
+    width: 1260px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.CommitteeMembersSection2 {
+    width: 1260px;
+    /* height: 2246px; */
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.search-filter-container {
+    width: 349px;
+}
+
+@media (max-width: 800px) {
+    .CommitteeMembersSection1 {
+        width: 349px;
+        flex-direction: column;
+    }
+
+    .CommitteeMembersSection2 {
+        width: 349px;
+        gap: 5px;
+    }
+}
+
+
+
+/** button modification or customizations */
+.w-fit {
+    width: fit-content;
+}
+
+.text_btn_primary-btn_txt2 {
+    color: #992E00;
+    font-size: 16px;
+    font-family: 'Familjen Grotesk',
+        sans-serif;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+}
+
+
+.text_btn_primary2 {
+    width: fit-content;
+    height: 26px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid #992E00;
+}
+
+.overflow-cstm-auto {
+    overflow: auto;
+    flex: 1;
+}
+
+.cstm-ch {
+    padding: 4%;
+}
+
+@media (max-width:800px) {
+    .overlay-dialog-cstm {
+        width: 349px !important;
+    }
+
+    .overlaymodal-body {
+        height: 70vh;
+    }
+}
+
+/** department.css*/
+
+.search {
+    display: flex;
+    width: 349px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:  10px;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    position: relative;
+}
+
+.search input[type="text"] {
+    margin-left: 15%;
+    color: var(--Colors-Neutral-Neutral-70, black) !important;
+    font-family: "Familjen Grotesk" !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 140% !important;
+    width: 90%;
+}
+
+.search input[type="text"]::placeholder {
+    color: var(--Colors-Neutral-Neutral-70, #707073);
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    opacity: 1;
+}
+
+.search .search-icon {
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+}
+
+#searchterm {
+    background-color: #F2F1ED
+}

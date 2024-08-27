@@ -1,0 +1,265 @@
+.container {
+    background-color: #F2F1ED;
+}
+
+.TopAligner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4435px;
+    margin-bottom: 180px;
+}
+
+.HistoryMainAligner {
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 280px;
+    height: 4160px;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .HistoryMainAligner{
+        width: 350px;
+        row-gap: 100px;
+        height: 3500px;
+    }
+    
+    .TopAligner{
+        height: 3600px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+.OurJourneyTitle95 {
+    color: #992E00;
+    font-family: "DM Serif Display";
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 1260px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.StartedFirst381 {
+    width: 315px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.StartedFirst381h95 {
+    width: 100%;
+    height: 95px;
+    color: #992E00;
+    font-family: "DM Serif Display";
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.StartedFirst381h28 {
+    width: 100%;
+    height: 28px;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.StartedFirst381h176 {
+    width: 315px;
+    height: 176px;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.StartedFirstCont {
+    width: 1098px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.StartedFirst {
+    width: 1221px;
+    height: 830px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.StartedFirst647 {
+    width: 647px;
+    height: 830px;
+    object-fit: cover;
+}
+
+.StartedFirstHighSchool {
+    width: 1221px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 830px;
+}
+
+.StartedFirstHighSchoolCont {
+    width: 1098px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.StartedFirstHighSchool647 {
+    width: 647px;
+    height: 100%;
+}
+
+.StartedFirstHighSchool315 {
+    width: 315px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.StartedFirstHighSchool315h95 {
+    width: 100%;
+    height: 95px;
+    color: #992E00;
+    font-family: "DM Serif Display";
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.StartedFirstHighSchool315h28 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.footer-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F1ED;
+}
+
+#ftr {
+    width: 1260px;
+    display: flex;
+}
+
+.MainAligner{
+    width: 100%;
+    background-color: #F2F1ED;
+}
+
+
+@media (max-width:800px) {
+    .OurJourneyTitle95{
+        font-size: 29px;
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .StartedFirst,.StartedFirstCont{
+        flex-direction: column;
+        width: 349px;
+    }
+    .StartedFirst647{
+        width: 349px;
+        height: 349px;
+    }
+    .StartedFirstHighSchool,.StartedFirstHighSchoolCont{
+        flex-direction: column-reverse;
+        width: 349px;
+    }
+    .StartedFirstHighSchool647{
+        width: 349px;
+        height: 349px;
+    }
+    .StartedFirst381,.StartedFirstHighSchool315{
+        width: 349px;
+    }
+    .StartedFirst381{
+        align-items: start;
+    }
+    .StartedFirstCont{
+        row-gap: 50px;
+        height:fit-content;
+    }
+    .StartedFirst{
+        height: 720px;
+    }
+    .StartedFirstHighSchool315{
+        height: fit-content;
+        row-gap: 10px;
+    }
+    .StartedFirstHighSchoolCont{
+        height: fit-content;
+        row-gap: 50px;
+    }
+    .StartedFirstHighSchool{
+        height: fit-content;
+    }
+    .StartedFirst381{
+        background-color: #F2F1ED;
+    }
+    .StartedFirstHighSchool315{
+        background-color: #F2F1ED;
+    }
+}
+
+.sectionaligningline{
+    width: 2px;
+    height: 98%;
+    background-color: #992E00;
+    position: absolute;
+    z-index: 1;
+}
+
+.HistorySectionsCont{
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 800px) {
+    .HistorySectionsCont{
+        height: 100%;
+    }
+}

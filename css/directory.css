@@ -1,0 +1,378 @@
+
+ 
+  .header-section {
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .header-section {
+      max-width: 100%;
+    }
+  }
+
+  .content-wrapper {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+
+  @media (max-width: 991px) {
+    .left-column {
+      width: 100%;
+    }
+  }
+
+  .facilities-section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #000;
+    line-height: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .facilities-section {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .facilities-title {
+    text-transform: uppercase;
+    font: 500 25px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .facilities-title {
+      max-width: 100%;
+    }
+  }
+
+  .directory-title {
+    margin-top: 25px;
+    font: 400 61px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .directory-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .right-column {
+      width: 100%;
+    }
+  }
+
+  .controls-wrapper {
+    display: flex;
+    margin-top: 53px;
+    width: 100%;
+    flex-grow: 1;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .controls-wrapper {
+      max-width: 100%;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .search-control {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Neutral-Neutral-70, #707073);
+    line-height: 140%;
+  }
+
+  @media (max-width: 991px) {
+    .search-control {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+
+  .search-wrapper {
+    align-self: start;
+    display: flex;
+    gap: 11px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .search-wrapper {
+      white-space: initial;
+    }
+  }
+
+  .img-search {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+
+  .search-text {
+    font-family: Familjen Grotesk, sans-serif;
+    margin: auto 0;
+  }
+
+  .divider {
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Colors-Text-Color, #000);
+    margin-top: 9px;
+    height: 1px;
+  }
+
+  @media (max-width: 991px) {
+    .divider {
+      max-width: 100%;
+    }
+  }
+
+  .filter-button {
+    justify-content: center;
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    display: flex;
+    gap: 8px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    line-height: 100%;
+    margin: auto 0;
+    padding: 20px 31px;
+  }
+
+  @media (max-width: 991px) {
+    .filter-button {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+
+  .img-filter {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+  }
+
+  .filter-text {
+  
+    font-family: Familjen Grotesk, sans-serif;
+    margin: auto 0;
+  }
+
+  .alphabet-nav {
+    justify-content: space-between;
+    align-self: stretch;
+    display: flex;
+    margin-top: 42px;
+    gap: 20px;
+    font-size: 25px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 500;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .alphabet-nav {
+      flex-wrap: wrap;
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+
+  .alphabet-letter {
+    font-family: Familjen Grotesk, sans-serif;
+  }
+
+  .alphabet-letter.active {
+    color: var(--Colors-Primary, #992e00);
+  }
+
+  .line-divider {
+    border-color: rgba(204, 204, 204, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Colors-Neutral-Neutral-40, #ccc);
+    align-self: stretch;
+    min-height: 1px;
+    margin-top: 38px;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .line-divider {
+      max-width: 100%;
+    }
+  }
+
+  .section-title {
+    color: var(--Colors-Secondary, #000);
+    align-self: stretch;
+    margin-top: 61px;
+    font: 400 31px/120% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .section-title {
+      max-width: 100%;
+      margin: 40px 10px 0 0;
+    }
+  }
+
+  .admin-section {
+    align-self: stretch;
+    margin-top: 49px;
+  }
+
+  @media (max-width: 991px) {
+    .admin-section {
+      max-width: 100%;
+      margin: 85px 10px 50px 0;
+    }
+    
+  }
+  .footer{
+    margin-top: 15% !important;
+  }
+  .admin-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  }
+
+  @media (max-width: 991px) {
+    .admin-wrapper {
+            grid-template-columns: 1fr; /* 1 column for smaller screens */
+            row-gap: 20px; /* Ensure row gap remains consistent on smaller screens */
+        
+    }
+  }
+
+  .admin-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  @media (max-width: 991px) {
+    .admin-column {
+      width: 100%;
+    }
+  }
+
+  .admin-details {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+ 
+
+  .admin-title {
+    font-family: Familjen Grotesk, sans-serif;
+    text-transform: uppercase;
+    margin-top: 43px;
+  }
+
+  .admin-name {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .admin-ext {
+    margin-top: 4px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  .admin-ph {
+    margin-top: 4px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .admin-email {
+    margin-top: 4px;
+    font: 16px Familjen Grotesk, sans-serif;
+  }
+
+  .academics-info{
+    padding: 0px !important;
+  }
+  .academics-subtitle{
+    margin-top: 6px !important;
+  }
+  @media (max-width: 991px) {
+    .admin-details {
+      margin-top: 20px;
+    }
+    .admin-title {
+      margin-top: 20px;
+    }
+    .mblfooter {
+      padding: 0px !important;
+    }
+   
+  }
+  
+
+
+
+
+
+
+  .alphabet-letter.act {
+    color: brown;
+}
+
+.alphabet-letter {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#mblftr{
+    margin-top: 5%;
+}
