@@ -94,7 +94,8 @@ if ($result->num_rows > 0) {
         }
     }else{
         $sql = "SELECT query_search, page_url, page_title
-                FROM search_queries";
+                FROM search_queries GROUP BY page_title
+        ORDER BY page_title";
         $result = $conn->query($sql);
         if (!$result) {
             echo json_encode(['error' => 'SQL error: ' . $conn->error]);
