@@ -578,7 +578,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    gap: 8px;
+    gap: 20px;
 }
 .member-card {
     display: flex;
@@ -1013,7 +1013,7 @@
     }
 }
 .Frequently-asked-questions-component {
-    height: 324px;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1030,7 +1030,7 @@
 
 .panel-group {
     width: 872px;
-    height: 352px;
+    height:100%;
 }
 
 @media (max-width: 1254px) and (min-width: 1000px) {

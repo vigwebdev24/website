@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="./css/mblfooter.css">
+    <link rel="stylesheet" href="css/ueac.css">
     <link rel="stylesheet" href="./css/button.css">
     <title>Vignan University</title>
     <style>
@@ -120,8 +121,8 @@
             padding: 50px 25px;
         }
         .course-cards {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
             row-gap: 61px;
             column-gap:20px;
             padding-bottom: 10px;
@@ -135,13 +136,21 @@
 
         @media (max-width: 1260px) and (min-width: 500px) {
             .course-card {
-                width: calc(50% - 10px); 
+                width:100%;
+            }
+            .course-cards{
+                grid-template-columns:repeat(2,1fr);
+                width:100%;
             }
         }
 
         @media (max-width: 500px) {
             .course-card {
-                width: 100%; /* One card per row */
+                width: 100%;
+            }
+            .course-cards{
+                grid-template-columns:repeat(1,1fr);
+                width:100%;
             }
         }
     </style>
@@ -156,11 +165,14 @@
                     <div class="patent-title">
                         E-Content
                     </div>
-                    <div class="patent-controls">
-                        <div class="col-lg-22" style="">
-                            <button class="cta_button_secondary Secondary-btn_txt">BookSearch<img
-                                    src="assets/icons/arrow_forward.png" /></button>
+                    <div class="search-filter-container">
+                        <div class="search-container">
+                        <span class="search-input-container">
+                        <img src="assets/svgicons/search.svg" alt="" class="prog-search-icon">
+                        <input type="text" class="search-input" id="search" placeholder="Search" autofocus="" fdprocessedid="mpsy7k"></span>
+                        <div class="search-divider"></div>
                         </div>
+                        <button class="filter_button_secondary filter_secondary-btn_txt"> <img src="assets/icons/filter_list.png"> &nbsp;Filter </button>
                     </div>
                 </div>
             </div>
@@ -170,7 +182,7 @@
                     <div style="display:flex; row-gap:25px;">
                         <div class="course-cards naac">
                             <?php
-                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_econtent'";
+                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_econtent'  ORDER BY sequence ASC";
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
@@ -179,10 +191,8 @@
                                 <div class="course-name"><?php echo $row['title']?></div>
                                 <div class="naac">
                                     <div class="text_btnnew ">
-                                        <div class="text_btnnew_innrdiv">
-                                            <a class="a" href="naac_card.php?id=cy2_card1" target="_blank">
-                                                <div class="text_btnnew_txt"><?php echo $row['btn_nm']?></div>
-                                            </a>
+                                        <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $row['btn_hlink']?>',  '_blank')">
+                                            <div class="text_btnnew_txt"><?php echo $row['btn_nm']?></div>
                                             <div>
                                                 <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                             </div>
