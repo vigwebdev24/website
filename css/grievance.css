@@ -1,0 +1,106 @@
+.btn-123 {
+  margin-top: 61px;
+}
+.aaa-content-container {
+  grid-gap: 92px;
+}
+.gtitle {
+  color: #000;
+
+  /* Serif/Heading/Se H4 */
+  font-family: "DM Serif Display";
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 39px */
+}
+.aaadesc,
+.aaabtn {
+  margin-top: 43px;
+}
+.regform-section {
+  display: flex;
+  gap: 27px;
+  margin-top: 180px;
+}
+@media (max-width: 991px) {
+  .regform-section{
+    flex-direction: column;
+    margin-top: 60px;
+  }
+}
+.regform-title {
+  width: 350px;
+  color: var(--Colors-Text-Color, #000);
+
+  /* Serif/Heading/Se H2 */
+  font-family: "DM Serif Display";
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 61px */
+}
+@media (max-width: 991px) {
+  .regform-title {
+    font-size: 31px;
+    width: 100%;
+  }
+}
+.regform-content {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .regform-content {
+    width: 100%;
+  }
+}
+
+.panel-content{
+  padding: 0 !important;
+}
+
+#simplelabel{
+  background-color: #F2F1ED !important;
+}
+
+.reginput{
+  padding: 25px 0;
+}
+.captcha-container{
+  display: flex;
+  gap: 31px;
+  padding: 25px 0;
+}
+.captcha{
+  width: 45%;
+  color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Body/SS Body small */
+font-family: "Familjen Grotesk";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 18.2px */
+margin-top: 20px;
+}
+.captcha-input{
+  width: 50%;
+}
+.captcha-value-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.captcha-value{
+  color: var(--Colors-Status-Disabled, #707073);
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.btn-con{
+  margin: 25px 0;
+}

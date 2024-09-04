@@ -1,0 +1,212 @@
+@media (max-width: 991px) {
+  .ulife-div-23 {
+    margin-top: 450px;
+  }
+}
+
+.message-section{
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (max-width: 991px) {
+    .message-section{
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.message-txt-container{
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+}
+@media (max-width: 991px) {
+    .message-txt-container{
+        width: 100%;
+    }
+}
+.message-title{
+    color: var(--Colors-Text-Color, #000);
+
+    /* Serif/Heading/Se H2 */
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 61px */
+}
+@media (max-width: 991px) {
+    .message-title{
+        font-size: 31px;
+    }
+}
+.message-desc{
+    color: var(--Colors-Text-Color, #000);
+
+    /* Sans-Serif/Body/SS Body */
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin-top: 49px;
+    width: 498px;
+}
+@media (max-width: 991px) {
+    .message-desc{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.message-btn{
+    margin-top: 25px;
+}
+
+.message-img{
+    width: 299px;
+    height: 392px;
+    object-fit: cover;
+}
+@media (max-width: 991px) {
+    .message-img{
+        width: 100%;
+    }
+}
+.message-img-txt{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Upper Case/SS UC 3 */
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 28px */
+text-transform: uppercase;
+padding: 13px 16px;
+}
+
+.h3{
+    color: var(--Colors-Text-Color, #000);
+
+/* Serif/Sub-heading/Se Sub-Heading 2 */
+font-family: "DM Serif Display";
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 30px */
+}
+.aaa-content-container{
+    grid-gap: 61px;
+    margin-top: 60px;
+}
+
+.aaa-mess{
+    color: var(--Colors-Text-Color, #000);
+
+    /* Sans-Serif/Body/SS Body Big */
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    margin-top: 25px;
+}
+.aaa-txt-h{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Upper Case/SS UC 4 */
+font-family: "Familjen Grotesk";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
+text-transform: uppercase;
+margin-top: 25px;
+}
+.aaa-descr{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+margin-top: 16px;
+cursor: pointer;
+}
+
+.assdean-box{
+    padding-bottom: 0;
+}
+
+.goals-journey-content{
+    margin-top: 180px;
+}
+
+.placement-stats-text{
+    padding: 0;
+}
+.contactus-section{
+    margin-top: 180px;
+}
+@media (max-width: 991px) {
+    .contactus-section{
+        margin-top: 80px;
+    }
+
+    .goals-journey-content{
+        margin-top: 60px;
+    }
+}
+
+.contactus-title{
+    color: var(--Colors-Text-Color, #000);
+
+/* Serif/Heading/Se H2 */
+font-family: "DM Serif Display";
+font-size: 61px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 61px */
+}
+@media (max-width: 991px) {
+    .contactus-title{
+        font-size: 31px;
+    }  
+}
+.contactus-box-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 49px;
+    width: 85%;
+}
+@media (max-width: 991px) {
+    .contactus-box-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    
+}
+.cbox-txt{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Body/SS Body Big Bold */
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 28px */
+}
+.cbox-add, .cbox-mob, .cbox-mail{
+    color: var(--Colors-Text-Color, #000);
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 28px */
+margin-top: 20px;
+}

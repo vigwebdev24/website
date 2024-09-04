@@ -1,0 +1,123 @@
+.section-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+
+.howtoreach-sec {
+  width: 100%;
+  height: 830px;
+  display: flex;
+}
+
+.howtoreach_leftsec {
+  width: 903px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing-Mega-L, 61px);
+}
+
+.howtoreach-title {
+  width: 570px;
+  color: var(--Colors-Primary, #992E00);
+  font-family: DM Serif Display;
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 95px */
+}
+
+.howtoreach-desc {
+  width: 625px;
+  color: var(--Color-Text-Color-def, #000);
+  font-family: DM Serif Display;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 37.2px */
+}
+
+.loc_btnwidth {
+  width: 305px !important;
+}
+
+.map {
+  width: 647px;
+  height: 830px;
+  flex-shrink: 0;
+}
+
+.waysdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing-Mega-L, 61px);
+  align-self: stretch;
+}
+
+.waysdiv_innr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing-l, 20px);
+  align-self: stretch;
+}
+
+.transprotmedium {
+  color: var(--Colors-Text-Color, #000);
+  font-family: DM Serif Display;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 61px */
+}
+
+.directiondiv {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing-Mega, 49px);
+  align-self: stretch;
+}
+
+.directiondivinnr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing-xxxl, 39px);
+  flex: 1 0 0;
+}
+
+.Terminals {
+  color: #000;
+  font-family: DM Serif Display;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 37.2px */
+}
+
+.distance_fare {
+  color: var(--Color-Text-Color-def, #000);
+  font-family: Familjen Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.direction_desc {
+  color: var(--Color-Text-Color-def, #000);
+  font-family: Familjen Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}

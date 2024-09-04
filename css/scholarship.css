@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .scholarship-container {
+    /* background: white; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .scholarship-container h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .scholarship-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .scholarship-cell {
+    flex: 1;
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    text-align: left;
+    font-size:16px;
+    /* background: white; */
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+  }
+
+  .header-row .scholarship-cell {
+    /* background: #ff4081; */
+    /* color: white; */
+    font-weight: bold;
+  }
+
+  .scholarship-container footer h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .instructions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+
+  }
+
+  .instructions-list li {
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  @media (min-width: 768px) {
+    .scholarship-row {
+      flex-wrap: nowrap;
+    }
+
+    .scholarship-cell {
+      text-align: left;
+    }
+  }
+  .content1 {
+  display: none;
+}
+
+.content1.active1 {
+  display: block;
+}
+.feeline{
+border-color: rgba(204, 204, 204, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--Colors-Neutral-Neutral-40, #ccc);
+  margin-top: 48px;
+  margin-bottom: 48px;
+  height: 1px;
+}
+.feeins{
+margin-top: 120px;
+}
+.hot{
+font-size: 26px;
+
+}

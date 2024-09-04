@@ -1,0 +1,156 @@
+.newstudent-div-space {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 180px;
+}
+
+.frst6daysoutdiv {
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.frst6days-picsdiv {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.frst6days-pics1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.frst6days-contentoutrdiv {
+    display: flex;
+    width: 391px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    flex-shrink: 0;
+}
+
+.frst6days-title {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+    align-self: stretch;
+}
+
+.frst6days-desc {
+    text-align: justify;
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify;
+    /* 22.4px */
+}
+
+
+.campus-desc-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+    align-self: stretch;
+}
+
+.campus-hdng {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.campus-subsec-div {
+    display: flex;
+    width: 292px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.dayscholar-bus{
+    display: flex;justify-content: space-between;align-items: flex-start;
+}
+
+.dayscholar-bus_leftdiv{
+    display: flex;width: 632px;flex-direction: column;align-items: flex-start;
+gap: var(--Spacing-Spacing-Mega, 49px);flex-shrink: 0;
+}
+
+.dayscholar-bus_desc{
+    width:553px;
+}
+
+.query-outdiv{
+    position: absolute;
+    left: 0;    
+    display: flex;
+    padding: var(--Spacing-Spacing-Mega-L, 61px) 0px;
+    align-items: flex-start;
+    background: var(--Colors-Primary, #992E00);
+    height: 636px;
+    padding: 100px;
+}
+
+.query-leftdiv{
+    display: flex;
+    /* padding: 50px 122px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.button_secondary2{
+    color: var(--Colors-Buttons-Primary-Button, #992E00);
+leading-trim: both;text-edge: cap;font-family: Familjen Grotesk;font-size: 20px;
+font-style: normal;font-weight: 400;line-height: 100%; /* 20px */display: flex;padding: var(--Numbers-7, 20px) var(--Numbers-9, 31px);justify-content: center;
+align-items: center;gap: 10px;border-radius: var(--Numbers-12, 61px);background: var(--Colors-Background, #F2F1ED);
+}
+
+.query-rightdiv{
+    display: flex;
+    /* padding: 305px 227px 179px 227px; */
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    flex: 1 0 0;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.query-contactnumdiv{
+    display: flex;align-items: center;gap: var(--Spacing-Spacing-xs, 10px);
+}
+
+.query-contactnum{
+    color: var(--Colors-Background, #F2F1ED);font-family: DM Serif Display;font-size: 39px;
+font-style: normal;font-weight: 400;line-height: 100%; /* 39px */
+}
+
+.query-timings{
+    color: var(--Colors-Background, #F2F1ED);text-align: right;font-family: Familjen Grotesk;
+font-size: 20px;font-style: normal;font-weight: 400;line-height: 140%; /* 28px */
+width: 298px;
+
+}

@@ -1,0 +1,1232 @@
+.CoExAMMPCCont {
+    background-color: #F2F1ED;
+    height: fit-content;
+}
+
+.MainAlignerForCoExAMMPC {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #F2F1ED;
+    height: fit-content;
+    margin-top: 80px;
+    row-gap: 180px;
+}
+
+@media (max-width: 800px) {
+    .MainAlignerForCoExAMMPC {
+        margin-top: 0px;
+    }
+}
+
+
+/*BillBoard*/
+
+.BillboardTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1260px;
+    height: 830px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .BillboardTab {
+        max-width: 349px;
+        margin-top: 25px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .MainAlignerForCoExAMMPC {
+        align-self: center;
+    }
+}
+
+.BillboardTab .BillboardTabplane1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.BillboardTab .BillboardTabplane2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 29px;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    top: 0;
+}
+
+.BillboardTabplane1Child {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.BillboardTabplane1ChildImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: right;
+}
+
+.BillboardTabplane2DiscriptionTextCont {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.BillboardTabplane2DiscriptionText {
+    width: 36%;
+    font-size: x-large;
+    font-family: 'DM Serif Display';
+    /* display: none; */
+}
+
+.BillboardTabplane2DiscriptionTextWCU {
+    width: 543px;
+    color: var(--Color-Text-Color-def, #000);
+    /* Serif/Sub-heading/Se Sub-Heading 1 */
+    font-family: "DM Serif Display";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.BillboardTabplane2TitleText {
+    color: var(--Colors-Primary, #992E00);
+    /* Serif/Heading/Se H3 */
+    font-family: "DM Serif Display";
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 769px;
+}
+
+.BillboardTabplane2Hyperlinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.BillboardTabplane2Hyperlinks1 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Maroon-Text);
+    font-size: large;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 61px;
+    cursor: pointer;
+}
+
+.BillboardTabplane2HyperlinksImg {
+    width: 20px;
+    height: 20px;
+}
+
+.BillboardTabplane2Hyperlinks2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+    background-color: var(--Main-Background-Color);
+    font-size: large;
+    color: var(--Maroon-Text);
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-color: var(--Maroon-Text);
+    border-radius: 61px;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: 'DM Serif Display';
+    /* Name of your custom font */
+    src: url('path/to/your-font.ttf') format('truetype');
+    /* Path to your TTF file */
+}
+
+.Billboardimage {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+
+.BillBoardHeader {
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+    height: fit-content;
+    color: #992E00;
+    /* 39px */
+}
+
+.BillBoardBottom {
+    width: 350px;
+    height: 599px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+
+}
+
+.BillBoardImg {
+    width: 350px;
+    height: 350px;
+}
+
+.BillBoardDescription {
+    font-family: "DM Serif Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.BillBoardNavButtons {
+    display: flex;
+    width: 350px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardNavButtons button {
+    display: flex;
+    border-radius: 61px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Familjen Grotesk";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-left: 31px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 16px;
+    border: none;
+}
+
+.BillBoardNavButtons button:nth-child(1) {
+    background-color: #992E00;
+    color: #f2f1ed;
+    width: 140px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardNavButtons button:nth-child(2) {
+    border: 1px solid #992E00;
+    width: 100px;
+    box-sizing: content-box;
+    color: #992E00;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BillBoardButtonArrows {
+    width: 16px;
+    height: 16px;
+}
+
+.BillBoardTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BillBoardBottom {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .BillBoardTop {
+        display: none;
+    }
+
+    .BillBoardBottom {
+        display: flex;
+        height: fit-content;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+
+.BillBoardImgimg {
+    width: 349px;
+    height: 349px;
+    object-fit: cover;
+}
+
+
+
+.OverviewSectionCoExAMMPC {
+    width: 1260px;
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.OverviewSectionCoExAMMPC621 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.OverviewSectionCoExAMMPC624 {
+    width: 674px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-suffix {
+    color: var(--Colors-Text-Color, #000);
+    /* Serif/Heading/Se H4 */
+    font-family: "DM Serif Display";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.OverviewSectionCoExAMMPC621h562 {
+    width: 100%;
+    height: 562px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.OverviewSectionCoExAMMPC621h562h61 {
+    color: var(--Colors-Secondary, #000);
+    /* Serif/Heading/Se H2 */
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.OverviewSectionCoExAMMPC621h562w498 {
+    width: 498px;
+    color: var(--Colors-Text-Color, #000);
+    /* Sans-Serif/Body/SS Body */
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media (max-width: 800px) {
+    .OverviewSectionCoExAMMPC {
+        flex-direction: column;
+        height: 1800px;
+        justify-content: space-between;
+        width: 349px;
+    }
+
+    .OverviewSectionCoExAMMPC621 {
+        height: fit-content;
+    }
+
+    .OverviewSectionCoExAMMPC621h562 {
+        width: 349px;
+        height: 680px;
+    }
+
+    .OverviewSectionCoExAMMPC621h562w498 {
+        width: 349px;
+    }
+
+    .OverviewSectionCoExAMMPC624 {
+        flex-direction: column;
+        height: 1000px;
+        justify-content: space-between;
+        width: 349px;
+    }
+    .OverviewSectionCoExAMMPC621h562h61{
+        font-size: 39px;
+    }
+}
+
+
+
+
+
+/* copied from home.ccc */
+
+.home-reseachcountdiv {
+    border: 1px solid var(--Colors-Rust-Rust-40, #C57654);
+    display: flex;
+    width: 298px;
+    height: 620px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: var(--Numbers-12, 61px) 0px var(--Numbers-5, 13px) 0px;
+}
+
+
+.home-reseachcount_innrdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Numbers-3, 8px);
+    flex: 1 0 0;
+}
+
+.home-reseachcount {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    width: 232px;
+    font-family: DM Serif Display;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* 76px */
+}
+
+.home-reseach_txt {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    width: 232px;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.home-reseach_imgbdrdiv {
+    display: flex;
+    width: 298px;
+    padding: var(--Numbers-7, 20px) var(--Numbers-8, 25px) 0px var(--Numbers-7, 20px);
+    align-items: center;
+    gap: var(--Numbers-4, 10px);
+}
+
+.home-reseach_img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.home-reseach_bdr {
+    flex: 1 1 0;
+    height: 0px;
+    border-bottom: 1px solid var(--Colors-Rust-Rust-40, #C57654);
+}
+
+.home-reseach_div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.home-reseach_circle {
+    display: flex;
+    width: 298px;
+    height: 298px;
+    justify-content: center;
+    border-radius: 200px;
+    border: 1px solid var(--Colors-Rust-Rust-40, #C57654);
+    align-items: center;
+}
+
+.home-reseach_circle_txtdiv {
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    width: 232px;
+    align-items: center;
+    gap: var(--Numbers-3, 8px);
+    flex-shrink: 0;
+}
+
+
+.home-reseach_circle_txt {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 76px */
+}
+
+.home-reseach_circle_small {
+    font-size: 25px;
+}
+
+.home-reseach_circle_title {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.home-reseach_square {
+    display: flex;
+    width: 298px;
+    height: 298px;
+    border: 1px solid var(--Colors-Rust-Rust-40, #C57654);
+    justify-content: center;
+    align-items: center;
+}
+
+.home-reseach_square_innrdiv {
+    display: flex;
+    height: 298px;
+    padding: var(--Numbers-12, 61px) 0px var(--Numbers-5, 13px) 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-reseach_square_content {
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Numbers-3, 8px);
+    flex-shrink: 0;
+}
+
+.home-reseach_square_txt {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 76px */
+}
+
+.home-reseach_square_title {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.home-reseach_squareimgbdrdiv {
+    display: flex;
+    width: 298px;
+    padding: 0px var(--Numbers-8, 25px) 0px var(--Numbers-7, 20px);
+    align-items: center;
+    gap: var(--Numbers-4, 10px);
+}
+
+.home-reseachcountdiv-cstm {
+    border: 1px solid var(--Colors-Rust-Rust-40, #C57654);
+    display: flex;
+    width: 349px;
+    height: 620px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 61px 0px 13px 0px;
+}
+
+
+@media (max-width: 800px) {
+    .home-reseachcountdiv-cstm {
+        width: 349px;
+        height: 349px;
+    }
+}
+
+
+
+/*** ***/
+
+
+.CoexmmpcContributorsSection {
+    width: 1260px;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 61px;
+}
+
+.CoexmmpcContributorsSectionTitle {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.aboutus-div-56-designation {
+    font-size: 16px;
+}
+
+.aboutus-div-56,
+.aboutus-div-58,
+.aboutus-div-60,
+.aboutus-div-62 {
+    font-size: 20px;
+    width: 250px;
+}
+
+.CoexmmpcContributorsSectionh484 {
+    width: 1260px;
+    height: 484px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CoexmmpcContributorsSectionh484w280 {
+    width: 280px;
+    height: 484px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CoexmmpcContributorsSectionh484w280img {
+    width: 280px;
+    height: 392px;
+    object-fit: cover;
+}
+
+.CoexmmpcContributorsSectionh484w280Detailsh92 {
+    width: 265px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.CoexmmpcContributorsSectionh484w280h92h281 {
+    width: 265px;
+    height: 28px;
+    text-align: start;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.CoexmmpcContributorsSectionh484w280h92h222 {
+    width: 265px;
+    height: 22px;
+    text-align: start;
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.CoexmmpcContributorsSectionh52 {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.CoexmmpcContributorsSection2 {
+    height: 744px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-btn-20-16 {
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .txt-btn-20-16 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px) {
+    .CoexmmpcContributorsSection {
+        height: fit-content;
+        flex-direction: column;
+        width: 349px;
+
+    }
+
+    .CoexmmpcContributorsSectionh484 {
+        flex-wrap: wrap;
+        width: 349px;
+        height: fit-content;
+    }
+
+    .CoexmmpcContributorsSectionh484w280 {
+        zoom: 0.6;
+    }
+
+    .CoexmmpcContributorsSectionTitle {
+        width: 349px;
+        font-size: 39px;
+    }
+
+    .CoexmmpcContributorsSectionh52 {
+        width: 349px;
+    }
+}
+
+
+
+
+/* Facilities Available */
+
+.CoexammpcFacilitiesAvailablesection {
+    width: 1260px;
+    height: 621px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CoexammpcFacilitiesAvailablesectionw773 {
+    width: 773px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.CoexammpcFacilitiesAvailablesectionw621w450 {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w450child {
+    width: 450px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w450img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w450cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8558558587197427) 0%, rgba(0, 0, 0, 0) 55%);
+    padding: 31px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 31px;
+    color: #FFF;
+    text-shadow: 2px 4px 63.7px rgba(0, 0, 0, 0.90);
+    /* Font UI Styles Main/H4 */
+    font-family: "DM Serif Display";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w298 {
+    width: 298px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w298cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 31px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8558558587197427) 0%, rgba(0, 0, 0, 0) 55%);
+    position: absolute;
+    z-index: 4;
+    color: #FFF;
+    text-shadow: 2px 4px 63.7px rgba(0, 0, 0, 0.90);
+    /* Font UI Styles Main/H4 */
+    font-family: "DM Serif Display";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.CoexammpcFacilitiesAvailablesectionw621w298img,
+.CoexammpcFacilitiesAvailablesectionw621w450img,
+.CoexammpcFacilitiesAvailablesectionw621w450img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+.CoexammpcFacilitiesAvailablesectionw383 {
+    width: 383px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+@media (max-width:800px) {
+    .CoexammpcFacilitiesAvailablesection {
+        flex-direction: column;
+        width: 349px;
+        height: fit-content;
+        row-gap: 50px;
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw773 {
+        flex-direction: column;
+        width: 349px;
+        row-gap: 20px;
+        height: fit-content;
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw621w298 {
+        width: 349px;
+        height: 349px;
+        object-fit: cover;
+        row-gap: 20px;
+
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw621w450child {
+        width: 349px;
+        height: 349px;
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw383 {
+        height: fit-content;
+        width: 349px;
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw621w450 {
+        height: fit-content;
+        width: 349px;
+    }
+
+    .CoexammpcFacilitiesAvailablesectionw383h61 {
+        width: 349px;
+        font-size: 39px;
+    }
+}
+
+
+
+/*Fluorescence Spectrophotometer*/
+
+.CoexammpFluorescenceSpectrophotometer {
+    width: 1260px;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.CoexammpFluorescenceSpectrophotometerCont {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8558558587197427) 0%, rgba(0, 0, 0, 0) 55%);
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 31px;
+    color: #FFF;
+    text-shadow: 2px 4px 63.7px rgba(0, 0, 0, 0.90);
+    /* Font UI Styles Main/H4 */
+    font-family: "DM Serif Display";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.CoexammpFluorescenceSpectrophotometerimg {
+    width: 1260px;
+    height: 620px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width: 800px) {
+    .CoexammpFluorescenceSpectrophotometer {
+        width: 349px;
+        height: 349px;
+    }
+
+    .CoexammpFluorescenceSpectrophotometerimg {
+        width: 349px;
+        height: 349px;
+    }
+
+    .CoexammpFluorescenceSpectrophotometerCont {
+        padding: 3px;
+        padding-bottom: 5%;
+    }
+}
+
+/** Contact us*/
+
+
+.CoexammpContactUs {
+    width: 1260px;
+    height: 619px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.CoexammpContactUsw654 {
+    width: 654px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoexammpContactUsw385 {
+    width: 385px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 61px;
+}
+
+.CoexammpContactUsw385h61 {
+    width: fit-content;
+    height: 61px;
+    font-family: "DM Serif Display";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.CoexammpContactUsw385h497 {
+    width: 385px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.CoexammpContactUsw385h497h392 {
+    width: 299px;
+    height: 392px;
+    object-fit: cover;
+}
+
+.CoexammpContactUsw385h497h98 {
+    width: 299px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoexammpContactUsw385h497h98h25 {
+    width: 273px;
+    height: 25px;
+    font-family: "Familjen Grotesk";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.CoexammpContactUsw385h497h98h28 {
+    width: 273px;
+    height: 25px;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.CoexammpContactUsw269 {
+    width: 269px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.CoexammpContactUsw269h275 {
+    width: 269px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.CoexammpContactUsw269h275w194 {
+    width: 194px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.CoexammpContactUsw269h275w194w86 {
+    width: 86px;
+    height: fit-content;
+    font-family: "DM Serif Display";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: start;
+}
+
+.CoexammpContactUsw269h275w194w194 {
+    height: fit-content;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.CoexammpContactUsw269w269h85 {
+    width: 269px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.CoexammpContactUsw269w269h85w78 {
+    width: 78px;
+    height: fit-content;
+    font-family: "DM Serif Display";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.CoexammpContactUsw269w269h85w269 {
+    width: 269px;
+    height: fit-content;
+    font-family: "Familjen Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media (max-width: 800px) {
+    .CoexammpContactUs {
+        width: 349px;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .CoexammpContactUsw654 {
+        flex-direction: column;
+    }
+
+    .CoexammpContactUsw385 {
+        flex-direction: column;
+        width: 349px;
+    }
+
+    .CoexammpContactUsw654 {
+        width: 349px;
+    }
+
+    .CoexammpContactUsw385h497 {
+        width: 349px;
+    }
+
+    .CoexammpContactUsw385h497h392 {
+        width: 349px;
+    }
+
+    .CoexammpContactUsw269 {
+        width: 349px;
+    }
+    .CoexammpContactUsw385h61{
+        font-size: 39px;
+    }
+    .CoexammpContactUsw385h497h98h25{
+        font-size: 16px;
+    }
+    .CoexammpContactUsw385h497h98h28{
+        font-size: 13px;
+    }
+}
+
+
+.footer-cover {
+    width: 1260px;
+}
+
+/*cstm*/
+
+@media (max-width: 1200px) {
+    .CoExAMMPCCont {
+        zoom: 0.8;
+    }
+}
+
+@media (max-width: 1300px) {
+    .CoExAMMPCCont {
+        zoom: 0.97;
+    }
+}
+
+@media (max-width: 1000px) {
+    .CoExAMMPCCont {
+        zoom: 0.6;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .CoExAMMPCCont {
+        zoom: normal;
+    }
+
+    .MainAlignerForCoExAMMPC {
+        width: 100%;
+    }
+}

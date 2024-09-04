@@ -1,0 +1,390 @@
+/* .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--Colors-Background, #f2f1ed);
+    padding: 80px;
+}
+
+@media (max-width: 991px) {
+    .main-container {
+        padding: 0 20px;
+    }
+} */
+
+.activities-title2 {
+    color: var(--Colors-Primary, #992e00);
+    margin: 100px 0 0 0px;
+    font: 400 95px/100% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .activities-title2 {
+        max-width: 100%;
+        margin-top: 30px;
+        font-size: 31px;
+        color: black;
+    }
+}
+
+.activities-description2 {
+    color: var(--Color-Text-Color-def, #000);
+    width: 827px;
+    margin: 61px 0 0 0px;
+    font: 400 31px/37px DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .activities-description2 {
+        max-width: 100%;
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 128%;
+    }
+}
+
+.content-wrapper {
+  display: grid;
+    grid-template-columns: repeat(3, 10fr);
+    align-self: center;
+    margin-top: 180px;
+    width: 102%;
+    max-width: 1284px;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 991px) {
+    .content-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+   grid-template-columns: 1fr; /* 1 column for smaller screens */
+    
+    }
+}
+
+.activity-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 991px) {
+    .activity-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+    }
+  
+}
+.filter-modal_content1{
+  position: relative;
+background-color: #F2F1ED !important;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 1px solid #999;
+border: 1px solid rgba(0, 0, 0, .2);
+border-radius: 0 !important;
+outline: 0;
+-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+height: auto;
+overflow-y: auto;
+}
+.activity-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 94%;
+}
+
+
+@media (max-width: 991px) {
+    .activity-column {
+        width: 100%;
+    }
+}
+
+.activity-item {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+    .activity-item {
+        margin-top: 25px;
+    }
+}
+
+.activity-date {
+    margin-top: 25px;
+    font: 16px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.activity-title {
+    margin-top: 13px;
+    font: 25px/120% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.responsive-img {
+  aspect-ratio: 1.67;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.decorative-img {
+    aspect-ratio: 1.67;
+    object-fit: auto;
+    object-position: center;
+    width: 406px;
+    max-width: 100%;
+    margin: 25px 0 0 34px;
+}
+
+@media (max-width: 991px) {
+    .decorative-img {
+        margin-left: 10px;
+    }
+}
+
+.decorative-date {
+    color: var(--Colors-Text-Color, #000);
+    margin: 25px 0 0 34px;
+    font: 400 16px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .decorative-date {
+        margin-left: 10px;
+    }
+}
+
+.decorative-title {
+    color: var(--Colors-Text-Color, #000);
+    margin: 13px 0 0 34px;
+    font: 400 25px/120% DM Serif Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .decorative-title {
+        margin-left: 10px;
+    }
+}
+
+/* side pages */
+
+.content-wrapper2 {
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 48px;
+  }
+  .overlay-dialog1 {
+    width: 81% !important;
+    margin: 13px 20px;
+    float: right;
+    animation-name: slide;
+    animation-duration: 1s;
+}
+.pad2{
+    padding: 2%;
+}
+.modal-open .modal {
+ 
+  height: 98%;
+}
+
+  @media (max-width: 991px) {
+    .content-wrapper2 {
+      padding: 0 0px;
+    }
+    .description-wrapper{
+        padding: 0px !important;
+    }
+    .overlay-dialog1{
+        width: 90% !important ;
+    }
+    .description-wrapper {
+      height: 60% !important;
+    }
+  }
+
+  .content-container {
+    margin-top: -2%;
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .content-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  .share-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+  }
+
+  @media (max-width: 991px) {
+    .share-section {
+      width: 100%;
+      margin-top: 20%;
+      margin-left: 7%;
+    }
+    .description-text{
+        margin-left: 1%;
+    }
+  }
+
+  .event-date {
+    color: #000;
+    text-transform: uppercase;
+    font: 400 20px/1.4 Familjen Grotesk, -apple-system, Roboto,
+      Helvetica, sans-serif;
+  }
+
+  .share-images-container {
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .share-title {
+    color: #000;
+    text-transform: uppercase;
+    align-self: start;
+    margin-top: 39px;
+    font: 500 16px Familjen Grotesk, -apple-system, Roboto,
+      Helvetica, sans-serif;
+  }
+
+  .share-icons {
+    align-items: start;
+    align-self: start;
+    display: flex;
+    margin-top: 4px;
+    gap: 12px;
+  }
+
+  .share-icon {
+    object-fit: auto;
+    object-position: center;
+    width: 46px;
+  }
+
+  .content-description-section {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+   
+    margin-left: 20px;
+    margin-top: -2%;
+  }
+.facultycontent-description-section {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+   
+    margin-left: 20px;
+    margin-top: -2%;
+	width: 100%;	
+  }
+  @media (max-width: 991px) {
+    .content-description-section {
+      width: 100%;
+      margin-top: 12%;
+    }
+   .facultycontent-description-section {
+      width: 100%;
+      margin-top: 12%;
+    }
+  }
+
+  .description-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    padding: 0 4px 25px 20px;
+
+	      height: 69vh;
+    overflow-y: auto;
+  }
+
+  .description-text {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .event-title {
+    font: 43px/100% DM Serif Display, -apple-system, Roboto,
+      Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .event-title {
+      font-size: 25px;
+      line-height: 110%;
+    }
+  }
+
+  .event-description {
+    margin-top: 45px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto,
+      Helvetica, sans-serif;
+	  text-align:justify;
+  }
+  @media (max-width: 991px) {
+    .event-description{
+        margin-top: 37px;
+    }
+  }
+
+  .highlight-container {
+    border-radius: 10px;
+    background-color: var(--Colors-Tone-Warm-3, #d1cec7);
+    align-self: end;
+    display: flex;
+    margin-top: 159px;
+    padding-top: 80px;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  @media (max-width: 991px) {
+    .highlight-container {
+      margin-top: 40px;
+    }
+    
+  }
+
+  .highlight-box {
+    border-radius: 10px;
+    background-color: var(--Colors-Text-Color, #000);
+    margin-top: 337px;
+    height: 244px;
+  }
+
+  @media (max-width: 991px) {
+    .highlight-box {
+      margin-top: 40px;
+    }
+  }
+  /* .modal-open .modal {
+    overflow-y: hidden !important;
+} */

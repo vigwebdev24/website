@@ -1,0 +1,48 @@
+
+
+.div-foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .foot{
+    width: 93%;
+  }
+.footer{
+        padding: 2% 0;
+    }
+@media (max-width: 991px) {
+    .div-foot{
+        margin-bottom: 40px;
+    }
+    .foot{
+        width: 90%;
+    }
+    
+    .footer_innrdiv{
+        flex-direction: column;
+
+    }
+    
+    .ftrcontact_div{
+        width: 100%;
+    }
+    .ftr_col1{
+        width: 100%;
+    }
+    .ftr_socialmediadivs {
+        margin-top: 40px;
+    }
+	
+    .ftr_row2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .copyrightsdiv {
+        flex-direction: column;
+    }
+    .subscribe_div{
+        width: 100%;
+        gap: 20px;
+    }
+  }
