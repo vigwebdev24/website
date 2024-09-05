@@ -1,0 +1,4404 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #f2f1ed !important;
+
+}
+
+.div {
+  padding: 5%;
+
+    max-width: 100%;
+    overflow-x: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:  #f2f1ed;
+    display: flex;
+    padding-bottom: 42px;
+    flex-direction: column;
+  }
+  .div-2 {
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--Number-1, 0px);
+    background-color: var(--Colors-Background, #f2f1ed);
+    align-self: stretch;
+    display: flex;
+    width: 90%;
+    gap: 30px;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    white-space: nowrap;
+    text-align: center;
+    padding: 32px 38px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      width: 100%;
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .div-3 {
+    justify-content: center;
+    align-self: stretch;
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      white-space: initial;
+    }
+  }
+  .img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 38px;
+    background-blend-mode: exclusion;
+    margin: auto 0;
+  }
+  .div-4 {
+    font-family: Familjen Grotesk, sans-serif;
+    justify-content: center;
+    flex-grow: 1;
+    padding-bottom: 21px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      white-space: initial;
+    }
+  }
+  .div-5 {
+    justify-content: space-between;
+    /* align-self: stretch; */
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 16px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-6 {
+    font-family: Familjen Grotesk, sans-serif;
+    aspect-ratio: 1.59;
+    justify-content: center;
+    padding: 2px 0;
+  }
+  @media (max-width: 991px) {
+    .div-6 {
+      white-space: initial;
+    }
+  }
+  .div-7 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 0;
+  }
+  @media (max-width: 991px) {
+    .div-7 {
+      white-space: initial;
+    }
+  }
+  .div-8 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  @media (max-width: 991px) {
+    .div-8 {
+      white-space: initial;
+    }
+  }
+  .div-9 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: start;
+    margin-top: 4px;
+  }
+  .div-10 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2px 0;
+  }
+  @media (max-width: 991px) {
+    .div-10 {
+      white-space: initial;
+    }
+  }
+  .div-11 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2px 0;
+  }
+  @media (max-width: 991px) {
+    .div-11 {
+      white-space: initial;
+    }
+  }
+  .div-12 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 20%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  @media (max-width: 991px) {
+    .div-12 {
+      white-space: initial;
+    }
+  }
+  .div-13 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  @media (max-width: 991px) {
+    .div-13 {
+      white-space: initial;
+    }
+  }
+  .div-14 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  .img-3 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: start;
+    margin-top: 4px;
+  }
+  .div-15 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2px 0;
+  }
+  @media (max-width: 991px) {
+    .div-15 {
+      white-space: initial;
+    }
+  }
+  .div-16 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    color: var(--Colors-Primary, #992e00);
+  }
+  @media (max-width: 991px) {
+    .div-16 {
+      white-space: initial;
+    }
+  }
+  .div-17 {
+    font-family: Familjen Grotesk, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-17 {
+      white-space: initial;
+    }
+  }
+  .div-18 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    height: 1px;
+  }
+  .img-4 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 25px;
+    fill: var(--Colors-Text-Color, #000);
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .div-19 {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-20 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-20 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 59%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-21 {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-weight: 400;
+    margin: auto 0;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-21 {
+      max-width: 100%;
+      margin-top: 40px;
+      
+    }
+  }
+  .div-22 {
+    /* opacity: 0; */
+    position:absolute;
+    top: 40%;
+    max-width: 66%;
+    color: var(--Colors-Primary, #992e00);
+    font: 90px/90px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+      margin-left: 2px;
+  }
+  @media (max-width: 991px) {
+    .div-22 {
+      color: #000;
+        margin-top: -27%;
+      max-width: 100%;
+      font-size: 30px;
+      line-height: 33px;
+      margin-right: 2%;
+    }
+  }
+  .div-23 {
+    color: var(--Color-Text-Color-def, #000);
+    margin-top: 360px;
+    margin-left: 1%;
+    font: 31px/37px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-23 {
+        font-size: 15px;
+      max-width: 100%;
+      line-height: 112%;
+      /* margin-bottom: -10%; */
+   
+    }
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 41%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-24 {
+    margin-top: -10%;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-24 {
+      max-width: 100%;
+    }
+  }
+  .img-5 {
+    margin-top: -20%;
+    aspect-ratio:0.8;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  .div-24n{
+    display: none;
+  }
+  @media (max-width: 991px) {
+    .img-5 {
+      width: 40vb;
+      scale: 1;
+      border-radius: 6px;
+      /* margin-top: -129%; */
+    }
+    .div-24{
+      display: none;
+    }
+    .div-24n{
+display: block;
+margin-top: 33%;
+    }
+    .div-23{
+      margin-top: -1px;
+    }
+  }
+  .div-25 {
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-25 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-26 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-26 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-3 {
+      width: 100%;
+    }
+  }
+  .div-27 {
+    justify-content: space-between;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 39px 61px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-27 {
+      max-width: 90%;
+      margin-top: 25px;
+      padding: 0 20px;
+    }
+  }
+  .div-28 {
+    color: #000;
+    text-align: center;
+    align-self: center;
+    white-space: nowrap;
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-28 {
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+  .div-29 {
+    color: var(--Color-Text-Color-def, #000);
+    text-align: center;
+    margin-top: 25px;
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-29 {
+      max-width: 100%;
+    }
+  }
+  .div-30 {
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-30 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+    
+  }
+  .div-31 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    align-self: stretch;
+    width: 192px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .img-6 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 72px;
+    align-self: stretch;
+  }
+  .div-32 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    align-self: stretch;
+    width: 193px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .column-4 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 45%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-4 {
+      width: 100%;
+    }
+    .div-31 ,.div-32 {
+      width: 70px;
+    }
+    
+    .div-32{
+      position: relative;
+      left:164px;
+      bottom: 56px;
+    }
+  }
+  .div-33 {
+    justify-content: space-between;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 39px 61px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-33 {
+      max-width: 90%;
+      margin-top: 25px;
+      padding: 0 20px;
+    }
+    .img-6{
+      position: relative;
+      right: 92px;
+    }
+  }
+  .div-34 {
+    color: #000;
+    text-align: center;
+    align-self: center;
+    white-space: nowrap;
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-34 {
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+  .div-35 {
+    color: var(--Color-Text-Color-def, #000);
+    text-align: center;
+    margin-top: 25px;
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-35 {
+      max-width: 100%;
+    }
+  }
+  .div-36 {
+    align-items: center;
+    display: flex;
+    margin-top: 69px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-36 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+  .div-37 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    align-self: stretch;
+    width: 192px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .img-7 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 72px;
+    align-self: stretch;
+  }
+  .div-38 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    align-self: stretch;
+    width: 193px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .div-39 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 180px;
+margin-right:60%;
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-39 {
+      max-width: 20%;
+      margin-top: 40px;
+      margin-left: -5%;
+      font-size: 40px;
+    }
+    .img-7{
+      position: relative;
+      right: 92px;
+    }
+  }
+  .div-40 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 49px;
+    width: 483px;
+    margin-right:54%;
+
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-40 {
+      max-width: 400px;
+      margin-top: 40px;
+      padding-left: 47%;
+
+    }
+    .div-37 , .div-38{
+      width: 70px;
+    }
+  }
+  .div-41 {
+    margin-top: 39px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-41 {
+      max-width: 100%;
+    }
+    .div-38{
+      position: relative;
+      left:164px;
+      bottom: 56px;
+    }
+  }
+  .div-42 {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 991px) {
+    .div-42 {
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-5 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 45%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-5 {
+      width: 50%;
+    }
+  }
+  .div-43 {
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  @media (max-width: 991px) {
+    .div-43 {
+      max-width: 100%;
+      margin-top: 25px;
+    }
+  }
+  .div-44 {
+    justify-content: center;
+    background-color: #eeefe8;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-radius: 100px;
+
+  }
+  @media (max-width: 991px) {
+    .div-44 {
+      max-width: 100%;
+    }
+  }
+  .img-8 {
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    height:86%;
+    border-radius: 1px;
+  }
+  @media (max-width: 991px) {
+    .img-8 {
+      padding: 3%;
+      max-width: 95%;
+      height: 27vh;
+      border-radius: 1px;
+    }
+  }
+  .div-45 {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 25px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-45 {
+      max-width: 100%;
+    }
+  }
+  .div-46 {
+    text-transform: uppercase;
+    font: 600 31px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-46 {
+      max-width: 100%;
+      font-size: 18px;
+    }
+  }
+  .div-47 {
+    margin-top: 16px;
+    font: 400 20px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-47 {
+      max-width: 100%;
+    }
+  }
+  .column-6 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 45%;
+    /* margin-left: 20px; */
+  }
+  @media (max-width: 991px) {
+    .column-6 {
+      width: 50%;
+    }
+  }
+  .div-48 {
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-48 {
+      max-width: 100%;
+      margin-top: 25px;
+    }
+  }
+  .div-49 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 620px;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-49 {
+      max-width: 100%;
+      height: 200px;
+     
+
+    }
+  }
+  .img-9 {
+    
+    margin-top: 3%;
+    position: absolute;
+    inset: 0;
+    height: 86%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1px;
+
+  }
+  .img-10 {
+    aspect-ratio: 0.86;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 2px;
+
+  }
+  @media (max-width: 991px) {
+    .img-9{
+width: 90%;
+height: 95%;
+border-radius: 1px;
+margin-top: -0.3%;
+    }
+    .img-10 {
+      width: 80%;
+    }
+  }
+  .div-50 {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 25px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-50 {
+      max-width: 100%;
+    }
+  }
+  .div-51 {
+    text-transform: uppercase;
+    font: 600 31px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-51 {
+      max-width: 100%;
+      font-size: 18px;
+      margin-left: -12%;
+    }
+  }
+  .div-52 {
+    margin-top: 16px;
+    font: 400 20px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-52 {
+      max-width: 120%;
+      font-size: 18px;
+      margin-left: -11%;
+    }
+  }
+  .div-53 {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-53 {
+      max-width: 100%;
+    }
+  }
+  .div-54 {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 991px) {
+    .div-54 {
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-7 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 20%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-7 {
+      width: 50%;
+    }
+  }
+  .div-55 {
+    justify-content: center;
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 16px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 140%;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-55 {
+      margin-top: 25px;
+      white-space: initial;
+    }
+  }
+  .img-11 {
+    perspective: 1000px;
+    aspect-ratio: 0.76;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 1px;
+
+
+  }
+  .div-56 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 16px;
+  }
+  @media (max-width: 991px) {
+    .div-56 {
+      white-space: initial;
+      font-size: 18px;
+    }
+    /* .img-11{
+      margin-left: 9%;
+    } */
+  }
+  .column-8 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 20%;
+    /* margin-left: 20px; */
+  }
+  @media (max-width: 991px) {
+    .column-8 {
+      width: 50%;
+    }
+  }
+  .div-57 {
+    justify-content: center;
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 16px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 140%;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-57 {
+      margin-top: 25px;
+      white-space: initial;
+      margin-left: 15%;
+    }
+  }
+  .img-12 {
+    aspect-ratio: 0.76;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 1px;
+    
+
+  }
+  .div-58 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 16px;
+  }
+  @media (max-width: 991px) {
+    .img-11{
+      width: 90%;
+      scale: 1.1;
+    }
+    .img-12{
+      width: 90%;
+      scale: 1.1;
+      margin-right: -18%;
+    }
+   
+    
+    .div-58 {
+      white-space: initial;
+      font-size: 18px;
+
+    }
+  }
+  .column-9 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 20%;
+    /* margin-left: 20px; */
+  }
+  @media (max-width: 991px) {
+    .column-9 {
+      width: 50%;
+    }
+  }
+  .div-59 {
+    justify-content: center;
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 16px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 140%;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-59 {
+      margin-top: 25px;
+      white-space: initial;
+    }
+  }
+  .img-13 {
+    aspect-ratio: 0.76;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 1px;
+
+  }
+  .div-60 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 16px;
+  }
+  @media (max-width: 991px) {
+    .div-60 {
+      white-space: initial;
+      font-size: 18px;
+
+    }
+  }
+  .column-10 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 20%;
+    /* margin-left: 20px; */
+  }
+  @media (max-width: 991px) {
+    .column-10 {
+      width: 50%;
+    }
+  }
+  .div-61 {
+    justify-content: center;
+    background-color: var(--Colors-Background, #f2f1ed);
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 16px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 140%;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-61 {
+      margin-top: 1px;
+      white-space: initial;
+      margin-left: 15%;
+    }
+  }
+  .img-14 {
+    aspect-ratio: 0.76;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius:1px;
+
+  }
+  .div-62 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 16px;
+  }
+  @media (max-width: 991px) {
+    .img-13{
+      width: 90%;
+      scale: 1.1;
+    }
+    .img-14{
+      width: 90%;
+      margin-top: 24px;
+      scale: 1.1;
+
+    }
+    .div-62 {
+      white-space: initial;
+      font-size: 18px;
+
+    }
+  }
+  .div-63 {
+
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: end;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 100%;
+    margin: 53px 90px 0 0;
+    padding: 16px 24px;
+  }
+  .div-63:hover{
+    cursor: pointer;
+    background-color: #ba3f0b;
+  }
+  .div-79:hover{
+    cursor: pointer;
+        background-color: #ba3f0b;
+
+  }
+  .div-99:hover{
+    cursor: pointer;
+        background-color: #ba3f0b;
+
+  }
+  .div-142:hover{
+    cursor: pointer;
+        background-color: #ba3f0b;
+
+  }
+  .div-151:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-87:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-92:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-97:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-106:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-123:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-129:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-135:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-151:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-177:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-188:hover{
+    cursor: pointer;
+        color: #ba3f0b;
+
+  }
+  .div-182:hover{
+    cursor: pointer;
+    color: #ba3f0b;
+
+  }
+  .div-194:hover{
+    cursor: pointer;
+color: #ba3f0b;
+
+  }
+  .div-212:hover{
+    cursor: pointer;
+    color: #ba3f0b;
+
+  }
+  .div-219:hover{
+    cursor: pointer;
+        background-color: #ba3f0b;
+
+  }
+  
+  
+  @media (max-width: 991px) {
+    .div-63 {
+      padding-left: 20px;
+      white-space: initial;
+      margin: 40px -5px 0 0px;
+      width: 100%;
+    }
+  }
+  .div-64 {
+      /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-64 {
+      white-space: initial;
+    }
+  }
+  .img-15 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+  .div-65 {
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-65 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-66 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-66 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-11 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 39%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-11 {
+      width: 100%;
+    }
+  }
+  .div-67 {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-67 {
+      max-width: 100%;
+      margin-top: 25px;
+    }
+  }
+  .div-68 {
+    color: var(--Colors-Text-Color, #000);
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-68 {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  .div-69 {
+    justify-content: center;
+    background-color: #f2f1ed;
+    display: flex;
+    margin-top: 61px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-69 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .img-16 {
+    aspect-ratio: 1.96;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .img-16 {
+      width: 47vb;
+      margin-left: -11%;
+
+    }
+  }
+  .div-70 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 61px;
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-70 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .column-12 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-12 {
+      width: 100%;
+    }
+  }
+  .div-71 {
+    justify-content: center;
+    background-color: #f2f1ed;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-71 {
+      max-width: 100%;
+      margin-top: 25px;
+      margin-right: 50% !important;
+    }
+  }
+  .img-17 {
+    aspect-ratio: 0.61;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .img-17 {
+      width: 45vb;
+      margin-left: -17%;
+      height: 30vh ;
+    }
+  }
+  .column-13 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 24%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-13 {
+      width: 100%;
+    }
+  }
+  .div-72 {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-72 {
+      margin-top: 25px;
+    }
+  }
+  .div-73n , .div-71n{
+    display: none;
+  }
+  .div-73 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+    background-color: #f2f1ed;
+    display: flex;
+    aspect-ratio: 1;
+  }
+  .img-18 {
+    aspect-ratio: 0.99;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .div-74 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    margin-top: 51px;
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 0 13px;
+  }
+  @media (max-width: 991px) {
+    .div-74 {
+      margin-top: 40px;
+      width: 100%;
+      margin-left: -5%;
+      height: 43vh;
+    }
+    .div-73 {
+      margin-right: 40px;
+    }
+    .img-18{
+      border-radius: 1px;
+    width: 46vb ;
+    margin-left: -10%;
+    }
+    .div-71 , .div-73{
+      display: none;
+    }
+    .div-73n , .div-71n{
+      display: block;
+    }
+    .img-17{
+      margin-left: -9%;
+    }
+    
+  }
+  .div-75 {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    margin-top: 25px;
+    font: 400 76px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-75 {
+      font-size: 40px;
+    }
+  }
+  .div-76 {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    white-space: nowrap;
+    font: 400 20px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-76 {
+      white-space: initial;
+    }
+  }
+  .div-77 {
+    align-self: stretch;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-77 {
+      margin-top: 40px;
+    }
+  }
+  .img-19 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+  .div-78 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    width: 198px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .div-79 {
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: end;
+    display: flex;
+    margin-top: 39px;
+    gap: 10px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 100%;
+    padding: 16px 14px 16px 31px;
+    width: 63%;
+  }
+  @media (max-width: 991px) {
+    .div-79 {
+      padding-left: 20px;
+      white-space: initial;
+      width: 110%;
+      margin-right: 1%;
+    }
+  }
+  .div-80 {
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-80 {
+      white-space: initial;
+    }
+  }
+  .img-20 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+  .div-81 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 180px;
+    margin-right:37%;
+
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-81 {
+      max-width: 120%;
+      margin-top: 40px;
+      margin-right: -3%;
+      font-size: 28px;
+    }
+  }
+  .div-82 {
+    margin-top: 39px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-82 {
+      max-width: 100%;
+    }
+  }
+  .div-83 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-83 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+      scale:1 ;
+      margin-left: -10%;
+    }
+  }
+  .column-14 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-14 {
+      width: 100%;
+    }
+  }
+  .div-84 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 34px 25px;
+  }
+  @media (max-width: 991px) {
+    .div-84 {
+    margin-left: 6%;
+      margin-top: 25px;
+      padding: 15px 20px;
+    }
+  }
+  .div-85 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font: 31px/37px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  
+  .div-86 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 100px;
+    max-width: 100%;
+    gap: 0px;
+    font-size: 16px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-85 {
+font-size: 25px;
+    }
+    .div-90{
+      font-size: 25px !important;
+    }
+    .div-95{
+      font-size: 25px !important;
+    }
+
+    .div-86 {
+      white-space: initial;
+    }
+  }
+  .div-87 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-87 {
+      white-space: initial;
+    }
+  }
+  .img-21 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-88 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 100px;
+    height: 1px;
+  }
+  .column-15 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-15 {
+      width: 100%;
+      margin-right: 10%;
+    }
+  }
+  .div-89 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 34px 25px;
+  }
+  @media (max-width: 991px) {
+    .div-89 {
+      margin-top: 25px;
+      padding: 15px 20px;
+    }
+  }
+  .div-90 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font: 31px/37px  DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-91 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 100px;
+    max-width: 100%;
+    gap: 0px;
+    font-size: 16px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-91 {
+      white-space: initial;
+    }
+  }
+  .div-92 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-92 {
+      white-space: initial;
+    }
+  }
+  .img-22 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-93 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 100px;
+    height: 1px;
+  }
+  .column-16 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-16 {
+      width: 100%;
+    }
+  }
+  .div-94 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 34px 25px;
+  }
+  @media (max-width: 991px) {
+    .div-94 {
+      margin-top: 25px;
+      padding: 15px 20px;
+    }
+  }
+  .div-95 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font: 31px/37px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-96 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 100px;
+    max-width: 100%;
+    gap: 0px;
+    font-size: 16px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-96 {
+      white-space: initial;
+    }
+  }
+  .div-97 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-97 {
+      white-space: initial;
+    }
+  }
+  .img-23 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-98 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 100px;
+    height: 1px;
+  }
+  .div-99 {
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: end;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    font-weight: 400;
+    line-height: 100%;
+    margin: 39px 20px 0 0;
+    padding: 16px 34px;
+    width: 15%;
+  }
+  @media (max-width: 991px) {
+    .div-99 {
+      margin-right: 23px;
+      padding-left: 15px;
+      width: 98%;
+      margin-right: -2%;
+
+    }
+  }
+  .div-100 {
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Familjen Grotesk, sans-serif;
+    margin: auto 0;
+  }
+  .img-24 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+  .div-101 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+    gap: 20px;
+    padding: 0 2px;
+  }
+  @media (max-width: 991px) {
+    .div-101 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .img-24{
+      position: relative;
+      left:70%
+    }
+  }
+  .div-102 {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-102 {
+      max-width: 100%;
+    }
+  }
+  .div-103 {
+    font: 61px/61px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-103 {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  .div-104 {
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-104 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-105 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    padding-right: 6px;
+    gap: 0px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    line-height: 100%;
+  }
+  .div-106 {
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  /*.img-25 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin-right: 32%;
+  }*/
+  .div-107 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 180px;
+    height: 1px;
+  }
+  .div-108 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding: 50px 20px 13px;
+  }
+  .div-109 {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    margin-top: 25px;
+    font: 400 76px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-109 {
+      font-size: 45px;
+    }
+    .div-108 {
+      width: 95%;
+      height: 84%;
+    }
+  }
+  .div-110 {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    font: 400 20px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-111 {
+    align-self: stretch;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-111 {
+      margin-top: 40px;
+    }
+  }
+  .img-26 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+  .div-112 {
+    background-color: var(--Colors-Rust-Rust-40, #c57654);
+    width: 200px;
+    height: 1px;
+    margin: auto 0;
+  }
+  .div-113 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 180px;
+    margin-right:60%;
+
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-113 {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+      margin-left: 55%;
+    }
+  }
+  .div-114 {
+    justify-content: space-between;
+    margin-top: 49px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-114 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-115 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-115 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-17 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 19%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-17 {
+      width: 100%;
+    }
+  }
+  .div-116 {
+    color: var(--Colors-Text-Color, #000);
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-116 {
+      margin-top: 40px;
+    }
+  }
+  .column-18 {
+    display: flex;
+    flex-direction: column;
+    width: 81%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-18 {
+      width: 100%;
+    }
+  }
+  .div-117 {
+    flex-grow: 1;
+    padding: 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-117 {
+      max-width: 100%;
+
+    }
+  }
+  .div-118 {
+    gap: 20px;
+    display: flex;
+
+
+  }
+  @media (max-width: 991px) {
+    .div-118{
+      flex-direction: column;
+      gap: 0;
+      margin-left: -23%;
+      margin-top: -12%;
+    }
+  }
+  .column-19 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-19 {
+      width: 100%;
+      scale: 0.8;
+
+    }
+  }
+  .div-119 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 220px;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    aspect-ratio: 1;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    
+  }
+  @media (max-width: 991px) {
+    .div-119 {
+      margin-top: 25px;
+      border-radius:0px;
+      margin-left: 4%;
+      scale: 0.96;
+      
+
+    }
+  }
+  .div-120 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 31px;
+  }
+  @media (max-width: 991px) {
+    .div-120 {
+      padding: 0 20px;
+    }
+  }
+  .img-27 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  .div-121 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 22px;
+    margin-top: 13px;
+  }
+  .div-122 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 94px;
+    gap: 0px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-122 {
+      white-space: initial;
+    }
+  }
+  .div-123 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-123 {
+      white-space: initial;
+    }
+  }
+  .img-28 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-124 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 94px;
+    height: 1px;
+  }
+  .column-20 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-20 {
+      width: 100%;
+      scale: 0.8;
+    }
+  }
+  .div-125 {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    aspect-ratio: 1;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-125 {
+      margin-top: -30px;
+      margin-left: -4%;
+      border-radius: 100px;
+      padding: 18px;
+      aspect-ratio: 2;
+    }
+  }
+  .div-126 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 31px;
+  }
+  @media (max-width: 991px) {
+    .div-126 {
+      padding: 0 20px;
+    }
+  }
+  .img-29 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  .div-127 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 22px;
+    margin-top: 13px;
+  }
+  .div-128 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 94px;
+    gap: 0px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-128 {
+      white-space: initial;
+    }
+  }
+  .div-129 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-129 {
+      white-space: initial;
+    }
+  }
+  .img-30 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-130 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 94px;
+    height: 1px;
+  }
+  .column-21 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-21 {
+      width: 100%;
+      scale: 0.8;
+
+    }
+  }
+  .div-131 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    border: 1px solid var(--Colors-Text-Color, #000);
+    display: flex;
+    aspect-ratio: 1;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+   .div-131{
+    margin-top: -6%;
+    margin-left: -5%;
+    border-radius: 100px;
+    aspect-ratio: 4;
+    padding: 8px;
+    
+   }
+  }
+  .div-132 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 31px;
+  }
+  @media (max-width: 991px) {
+    .div-132 {
+      padding: 0 20px;
+    }
+  }
+  .img-31 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+  }
+  .div-133 {
+    align-self: stretch;
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 22px;
+    margin-top: 13px;
+  }
+  .div-134 {
+    justify-content: center;
+    display: flex;
+    margin-top: 13px;
+    width: 94px;
+    gap: 0px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-134 {
+      white-space: initial;
+    }
+  }
+  .div-135 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-135 {
+      white-space: initial;
+    }
+  }
+  .img-32 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-136 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 94px;
+    height: 1px;
+  }
+  .div-137 {
+    justify-content: space-between;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-137 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-138 {
+    gap: 20px;
+    display: flex;
+  }
+  .nn{
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-138 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+   
+  }
+  .column-22 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-22 {
+      width: 100%;
+    }
+  }
+  .div-139 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-139 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-140 {
+    color: #000;
+    font: 61px/61px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-140 {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  .div-141 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-141 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-142 {
+    justify-content: center;
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: start;
+    display: flex;
+    margin-top: 25px;
+    gap: 8px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    white-space: nowrap;
+    line-height: 100%;
+    padding: 14px 31px;
+  }
+  @media (max-width: 991px) {
+    .div-142 {
+      white-space: initial;
+      padding: 10px 20px;
+      width: 110%;
+      position: relative;
+      right: 6%;
+    }
+  }
+  .img-33 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+  }
+  .div-143 {
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  .column-23 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-23 {
+      width: 100%;
+    }
+  }
+  .div-144n{
+    display: none;
+  }
+  .div-144 {
+    display: block;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-144 {
+      max-width: 100%;
+      margin-top: 40px;
+      display: none;
+      margin-left: -9%;
+    }
+    .div-144n{
+      display: block;
+    }
+  
+  }
+  .img-34 {
+    aspect-ratio: 1.54;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .img-34 {
+      max-width: 100%;
+    }
+  }
+  .div-145 {
+    justify-content: space-between;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-145 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-146 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-146 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .div-147 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-147 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-148 {
+    font: 61px/61px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-148 {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  .div-149 {
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-149 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-150 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    gap: 0px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+    line-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-150 {
+      white-space: initial;
+    }
+  }
+  .div-151 {
+    margin-right:60%;
+
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-151 {
+      white-space: initial;
+    }
+  }
+  .img-35 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+  }
+  .div-152 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 162px;
+    height: 1px;
+  }
+  .column-24 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 41%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-24 {
+      width: 100%;
+    }
+  }
+  .div-153 {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-153 {
+      max-width: 100%;
+      margin-top: 40px;
+      margin-right: 26%;
+      scale: 1.1;
+    }
+  }
+  .div-154 {
+  }
+  @media (max-width: 991px) {
+    .div-154 {
+      max-width: 100%;
+    }
+  }
+  .div-155 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-155 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-25 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-25 {
+      width: 100%;
+    }
+  }
+  .div-156 {
+    justify-content: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  @media (max-width: 991px) {
+    .div-156 {
+      margin-top: 25px;
+      margin-left: 6px;
+      width: 38vb;
+    }
+  }
+  .div-157 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 11px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .div-158 {
+    font-family: DM Serif Display, sans-serif;
+  }
+  .img-36 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+    margin: auto 0;
+  }
+  .column-26 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-26 {
+      width: 100%;
+    }
+  }
+  .div-159 {
+    justify-content: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  @media (max-width: 991px) {
+    .div-159 {
+      margin-top: 25px;
+      width: 38vb;
+      margin-left: -6%;
+
+    }
+  }
+  .div-160 {
+    display: flex;
+    margin-top: 11px;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 0 20px;
+  }
+  .div-161 {
+    font-family: DM Serif Display, sans-serif;
+    margin: auto 0;
+  }
+  .img-37 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+  .div-162 {
+    margin-top: 25px;
+  }
+  @media (max-width: 991px) {
+    .div-162 {
+      max-width: 100%;
+    }
+  }
+  .div-163 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-163 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-27 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-27 {
+      width: 100%;
+    }
+  }
+  .div-164 {
+    justify-content: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  @media (max-width: 991px) {
+    .div-164 {
+      margin-top: 25px;
+      margin-left: 6px;
+      width: 38vb;
+
+    }
+  }
+  .div-165 {
+    display: flex;
+    margin-top: 11px;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 0 27px;
+  }
+  @media (max-width: 991px) {
+    .div-165 {
+      padding-right: 20px;
+    }
+  }
+  .div-166 {
+    font-family: DM Serif Display, sans-serif;
+    margin: auto 0;
+  }
+  .img-38 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+  .column-28 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-28 {
+      width: 100%;
+    }
+  }
+  .div-167 {
+    justify-content: center;
+    border: 1px solid var(--Colors-Rust-Rust-40, #c57654);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  @media (max-width: 991px) {
+    .div-167 {
+      margin-top: 25px;
+      white-space: initial;
+      width: 38vb;
+      margin-left: -6%;
+
+    }
+  }
+  .div-168 {
+    display: flex;
+    margin-top: 11px;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 0 27px;
+  }
+  @media (max-width: 991px) {
+    .div-168 {
+      padding-right: 20px;
+      white-space: initial;
+    }
+  }
+  .div-169 {
+    font-family: DM Serif Display, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-169 {
+      white-space: initial;
+    }
+  }
+  .img-39 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+  .div-170 {
+    justify-content: space-between;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-170 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-171 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-171 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-29 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-29 {
+      width: 100%;
+    }
+  }
+  .div-172 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-172 {
+      margin-top: 38px;
+    }
+  }
+  .div-173 {
+    font: 61px DM Serif Display, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-173 {
+      font-size: 40px;
+    }
+  }
+  .div-174 {
+    color: #000;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-top: 49px;
+  }
+  @media (max-width: 991px) {
+    .div-174 {
+      margin-top: 40px;
+    }
+  }
+  .div-175 {
+    margin-top: 20px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-176 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    padding-right: 19px;
+    gap: 0px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+  }
+  .div-177 {
+    
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .img-40 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin-right: 36%;
+  }
+  .div-178 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    height: 1px;
+    width: 240px;
+  }
+  .div-179 {
+    color: #000;
+    font-family: Familjen Grotesk, sans-serif;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-top: 49px;
+  }
+  @media (max-width: 991px) {
+    .div-179 {
+      margin-top: 40px;
+    }
+  }
+  .div-180 {
+    margin-top: 20px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-181 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    padding-right: 16px;
+    gap: 0px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+  }
+  .div-182 {
+   
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .img-41 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin-right: 33%;
+  }
+  .div-183 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    height: 1px;
+    width: 255px;
+  }
+  .column-30 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+  }
+  @media (max-width: 991px) {
+    .column-30 {
+      width: 100%;
+      margin-left: -1%;
+    }
+  }
+  .div-184 {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-184 {
+      margin-top: 38px;
+    }
+  }
+  .div-185 {
+    white-space: nowrap;
+    font: 61px DM Serif Display, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-185 {
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+  .div-186 {
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-186 {
+      margin-top: 40px;
+    }
+  }
+  .div-187 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    gap: 0px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-187 {
+      white-space: initial;
+    }
+  }
+  .div-188 {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  .img-42 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+  }
+  .div-189 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    width: 111px;
+    height: 1px;
+  }
+  .column-31 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-31 {
+      width: 100%;
+    }
+  }
+  .div-190 {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    line-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-190 {
+      margin-top: 38px;
+      margin-left: -6%;
+    }
+  }
+  .div-191 {
+    white-space: nowrap;
+    font: 61px DM Serif Display, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-191 {
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+  .div-192 {
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-192 {
+      margin-top: 40px;
+    }
+  }
+  .div-193 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    padding-right: 14px;
+    gap: 0px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+  }
+  .div-194 {
+ 
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .img-43 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin-right: 30%;
+  }
+  .div-195 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    height: 1px;
+    width: 265px;
+  }
+  .div-196 {
+    color: var(--Colors-Text-Color, #000);
+    margin-top: 180px;
+    margin-right:60%;
+
+    font: 400 61px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-196 {
+      max-width: 100%;
+      margin-right: 20%;
+      margin-top: 40px;
+      font-size: 35px;
+    }
+  }
+  .div-197 {
+    margin-top: 95px;
+    width: 100%;
+    max-width: 1271px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-197 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-198 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-198 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-32 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-32 {
+      width: 100%;
+    }
+  }
+  
+  .div-199 {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .div-199 {
+      margin-top: 40px;
+    }
+  }
+  .img-44 {
+    aspect-ratio: 1.14;
+    object-fit: auto;
+    object-position: center;
+    width: 65px;
+    fill: var(--Colors-Primary, #992e00);
+  }
+  .div-200 {
+    margin-top: 25px;
+    font: 20px/28px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .div-200 {
+      position: relative;
+      left:52px;
+      bottom: 80px;
+    }
+    .img-44, .img-46 , .img-48{
+      margin-left: -11%;
+    }
+  }
+  .img-45 {
+    aspect-ratio: 1.79;
+    object-fit: auto;
+    object-position: center;
+    width: 320px;
+    margin-top: 104px;
+    max-width: 100%;
+  }
+  .div-201 {
+    text-transform: uppercase;
+    margin-top: 47px;
+    white-space: nowrap;
+    font: 500 25px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-201 {
+      font-size: 20px;
+position: relative;
+top:-122px;
+left:50px;
+
+
+white-space: initial;
+    }
+    .img-45 ,.img-49{
+      display: none;
+    }
+    .img-47 {
+      display: none ;
+  }
+}
+  .div-202 {
+    margin-top: 16px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .column-33 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-202{
+      display: none;
+    }
+    .column-33 {
+      width: 100%;
+    }
+  }
+
+ 
+  .div-203 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .div-203 {
+      margin-top: 40px;
+      margin-left: -8%;
+    }
+  }
+  .img-46 {
+    aspect-ratio: 1.16;
+    object-fit: auto;
+    object-position: center;
+    width: 66px;
+    fill: var(--Colors-Primary, #992e00);
+  }
+  .div-204 {
+    margin-top: 25px;
+    font: 20px/28px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .img-47 {
+    aspect-ratio: 1.79;
+    object-fit: auto;
+    object-position: center;
+    width: 320px;
+    margin-top: 74px;
+    max-width: 100%;
+  }
+  .div-205 {
+    text-transform: uppercase;
+    margin-top: 47px;
+    white-space: nowrap;
+    font: 500 25px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .img-46{
+      position: relative;
+
+      top:-94px;
+    }
+    .img-48{
+      position: relative;
+
+      top:-224px;
+    }
+    .div-205 {
+position: relative ;
+top:-220px;
+left:56px ;
+font-size: 18px;
+      white-space: initial;
+    }
+    .div-204{
+      padding-right: 22px;
+      position: relative;
+top: -180px;
+left:55px;
+    }
+    .div-206,.div-210{
+      display: none;
+    }
+
+    .div-208{
+      position: relative;
+      top: -310px;
+      left: 55px;
+      padding-right: 22px;
+
+    }
+    .div-209{
+      position: relative;
+      top:-340px;
+      left:55px;
+      font-size: 18px !important;
+    }
+  }
+  .div-206 {
+    margin-top: 16px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .column-34 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-34 {
+      width: 100%;
+    }
+  }
+  .div-207 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .div-207 {
+      margin-top: 40px;
+      margin-left: -8%;
+    }
+    .div-200 , .div-204 {
+      font-size: 16px;
+      padding-right: 22px;
+
+    }
+    .div-208{
+      font-size: 18px !important;
+    }
+  }
+  .img-48 {
+    aspect-ratio: 1.14;
+    object-fit: auto;
+    object-position: center;
+    width: 65px;
+    fill: var(--Colors-Primary, #992e00);
+  }
+  .div-208 {
+    margin-top: 25px;
+    font: 20px/28px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .img-49 {
+    aspect-ratio: 1.79;
+    object-fit: auto;
+    object-position: center;
+    width: 320px;
+    margin-top: 74px;
+    max-width: 100%;
+  }
+  .div-209 {
+    text-transform: uppercase;
+    margin-top: 47px;
+    white-space: nowrap;
+    font: 500 25px/100% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-209 {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  .div-210 {
+    margin-top: 16px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-211 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    gap: 0px;
+    font-size: 16px;
+    color: var(--Colors-Buttons-Primary-Button, #992e00);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 140%;
+    margin: 95px 0 0 19px;
+  }
+  @media (max-width: 991px) {
+    .div-211 {
+      white-space: initial;
+      margin: 40px 0 0 10px;
+    }
+  }
+  .div-212 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+
+
+  }
+  @media (max-width: 991px) {
+    .div-212 {
+      white-space: initial;
+      margin-top: -153%;
+    }
+  }
+  .img-50 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+    margin-top: 6px;
+  }
+  .div-213 {
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: start;
+  width: 155px;
+    height: 1px;
+    margin-left: 1%;
+  }
+  @media (max-width: 991px) {
+    .div-213 {
+      margin-left: 10px;
+      margin-top: -66%;
+
+    }
+    .img-50{
+      margin-top: -149%;
+
+    }
+  }
+  .div-214 {
+    justify-content: space-between;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+  }
+  @media (max-width: 991px) {
+    .div-214 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-215 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-215 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-35 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 34%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-35 {
+      width: 100%;
+    }
+  }
+  .div-216 {
+    display: flex;
+    flex-direction: column;
+    color: var(--Colors-Text-Color, #000);
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-216 {
+      margin-top: 40px;
+    }
+  }
+  .div-217 {
+    font: 61px/61px DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-217 {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  .div-218 {
+    margin-top: 49px;
+    font: 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-218 {
+      margin-top: 40px;
+    }
+  }
+  .div-219 {
+    border-radius: var(--Numbers-12, 61px);
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 20px;
+    color: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+    /* white-space: nowrap; */
+    line-height: 100%;
+    padding: 16px 24px;
+  }
+  @media (max-width: 991px) {
+    .div-219 {
+      padding-left: 20px;
+      white-space: initial;
+      width: 114%;
+      margin-left: -5%;
+    }
+  }
+  .div-220 {
+   
+    font-family: Familjen Grotesk, sans-serif;
+    align-self: start;
+    /* margin-top: 2px; */
+  }
+  .img-51 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+  .column-36 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 66%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-36 {
+      width: 100%;
+    }
+  }
+  .div-221 {
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-221 {
+      max-width: 100%;
+      margin-top: -60px;
+    }
+  }
+  .div-222 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-222 {
+      flex-direction: column;
+      align-items: stretch;
+      column-gap: 30px;
+      scale: 0.8;
+    }
+  }
+  .column-37 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 60%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-37 {
+      width: 100%;
+    }
+  }
+  .div-223 {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-223 {
+      max-width: 100%;
+      margin-top: 25px;
+      margin-left: -10%;
+    }
+  }
+  .img-52 {
+    aspect-ratio: 0.61;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+ 
+  @media (max-width: 991px) {
+    .img-52 {
+      width: 56vb;
+      margin-left: -12%;
+      margin-top: 3%;
+      height: 63vh;
+    }
+  }
+  .column-38 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 40%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-38 {
+      width: 100%;
+    }
+  }
+  .div-224 {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-224 {
+      margin-top: 25px;
+      margin-left: -19%;
+    }
+    .div-225{
+      margin-left: -10%;
+    }
+  }
+  .div-225 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    aspect-ratio: 1;
+  }
+  .img-53 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  .div-226 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 25px;
+    aspect-ratio: 1;
+  }
+  .img-54 {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  .div-227 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1271px;
+    gap: 20px;
+    padding: 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-227 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .img-54{
+      border-radius: 0px;
+      margin-left: -11%;
+      width: 155%;
+    }
+    
+  }
+  .div-228 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 38px;
+  }
+  .div-229 {
+    color: var(--Color-Text-Color-def, #000);
+    white-space: nowrap;
+    font: 400 31px/120% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-229 {
+      white-space: initial;
+    }
+  }
+  .div-230 {
+    color: var(--Color-Text-Color-def, #000);
+    margin-top: 25px;
+    white-space: nowrap;
+    font: 400 16px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-230 {
+      white-space: initial;
+    }
+  }
+  .div-231 {
+    display: flex;
+    margin-top: 39px;
+   flex-direction: column;
+   gap: 10px;
+  }
+  .div-232 {
+    color: var(--Colors-Text-Color, #000);
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: 3% 10%;
+    cursor: pointer;
+    font: 400 16px/140% Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-233 {
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--Colors-Buttons-Primary-Button, #992e00);
+    display: flex;
+    aspect-ratio: 1;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 9%;
+    margin-left: 95%;
+    padding: 0 13px;
+  }
+  .img-55 {
+    aspect-ratio: 0.92;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    fill: var(--Colors-Buttons-Primary-Button-Text, #f2f1ed);
+  }
+  .div-234 {
+    background-color: var(--Colors-Text-Color, #000);
+    margin-top: 12px;
+    width: 90%;
+    height: 1px;
+  }
+  .div-235 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .div-236 {
+    color: var(--Color-Text-Color-def, #000);
+    white-space: nowrap;
+    font: 400 31px/100% DM Serif Display, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-236 {
+      white-space: initial;
+    }
+  }
+  .div-237 {
+    color: var(--Color-Text-Color-def, #000);
+    margin-top: 25px;
+    font: 400 16px/22px Familjen Grotesk, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .div-238 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-238 {
+      white-space: initial;
+    }
+  }
+  .div-239 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  .div-240 {
+    font-family: Familjen Grotesk, sans-serif;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .div-240 {
+      white-space: initial;
+    }
+  }
+  .div-241 {
+    align-items: start;
+    display: flex;
+    margin-top: 25px;
+    padding-right: 80px;
+    gap: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-241 {
+      padding-right: 20px;
+    }
+  }
+  .img-56 {
+    aspect-ratio: 1.04;
+    object-fit: auto;
+    object-position: center;
+    width: 46px;
+  }
+  .img-57 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 45px;
+    align-self: stretch;
+  }
+  .img-58 {
+    aspect-ratio: 1.04;
+    object-fit: auto;
+    object-position: center;
+    width: 46px;
+  }
+  .img-59 {
+    aspect-ratio: 1.04;
+    object-fit: auto;
+    object-position: center;
+    width: 46px;
+  }
+  .div-242 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 61px;
+    width: 100%;
+    max-width: 1271px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-242 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+  .div-243 {
+  }
+  @media (max-width: 991px) {
+    .div-243 {
+      max-width: 100%;
+    }
+  }
+  .div-244 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-244 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-39 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 62%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-39 {
+      width: 100%;
+    }
+  }
+  .div-245 {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-245 {
+      margin-top: 40px;
+    }
+  }
+  .div-246 {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .div-247 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 14px;
+  }
+  .div-248 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-248 {
+      white-space: initial;
+    }
+  }
+  .div-249 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-250 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-251 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .column-40 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 38%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-40 {
+      width: 100%;
+    }
+  }
+  .div-252 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-252 {
+      margin-top: 40px;
+    }
+  }
+  .div-253 {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .div-254 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 14px;
+  }
+  .div-255 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-256 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-257 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-258 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-259 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+    white-space: nowrap;
+  }
+
+  .div-223n , .div-226n {
+    display: none;
+  }
+  .div-225n{
+    display: none;
+  }
+  @media (max-width: 991px) {
+    .div-259 {
+      white-space: initial;
+    }
+
+    .div-223 , .div-226 {
+      display: none;
+    }
+    .div-225{
+      display: none;
+    }
+    .div-223n , .div-226n {
+      display: block;
+      scale: 0.85;
+    }
+    .div-223n{
+      width: 25%;
+      margin-left: -10%;
+    }
+    .div-225n{
+      display: block;
+margin-left: -11%; 
+width: 48vb;
+   }
+  }
+  .div-226n{
+width: 96%;  
+  margin-left: -11%;
+  }
+  .div-260 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-261 {
+    align-self: start;
+  }
+  .div-262 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-262 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-41 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 62%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-41 {
+      width: 100%;
+    }
+  }
+  .div-263 {
+    align-items: start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-263 {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  .div-264 {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-self: stretch;
+  }
+  .div-265 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 14px;
+  }
+  .div-266 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-267 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-267 {
+      white-space: initial;
+    }
+  }
+  .column-42 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 38%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-42 {
+      width: 100%;
+    }
+  }
+  .div-268 {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-268 {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  .div-269 {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  @media (max-width: 991px) {
+    .div-269 {
+      white-space: initial;
+    }
+  }
+  .div-270 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 14px;
+  }
+  .div-271 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-272 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-273 {
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--Color-Text-Color-def, #000);
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 140%;
+  }
+  @media (max-width: 991px) {
+    .div-273 {
+      white-space: initial;
+    }
+  }
+  .div-274 {
+    font-family: Familjen Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .div-275 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 14px;
+  }
+  .div-276 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-276 {
+      white-space: initial;
+    }
+  }
+  .div-277 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-277 {
+      white-space: initial;
+    }
+  }
+  .div-278 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-279 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-280 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+  .div-281 {
+    font-family: Familjen Grotesk, sans-serif;
+    margin-top: 12px;
+  }
+
+
+
+  .div-231 {
+    position: relative;
+    cursor: pointer;
+}
+
+.div-232 {
+    transition: transform 0.4s ease-in-out;
+    /* margin-bottom: 2%; */
+}
+
+.div-233 {
+    position: absolute;
+    top: 0;
+}
+
+/* Style for the input field */
+#emailInput {
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    padding: 10px;
+  background-color:  #ebe1da;
+    margin-top: -25px; /* Adjust as needed */
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: opacity 0.5s, max-height 0.5s ease-in-out;
+}
+
+
+
+
+  

@@ -1,0 +1,217 @@
+.patent-section{
+    margin-top: 111px;
+}
+@media (max-width: 991px) {
+    .patent-section{
+        margin-top: 30px;
+    }
+}
+.patent-subhead{
+    color: #000;
+
+/* Sans-Serif/Upper Case/SS UC 4 */
+font-family: "Familjen Grotesk";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
+text-transform: uppercase;
+}
+@media (max-width: 991px) {
+    .patent-subhead{
+        font-size: 20px;
+    }
+}
+.patent-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+@media (max-width: 991px) {
+    .patent-head{
+        flex-direction: column;
+    }
+}
+.patent-title{
+    color: #000;
+
+/* Serif/Heading/Se H2 */
+font-family: "DM Serif Display";
+font-size: 61px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 61px */
+}
+@media (max-width: 991px) {
+    .patent-title{
+        font-size: 31px;
+    }
+}
+.search-container{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 6px 0px;
+}
+@media (max-width: 991px) {
+    .patent-search{
+        width: 100%;
+    }
+}
+.patent-controls{
+    display: flex;
+    align-items: end;
+    gap: 25px;
+}
+.search-icon-1{
+    width: 48px;
+    height: 48px;
+}
+@media (max-width: 991px) {
+    .search-icon-1{
+        width: 38px;
+        height: 38px;
+    }
+    .patent-controls{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+input[type="text"]::placeholder {
+    opacity: 1; 
+}
+#searchterm{
+    margin: 0;
+    padding: 0px 11px;
+    background-color: #F2F1ED;
+
+/* Sans-Serif/Body/SS Body Big */
+font-family: "Familjen Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 28px */
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    #searchterm{
+        padding: 6px 6px;
+    }
+}
+.patent-filter{
+    display: flex;
+}
+.patent-box-container{
+    margin-top: 111px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    grid-row-gap: 111px;
+}
+
+@media (max-width: 991px) {
+    .patent-box-container{
+        margin-top: 60px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 49px;
+    }
+}
+.pdate{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Upper Case/SS UC 2 */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+text-transform: uppercase;
+}
+.ptitle{
+    margin-top: 31px;
+    color: var(--Colors-Text-Color, #000);
+
+/* Serif/Sub-heading/Se Sub-Heading 2 */
+font-family: "DM Serif Display";
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 30px */
+}
+@media (max-width: 991px) {
+    .ptitle{
+        margin-top: 20px;
+    }
+}
+.pdescr{
+    margin-top: 5px;
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Body/SS Body */
+font-family: "Familjen Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.pbtn{
+    margin-top: 31px;
+}
+@media (max-width: 991px) {
+    .pbtn{
+        margin-top: 20px;
+    }
+}
+.patent-page{
+    margin-top: 111px;
+}
+@media (max-width: 991px) {
+    .patent-page{
+        margin-top: 75px;
+    }
+}
+.patent-page-no{
+    color: var(--New---Gray-Outer-Space-06, #464646);
+
+/* Serif/Body/Se Body */
+font-family: "DM Serif Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 16px */
+}
+
+.patent-page-btn{
+    color: var(--Primary-01---Brand-Color, #B00707);
+
+/* Serif/Body/Se Body Big */
+font-family: "DM Serif Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 20px */
+cursor: pointer;
+}
+
+.rdescr{
+    margin-top: 31px;
+	    font-size: 17px;
+}
+.rname{
+    color: var(--Colors-Text-Color, #000);
+
+/* Sans-Serif/Body/SS Body small */
+font-family: "Familjen Grotesk";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 18.2px */
+}
+
+.patent-box{
+    display: none;
+    /* Style your cards */
+}
+.patent-box.visible {
+    display: block;
+}
