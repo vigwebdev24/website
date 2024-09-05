@@ -1,0 +1,211 @@
+
+
+
+.dept_evedetails_div1 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+}
+
+.dept_evedetails_innrdiv {
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.dept_evedetails_hdng {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 25px */
+    text-transform: uppercase;
+}
+
+.dept_evedetails_title {
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+.dept_evedetails_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+.dept_evedetails_left_spacing {
+    display: flex;
+    width: 517px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    flex-shrink: 0;
+}
+
+.dept_evedetails_desc {
+    color: var(--Color-Neutral-Black, #000);
+    font-family: DM Serif Display;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 39px */
+}
+
+.dept_evedetails_eveimg {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.dept_evedetails_date_time {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dept_evedetails_mnth {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: Familjen Grotesk;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 25px */
+    text-transform: uppercase;
+}
+
+.dept_evedetails_date {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+.dept_evedetails_separator {
+    width: 1px;
+    height: 86px;
+    background: #000;
+}
+
+.dept_evedetails_day {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 25px */
+    text-transform: uppercase;
+}
+
+.dept_evedetails_time {
+    color: var(--Colors-Text-Color, #000);
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+}
+
+.dept_evedetails_session {
+    font-family: Familjen Grotesk;
+    font-size: 15px;
+}
+
+.dept_evedetails_right {
+    display: flex;
+    width: 617px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    flex-shrink: 0;
+    text-align: justify;
+}
+
+.dept_evedetails_summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+    align-self: stretch;
+}
+
+.dept_evedetails_txt_hdng {
+    color: var(--Color-Neutral-Black, #000);
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+}
+
+.dept_evedetails_txt_desc {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.dept_evedetails_venue{
+    display: flex;flex-direction: column;align-items: flex-start;
+                            gap: var(--Spacing-Spacing-s, 13px);align-self: stretch;
+}
+
+.dept_evedetails_venue_hdng{
+    color: var(--Color-Neutral-Black, #000);
+/* Sans-Serif/Upper Case/SS UC 4 */
+font-family: "Familjen Grotesk";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
+text-transform: uppercase;
+}
+
+.dept_evedetails_spkr_div{
+    display: inline-flex;flex-direction: column;align-items: flex-start;gap: var(--Spacing-Spacing-xxxl, 39px);
+}
+
+.dept_evedetails_spkr_hdng{
+    color: var(--Color-Neutral-Black, #000);font-family: DM Serif Display;font-size: 31px;font-style: normal;
+font-weight: 400;line-height: 120%; /* 37.2px */
+}
+
+.dept_evedetails_spkr_cptn{
+    color: var(--Colors-Text-Color, #000);font-family: Familjen Grotesk;font-size: 16px;font-style: normal;
+font-weight: 400;line-height: 140%; /* 22.4px */
+}
+
+.dept_evedetails_spkr_img{
+    width: 299px;height: 392px;flex-shrink: 0;
+}

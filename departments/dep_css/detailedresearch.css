@@ -1,0 +1,129 @@
+.detld_res_outbx {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.detld_res_backdiv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+	cursor:pointer;
+}
+
+.detld_res_back {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    /* Button/Button Text 20 */
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+	cursor:pointer;
+    /* 20px */
+}
+
+.detld_res_div1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 23px;
+    align-items: flex-start;
+}
+
+.detld_res_leftdiv {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+}
+
+.detld_res_nm {
+    width: 647px;
+    color: var(--Color-Neutral-Black, #000);
+    font-family: DM Serif Display;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 49px */
+}
+
+.detld_res_icndiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.detld_res_icnimgdiv {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 5px;
+}
+
+.detld_res_icntxt {
+    color: var(--Colors-Text-Color, #000);
+    /* Sans-Serif/Body/SS Body */
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.detld_res_rightdiv {
+    width: 559px;
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 28px */
+    text-align: justify;
+}
+
+.detld_res_cnt {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-align: justify;
+}
+
+.detld_res_left_btmdiv{
+    display: flex;width: 524px;flex-direction: column;align-items: flex-start;gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.detld_res_authorsdiv{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+align-self: stretch;
+}
+
+.detld_res_authortxt{
+    color: #000;font-family: Familjen Grotesk;font-size: 20px;font-style: normal;
+font-weight: 400;line-height: 140%; /* 28px */
+}
+
+.detld_res_author_detailsdiv{
+    display: flex;align-items: flex-start;align-content: flex-start;gap: 26px;
+align-self: stretch;flex-wrap: wrap;
+}
+
+.detld_res_author_imgnm{
+    display: flex;align-items: center;gap: 12px;
+}
+
+.detld_res_authornm{
+    color: #000;font-family: Familjen Grotesk;font-size: 20px;
+font-style: normal;font-weight: 400;line-height: 140%; /* 28px */
+}

@@ -1,0 +1,618 @@
+.pagetop_space {
+    margin-top: 100px;
+}
+
+.individualdept_name {
+    width: 813px;
+    color: var(--Color-Text-Color-def, #000);
+    font-family: Familjen Grotesk;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 49px */
+}
+
+.dept_descbtndiv {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.news-div {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xxxl, 39px);
+    /* margin-top: 7%; */
+    width: 100%;
+}
+
+
+.photos2 {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 9px;
+    width: 100%;
+}
+
+.whatu_learnparent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.whatu_learnleftupper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.whatu_learnleftupper1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.whatu_learn_content {
+    display: flex;
+    width: 298px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+}
+
+.whatu_lear_hdng {
+    color: var(--Color-Neutral-Black, #000);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: DM Serif Display;
+    font-size: 61.037px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61.037px */
+}
+
+.whatu_learn_desc {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.whatu_learn_cardoutrr {
+    display: flex;
+    height: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Colors-Text-Color, #000);
+}
+
+
+.whatu_learn_cardinnr {
+    display: flex;
+    height: 360px;
+    padding: var(--Numbers-12, 61px) 0px var(--Numbers-5, 13px) 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.whatu_learn_cardtxt {
+    width: 232px;
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.whatu_learn_hod {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-1, 0px);
+}
+
+.whatu_learn_hoddetails {
+    display: flex;
+    padding: var(--Numbers-8, 25px) var(--Numbers-7, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-6, 16px);
+    align-self: stretch;
+}
+
+.whatu_learn_hodname {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 31px */
+    text-transform: uppercase;
+}
+
+.whatu_learn_hoddesig {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.dept-prgms-rect {
+    display: flex;
+    width: 390px;
+}
+
+.faculty_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.faculty_leftdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    align-self: stretch;
+}
+
+.hdng {
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+
+
+
+.contnt {
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    text-align: justify;
+}
+
+
+.fac_picdiv {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.fac_card {
+    display: flex;
+    width: 299px;
+    height: 452px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fac_card img {
+    width: 299px !important;
+    height: 452px;
+	    height: 356px;
+    object-fit: cover;
+}
+
+.fac_namediv {
+    display: flex;
+    padding: var(--Numbers-6, 16px) var(--Numbers-5, 13px);
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.fac_name {
+    flex: 1 0 0;
+    color: var(--Colors-Text-Color, #000);
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.explore_facilidiv {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.explore_facili_leftdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxxl, 39px);
+}
+
+.explore_facili_leftupprdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    align-self: stretch;
+}
+
+.explore_facili_leftlwrdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.explore_facili_leftlwrdiv_img1 {
+    width: 100%;
+}
+
+.explore_facili_rightdiv {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.explore_facili_right_imgbtndiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+}
+
+.query-depthome {
+    position: inherit;
+    margin-top: 100px;
+}
+
+.contactusdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+}
+
+.contactus_upprdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+}
+
+.contactus_lwrdiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 84px;
+}
+
+.contactus_detaildiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    flex: 1 0 0;
+}
+
+.contactus_hdng {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+}
+
+.contactus_desc {
+    color: #000;
+
+    /* Sans-Serif/Body/SS Body */
+    font-family: "Familjen Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.contact_desc_width {
+
+    width: 474px;
+}
+
+.contactus_medium {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.map_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 155px;
+}
+
+.map_leftdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    width: 312px;
+}
+
+.map_lefttxtdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    align-self: stretch;
+}
+
+.map_lefttxt1 {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+    text-align: justify;
+}
+
+.map_leftdesc {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.map_distancediv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    align-self: stretch;
+}
+
+.map_distance1 {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.map_distance2 {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.map_btnsdiv {
+    display: flex;
+    align-items: center;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.deptallresearch_title {
+    font-size: 58px !important;
+}
+
+.deptresearch_div1_innrdiv {
+    width: 522px !important;
+}
+
+.deptresearch_search-container {
+    width: 380px;
+}
+
+.detail_res_socialdiv {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.deptprgm_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-l, 20px);
+}
+
+.deptoverlay-dialog {
+    width: 1024px !important;
+    margin: 13px 20px;
+    max-height: calc(100vh - 160px);
+    float: right;
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.deptmodal-body {
+    position: relative;
+   
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-left: 13px;
+    max-height: calc(100vh - 30px);
+    flex-shrink: 0;
+    height: 86vh;
+    overflow-y: hidden;
+    width: 100%;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.deptclose {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.dept_hoddiv{
+    z-index: 10;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 20px;
+}
+
+button.deptclose {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    padding: 14px;
+}
+
+.vm_modal_outdiv {
+    display: flex;
+    margin-top: 2%;
+    gap: 134px;
+}
+
+.vm_modal_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.vm_modal_title {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: DM Serif Display;
+    font-size: 48.825px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 48.825px */
+}
+
+.vm_icn {
+    width: 86px;
+    height: 86px;
+}
+
+.vm_desc {
+    width: 380px;
+    color: var(--Color-Text-Color-def, #000);
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    text-align: justify;
+}
+
+.hod_modal_img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover
+}
+
+.deptmodal-header {
+    padding: 15px;
+    border-bottom: 0px solid #e5e5e5;
+}
+
+.deptoverlay2-dialog {
+    width: 668px !important;
+    margin: 13px 20px;
+    max-height: calc(100vh - 160px);
+    float: right;
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.cnt_div{
+    display: inline-flex;flex-direction: column;align-items: flex-start;gap: 34px;
+}
+
+.heoverlay_desc
+{
+    width: 588px;color: #000;font-family: Familjen Grotesk;font-size: 16px;font-style: normal;
+font-weight: 400;line-height: 140%; /* 22.4px */text-align:justify;
+}
+
+.heoverlay_hlnkdiv{
+    display: flex;align-items: flex-start;gap: 11px;
+}
+
+.heoverlay_hlnk_innrdiv{
+    display: flex;flex-direction: column;align-items: flex-start;gap: 7px;
+}
+
+.heoverlay_hlnknm{
+    width: 463px;color: #000;font-family: Familjen Grotesk;font-size: 25px;font-style: normal;font-weight: 500;
+line-height: 100%; /* 25px */
+}
+
+.heoverlaymodal-body {
+    position: relative;
+    padding: 20px 25px;
+    max-height: calc(100vh - 154px);
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}

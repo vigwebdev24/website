@@ -1,0 +1,451 @@
+.conf_div1 {
+    height: 830px;
+    align-self: stretch;
+    display: flex;
+    gap: 30px;
+}
+
+.conf_div1_left {
+    display: flex;
+    width: 555px;
+    height: 445px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    flex-shrink: 0;
+}
+
+.conf_div1_condiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    margin-top: 57px;
+}
+
+.conf_div1_title {
+    color: var(--Colors-Secondary, #000);
+    font-family: DM Serif Display;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 95px */
+    position: static;
+    z-index: 1;
+    width: 1089px;
+}
+
+.conf_div1_desc {
+    color: var(--Color-Text-Color-def, #000);
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+    position: relative;
+    align-self: stretch;
+    width: 451px;
+}
+
+.conf_div1_btnsdiv {
+    display: flex;
+    gap: 25px;
+}
+
+.conf_div1_img {
+    display: flex;
+    width: 647px;
+    height: 830px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.conf_div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 150px;
+}
+
+.conf_div2_innrdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.conf_div2_hdng {
+    width: 395px;
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+.conf_div2_desc {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-align: justify;
+}
+
+.conf_div3_hdng {
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+.conf_div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    align-self: stretch;
+}
+
+.conf_impdts_card {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    aspect-ratio: 1;
+    padding: 61px 0 13px;
+    box-sizing: border-box;
+    gap: 38px;
+}
+
+.conf_callppr_hdng {
+    color: var(--Color-Text-Color-def, #000);
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+    position: relative;
+    align-self: stretch;
+}
+
+.conf_div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    align-self: stretch;
+}
+
+.conf_callppr_div {
+    display: flex;
+    align-items: flex-start;
+    gap: 84px;
+    align-self: stretch;
+}
+
+.conf_callppr_innrdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    flex: 1 0 0;
+}
+
+.conf_div4_desc {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.conf_div4_btndiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.conf_sched_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    align-self: stretch;
+}
+
+.conf_sched_title {
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 61px */
+}
+
+.conf_sched_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    align-self: stretch;
+}
+
+.conf_sched_innrbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxxl, 39px);
+    align-self: stretch;
+}
+
+.conf_sched_datediv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.conf_sched_date {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 25px */
+    text-transform: uppercase;
+}
+
+.conf_sched_day {
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 49px */
+}
+
+.conf_sched_listbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    align-self: stretch;
+}
+
+.conf_sched_listbox_innr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.conf_sched_time {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 49px */
+}
+
+.conf_sched_topicdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+    align-self: stretch;
+}
+
+.conf_sched_topic_innrdiv {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.conf_sched_topicauthordiv {
+    display: flex;
+    width: 478px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-m, 16px);
+}
+
+.conf_sched_topic {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.conf_sched_author {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    text-transform: uppercase;
+}
+
+.conf_sched_locationdiv {
+    display: flex;
+    width: 253px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xs, 10px);
+}
+
+.conf_sched_loc_hdng {
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    text-transform: uppercase;
+}
+
+.conf_sched_location {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.conf_sched_separator {
+    width: 1270px;
+    height: 1px;
+    background: var(--Colors-Neutral-Neutral-50, #ADADB2);
+}
+
+
+
+.spkr_card {
+    display: flex;
+    width: 292px;
+    height: 515px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conf_reg_div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+    align-self: stretch;
+}
+
+.conf_reg_spacing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+}
+
+.conf_reg__crd_spacing {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xl, 25px);
+	    flex-wrap: wrap;
+}
+
+.conf_reg_desc {
+    width: 520px;
+    color: #000;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.conf_reg_card {
+    font-size: 72px !important;
+}
+
+.conf_org_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega-L, 61px);
+    align-self: stretch;
+}
+
+.conf_org_innrdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-xxl, 31px);
+    align-self: stretch;
+}
+
+.conf_org_hdng {
+    color: #000;
+    font-family: DM Serif Display;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 37.2px */
+}
+
+.conf_org_content {
+    display: flex;
+    width: 604px;
+	    width: 613px;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+}
+
+.conf_org_content2 {
+    display: flex;
+    width: 850px;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Mega, 49px);
+}
+
+.conf_org_content_innrdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+	    gap: 5px;
+    flex: 1 0 0;
+}
