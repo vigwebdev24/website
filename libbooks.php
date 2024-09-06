@@ -108,8 +108,6 @@
             flex-wrap: wrap;
             column-gap: 20px;
             row-gap:61px;
-            justify-content: space-between;
-
         }
         
         .ulife-column-7 {
@@ -196,7 +194,7 @@
                     </div>
                     <div class="patent-controls">
                         <div class="col-lg-22" style="">
-                            <button class="cta_button_secondary Secondary-btn_txt">BookSearch<img
+                            <button class="cta_button_secondary Secondary-btn_txt" onclick="window.open('booksearch.php',  '_blank')">BookSearch<img
                                     src="assets/icons/arrow_forward.png" /></button>
                         </div>
                     </div>
@@ -208,7 +206,7 @@
                     <div style="display:flex; row-gap:25px;">
                         <div class="ulife-div-52">
                             <?php
-                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_books'";
+                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_books' ORDER BY sequence ASC";
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {

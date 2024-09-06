@@ -14,8 +14,22 @@
         .ueac-team-bottom {
             gap: 25px;
         }
+        img{
+            width:100%;
+        }
         .member-content {
             padding: var(--Numbers-6, 16px) var(--Numbers-5, 0px);
+        }
+        .member-card img {
+            width: 299px;
+            height: 80%;
+            object-fit: cover;
+        }
+        @media only screen and(min-width:1261px){
+            .member-card img{height:399px;width: 100%;}
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            .member-card img{width: 100%;height:70%;}
         }
         @media only screen and (min-width: 501px) and (max-width: 768px) {
             .member-card img{width: 100%;}
@@ -27,9 +41,6 @@
             .search-filter-container{
                 display:none;
             }
-        }
-        @media(min-width:1260px){
-            .member-card img{height:399px;}
         }
     </style>
 </head>

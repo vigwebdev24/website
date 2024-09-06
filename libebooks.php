@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/ueac.css">
     <link rel="stylesheet" href="./css/mblfooter.css">
     <link rel="stylesheet" href="./css/button.css">
     <title>Vignan University</title>
@@ -108,8 +109,6 @@
             flex-wrap: wrap;
             column-gap: 20px;
             row-gap:61px;
-            justify-content: space-between;
-
         }
         
         .ulife-column-7 {
@@ -193,11 +192,14 @@
                     <div class="patent-title">
                         E-Books
                     </div>
-                    <div class="patent-controls">
-                        <div class="col-lg-22" style="">
-                            <button class="cta_button_secondary Secondary-btn_txt">BookSearch<img
-                                    src="assets/icons/arrow_forward.png" /></button>
+                    <div class="search-filter-container">
+                        <div class="search-container">
+                        <span class="search-input-container">
+                        <img src="assets/svgicons/search.svg" alt="" class="prog-search-icon">
+                        <input type="text" class="search-input" id="search" placeholder="Search" autofocus="" fdprocessedid="mpsy7k"></span>
+                        <div class="search-divider"></div>
                         </div>
+                        <button class="filter_button_secondary filter_secondary-btn_txt"> <img src="assets/icons/filter_list.png"> &nbsp;Filter </button>
                     </div>
                 </div>
             </div>
@@ -207,7 +209,7 @@
                     <div style="display:flex; row-gap:25px;">
                         <div class="ulife-div-52">
                             <?php
-                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_ebooks'";
+                                $sql = "SELECT * FROM `Cards` WHERE `cardtype` = 'lib_resources_ebooks'  ORDER BY sequence ASC";
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
@@ -221,7 +223,7 @@
                                     </div>
                                     <div class="ulife-div-56" style="cursor:pointer;">
                                         <div class="text_btnnew viewall-right">
-                                            <div class="text_btnnew_innrdiv">
+                                            <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $row['btn_hlink']?>',  '_blank')">
                                                 <div class="text_btnnew_txt">
                                                     <?php echo $row['btn_nm']?>
                                                 </div>

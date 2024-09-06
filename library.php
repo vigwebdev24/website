@@ -28,7 +28,7 @@
         <?php 
             include_once 'connect.php';
             include_once  'navbar.php';
-            $sql = "Select * FROM sections where id like '%lib%'";
+            $sql = "Select * FROM sections";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -465,7 +465,7 @@
                                             </div>
                                             <div class="ulife-div-56" style="cursor:pointer;">
                                                 <div class="text_btnnew viewall-right">
-                                                    <div class="text_btnnew_innrdiv">
+                                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals41['btn_hlink']?>','_self')">
                                                         <div class="text_btnnew_txt">
                                                             <?php echo $goals41['btn_nm']?>
                                                         </div>
@@ -491,7 +491,7 @@
                                                 </div>
                                                 <div class="ulife-div-56" style="cursor:pointer;">
                                                     <div class="text_btnnew viewall-right">
-                                                        <div class="text_btnnew_innrdiv">
+                                                        <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals42['btn_hlink']?>','_self')">
                                                             <div class="text_btnnew_txt">
                                                                 <?php echo $goals42['btn_nm']?>
                                                             </div>
@@ -517,9 +517,9 @@
                                                     </div>
                                                     <div class="ulife-div-56" style="cursor:pointer;">
                                             <div class="text_btnnew viewall-right">
-                                                <div class="text_btnnew_innrdiv">
+                                                <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
                                                     <div class="text_btnnew_txt">
-                                                    <?php echo $goals42['btn_nm']?>
+                                                    <?php echo $goals43['btn_nm']?>
                                                     </div>
                                                     <div>
                                                         <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -542,9 +542,9 @@
                                             </div>
                                             <div class="ulife-div-56" style="cursor:pointer;">
                                                 <div class="text_btnnew viewall-right">
-                                                    <div class="text_btnnew_innrdiv">
+                                                    <div class="text_btnnew_innrdiv"  onclick="window.open('<?php echo $goals44['btn_hlink']?>','_self')">
                                                         <div class="text_btnnew_txt">
-                                                            <?php echo $goals42['btn_nm']?>
+                                                            <?php echo $goals44['btn_nm']?>
                                                         </div>
                                                         <div>
                                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -582,9 +582,9 @@
                     <header class="resourcessection-header">
                         <h2 class="resourcessection-title"><?php echo $goals51['title']; ?></h2>
                     </header>
-                    <?php   $sqlquery41 ="SELECT * FROM  cards  where id='lib_sec5_ejournals1'";
-                            $result41=mysqli_query($conn, $sqlquery41);
-                            $goals41 = $result41->fetch_assoc();
+                    <?php   $sqlquery411 ="SELECT * FROM  cards  where id='lib_sec5_ejournals1'";
+                            $result411=mysqli_query($conn, $sqlquery411);
+                            $goals411= $result411->fetch_assoc();
                     ?>
                     <div class="depresearchproj_outdiv">
                         <div style="display: flex;flex-direction: column;justify-content: center;align-items: flex-end;
@@ -595,16 +595,16 @@
                                         <div class="ulife-div-53">
                                             <div style="color: var(--Colors-Text-Color, #000);font-family: Familjen Grotesk;font-size: 13px;font-style: normal;
                                                     font-weight: 400;line-height: 140%; /* 18.2px */">
-                                                    <?php echo $goals41['title']?>
+                                                    <?php echo $goals411['title']?>
                                             </div>
                                             <div class="ulife-div-55">
-                                                <?php echo $goals41['descr']?>
+                                                <?php echo $goals411['descr']?>
                                             </div>
                                             <div class="ulife-div-56" style="cursor:pointer;">
                                                 <div class="text_btnnew viewall-right">
-                                                    <div class="text_btnnew_innrdiv">
+                                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals411['btn_hlink']?>', '_self')">
                                                         <div class="text_btnnew_txt">
-                                                            <?php echo $goals42['btn_nm']?>
+                                                            <?php echo $goals411['btn_nm']?>
                                                         </div>
                                                         <div>
                                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -614,22 +614,22 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <?php  $sqlquery42 ="SELECT * FROM  cards  where id='lib_sec5_ejournals2'";
-                                            $result42=mysqli_query($conn, $sqlquery42);
-                                            $goals42 = $result42->fetch_assoc();
+                                    <?php  $sqlquery412 ="SELECT * FROM  cards  where id='lib_sec5_ejournals2'";
+                                            $result412=mysqli_query($conn, $sqlquery412);
+                                            $goals412 = $result412->fetch_assoc();
                                     ?>
                                     <div class="ulife-column-7">
                                         <div class="ulife-div-53">
                                             <div style="color: var(--Colors-Text-Color, #000);font-family: Familjen Grotesk;font-size: 13px;font-style: normal;
-                                            font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals42['title']?></div>
+                                            font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals412['title']?></div>
                                                 <div class="ulife-div-55">
-                                                    <?php echo $goals42['descr']?>
+                                                    <?php echo $goals412['descr']?>
                                                 </div>
                                                 <div class="ulife-div-56" style="cursor:pointer;">
                                                     <div class="text_btnnew viewall-right">
-                                                        <div class="text_btnnew_innrdiv">
+                                                        <div class="text_btnnew_innrdiv"  onclick="window.open('<?php echo $goals412['btn_hlink']?>','_self')">
                                                             <div class="text_btnnew_txt">
-                                                                <?php echo $goals42['btn_nm']?>
+                                                                <?php echo $goals412['btn_nm']?>
                                                             </div>
                                                             <div>
                                                                 <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -639,22 +639,22 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <?php  $sqlquery43 ="SELECT * FROM  cards  where id='lib_sec5_ejournals3'";
-                                                $result43=mysqli_query($conn, $sqlquery43);
-                                                $goals43 = $result43->fetch_assoc();
+                                        <?php  $sqlquery413 ="SELECT * FROM  cards  where id='lib_sec5_ejournals3'";
+                                                $result413=mysqli_query($conn, $sqlquery413);
+                                                $goals413 = $result413->fetch_assoc();
                                         ?>
                                         <div class="ulife-column-7">
                                             <div class="ulife-div-53">
                                                 <div style="color: var(--Colors-Text-Color, #000);font-family: Familjen Grotesk;font-size: 13px;font-style: normal;
-                                                    font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals43['title']?></div>
+                                                    font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals413['title']?></div>
                                                 <div class="ulife-div-55">
-                                                    <?php echo $goals43['descr']?>
+                                                    <?php echo $goals413['descr']?>
                                                 </div>
                                                 <div class="ulife-div-56" style="cursor:pointer;">
                                                     <div class="text_btnnew viewall-right">
                                                         <div class="text_btnnew_innrdiv">
-                                                            <div class="text_btnnew_txt">
-                                                                <?php echo $goals42['btn_nm']?>
+                                                            <div class="text_btnnew_txt" onclick="window.open('<?php echo $goals413['btn_hlink']?>','_self')">
+                                                                <?php echo $goals413['btn_nm']?>
                                                             </div>
                                                             <div>
                                                                 <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -664,22 +664,22 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <?php  $sqlquery44 ="SELECT * FROM  cards  where id='lib_sec5_ejournals4'";
-                                                $result44=mysqli_query($conn, $sqlquery44);
-                                                $goals44 = $result44->fetch_assoc();
+                                        <?php  $sqlquery414 ="SELECT * FROM  cards  where id='lib_sec5_ejournals4'";
+                                                $result414=mysqli_query($conn, $sqlquery414);
+                                                $goals414 = $result414->fetch_assoc();
                                         ?>
                                         <div class="ulife-column-7">
                                             <div class="ulife-div-53">
                                                 <div style="color: var(--Colors-Text-Color, #000);font-family: Familjen Grotesk;font-size: 13px;font-style: normal;
-                                                    font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals44['title']?></div>
+                                                    font-weight: 400;line-height: 140%; /* 18.2px */"><?php echo $goals414['title']?></div>
                                                 <div class="ulife-div-55">
-                                                    <?php echo $goals44['descr']?>
+                                                    <?php echo $goals414['descr']?>
                                                 </div>
                                                 <div class="ulife-div-56" style="cursor:pointer;">
                                                 <div class="text_btnnew viewall-right">
                                                     <div class="text_btnnew_innrdiv">
-                                                        <div class="text_btnnew_txt">
-                                                            <?php echo $goals42['btn_nm']?>
+                                                        <div class="text_btnnew_txt" onclick="window.open('<?php echo $goals414['btn_hlink']?>','_self')">
+                                                            <?php echo $goals414['btn_nm']?>
                                                         </div>
                                                         <div>
                                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
@@ -725,10 +725,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card1" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -744,10 +742,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card2" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -763,10 +759,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card3" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -782,10 +776,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card4" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -834,10 +826,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card1" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -853,10 +843,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card2" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -872,10 +860,8 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card3" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')">
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -891,10 +877,9 @@
                             <div class="course-name"><?php echo $goals43['title']?></div>
                             <div class="naac">
                                 <div class="text_btnnew ">
-                                    <div class="text_btnnew_innrdiv">
-                                        <a class="a" href="naac_card.php?id=cy2_card4" target="_blank">
-                                            <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
-                                        </a>
+                                    <div class="text_btnnew_innrdiv" onclick="window.open('<?php echo $goals43['btn_hlink']?>','_self')"
+                                    >
+                                        <div class="text_btnnew_txt"><?php echo $goals43['btn_nm']?></div>
                                         <div>
                                             <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;">
                                         </div>
@@ -952,161 +937,55 @@
             </div>
             <!-- Automation ends -->
              <!--FAQs starts-->
-            <div class="FAQ">
-                <div class="Frequently-asked-questions-component">
-                    <div class="Frequently-asked-questions-component-title">
-                        How Do I?
-                    </div>
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default" style="background-color: transparent">
-                            <div class="panel-heading" role="tab" id="headingOne" style="background-color: transparent">
-                                <h4 class="panel-title">
-                                    <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        1. How do I become a member of the Library ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                                id="collapseOne"
-                                class="panel-collapse collapse in"
-                                role="tabpanel"
-                                aria-labelledby="headingOne"
-                            >
-                                <div class="panel-body">
-                                Vignan's University faculty, students, and staff are bona-fide members and no other formality is required. As soon as you get your ID card, please visit the library once to activate your membership.
+             <div class="FAQ">
+                <?php
+                    $sqlfaq = "SELECT * FROM `faq` WHERE `page` = 'library' ORDER BY id ASC";
+                    $resultfaq = $conn->query($sqlfaq);
+                    $i=1;
+                    if ($resultfaq->num_rows > 0) {
+                ?>
+                    <div class="Frequently-asked-questions-component">
+                        <div class="Frequently-asked-questions-component-title">
+                            How Do I?
+                        </div>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <?php
+                                while($rowfaq = $resultfaq->fetch_assoc()) {
+                                    if($i == 1) {
+                            ?>
+                            <div class="panel panel-default" style="background-color: transparent">
+                                <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>" style="background-color: transparent">
+                                    <h4 class="panel-title">
+                                        <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse<?php echo $i; ?>">
+                                            <?php echo $i . ". " . $rowfaq['ques'] . " ?"; $i++;?> 
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse<?php echo $i-1; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $i-1; ?>">
+                                    <div class="panel-body">
+                                        <?php echo $rowfaq['answer']; ?> 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="panel panel-default"
-                            style="background-color: transparent"
-                        >
-                            <div
-                            class="panel-heading"
-                            role="tab"
-                            id="headingTwo"
-                            style="background-color: transparent"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                    class="question collapsed"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion"
-                                    href="#collapseTwo"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTwo"
-                                    >
-                                        2. How do I search books ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                            id="collapseTwo"
-                            class="panel-collapse collapse"
-                            role="tabpanel"
-                            aria-labelledby="headingTwo"
-                            >
-                                <div class="panel-body">Answer</div>
-                            </div>
-                        </div>
-                        <div
-                            class="panel panel-default"
-                            style="background-color: transparent"
-                        >
-                            <div
-                            class="panel-heading"
-                            role="tab"
-                            id="headingThree"
-                            style="background-color: transparent"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                    class="question collapsed"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion"
-                                    href="#collapseThree"
-                                    aria-expanded="false"
-                                    aria-controls="collapseThree"
-                                    >
-                                        3. What is OPAC ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                            id="collapseThree"
-                            class="panel-collapse collapse"
-                            role="tabpanel"
-                            aria-labelledby="headingThree"
-                            >
-                                <div class="panel-body">Answer</div>
-                            </div>
-                        </div>
-                        <div
-                            class="panel panel-default"
-                            style="background-color: transparent"
-                        >
-                            <div
-                            class="panel-heading"
-                            role="tab"
-                            id="headingFour"
-                            style="background-color: transparent"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                    class="question collapsed"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion"
-                                    href="#collapseFour"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFour"
-                                    >
-                                        4. How do I Know what e-books are available / accessible to VU users ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                            id="collapseFour"
-                            class="panel-collapse collapse"
-                            role="tabpanel"
-                            aria-labelledby="headingFour"
-                            >
-                                <div class="panel-body">Answer</div>
-                            </div>
-                        </div>
-                        <div
-                            class="panel panel-default"
-                            style="background-color: transparent"
-                        >
-                            <div
-                            class="panel-heading"
-                            role="tab"
-                            id="headingFive"
-                            style="background-color: transparent"
-                            >
-                                <h4 class="panel-title">
-                                    <a
-                                    class="question collapsed"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion"
-                                    href="#collapseFive"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFive"
-                                    >
-                                        5. How do I Borrow books ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div
-                            id="collapseFive"
-                            class="panel-collapse collapse"
-                            role="tabpanel"
-                            aria-labelledby="headingFive"
-                            >
-                                <div class="panel-body">Answer</div>
-                            </div>
+                            <?php } else { ?>
+                                <div class="panel panel-default" style="background-color: transparent">
+                                    <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>" style="background-color: transparent">
+                                        <h4 class="panel-title">
+                                            <a class="question" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="false" aria-controls="collapse<?php echo $i; ?>">
+                                                <?php echo $i . ". " . $rowfaq['ques'] . " ?"; $i++;?> 
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse<?php echo $i-1; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $i-1; ?>">
+                                        <div class="panel-body">
+                                            <?php echo $rowfaq['answer']; ?> 
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } } ?>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
             <!-- Rules starts-->
             <div class="Rules">
@@ -1168,7 +1047,7 @@
             </div>
         <!--Rules ends-->
         <!--Contactus startshere-->
-            <div class="ContactUS">
+            <div class="ContactUS" style="margin-bottom:180px;">
                 <?php
                     $sql = "Select * FROM contactus";
                     $result = $conn->query($sql);
@@ -1336,7 +1215,6 @@
             <div class="p">
               <?php
               echo $row['descr'];
-
               ?>
 
                 <div class="text_btnnew" onclick="window.open('<?php echo $row['btn_hlink']; ?>',  '_blank')">
