@@ -279,6 +279,34 @@
 
 .explore_facili_leftlwrdiv_img1 {
     width: 100%;
+	    width: 427px;
+    height: 221px;
+	object-fit: cover;
+}
+
+.explore_facili_leftlwrdiv_img2 {
+   
+	    width: 298px;
+    height: 299px;
+	border-radius:50%;
+	object-fit: fill;
+}
+
+.explore_facili_rightdiv_img {
+	 width: 450px;
+    height: 737px;
+}
+
+.frst6days-picsdiv_img3{
+ width: 299px;
+    height: 621px;
+	object-fit: cover;
+}
+
+.explore_facili_rightdiv_img2{
+width: 298px;
+    height: 299px;
+	object-fit:cover;
 }
 
 .explore_facili_rightdiv {

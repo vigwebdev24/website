@@ -16,6 +16,7 @@ include('connect.php');
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/exam_home.css">
+	<link rel="stylesheet" href="css/home.css">
 
 	<link rel="stylesheet" href="css/mblfooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,24 +76,18 @@ if ($result->num_rows > 0) {
             <div class="BillboardTabplane2Hyperlinks">
               <button class="cta_button_primary Ss-btn_txt"  onclick="window.open('exam.php',  '_blank')" >
                 
-              <?php echo $row['btn_nm1']?>
+              Examinations
                   <img
-                    src="assets/svgicons/arrow_right_white.svg"
-                    style="width: 15px; height: 15px"
-                    alt=""
-                  />
-                </a>
+                    src="assets/svgicons/arrow_right_white.svg" alt=""   />
+               
               </button>
               <button class="cta_button_secondary Secondary-btn_txt" onclick="window.open('https://vignan.ac.in/tutionfee.php',  '_blank')">
                
               <?php echo $row['btn_nm2']?>
 
                   <img
-                    src="assets/svgicons/arrow_right_brown.svg"
-                    style="width: 15px; height: 15px"
-                    alt=""
-                  />
-                </a>
+                    src="assets/svgicons/arrow_right_brown.svg" alt="" />
+               
               </button>
             </div>
           </div>
@@ -141,169 +136,81 @@ if ($result->num_rows > 0) {
     }}}
     ?>
 
-<?php 
- $sql = "Select * FROM notifications";
+  <?php 
 
- // Execute the query
-$result = $conn->query($sql);
+$sqlquery5 ="SELECT * FROM  notifications  where notify_type='exam' order by  date desc limit 4 ";
 
-if ($result->num_rows > 0) {
-  // Fetching data and storing in a multidimensional array
-  while ($row = $result->fetch_assoc()) {
-    if($row['Id']=='exam_sec2_1'){
+$result=mysqli_query($conn, $sqlquery5);
+
+     
 ?>
 
-    <section class="notifications-container">
-      <h2 class="notifications-title"><?php echo $row['title']?></h2>
-      <div class="notifications-list">
-        <div class="notification-row">
-          <article class="notification-card">
-            <div class="notification-content">
-              <div class="notification-details">
-              <div class="notification-text">
-  <p class="notification-description">
-    <?php echo $row['descr']; ?>
-  </p>
-  <time class="notification-date">
-    <?php
-    $dateString = $row['date'];
-    
-    $date = new DateTime($dateString);
-        $formattedDate = $date->format('jS M Y');
-    
-    echo $formattedDate;
-    ?>
-  </time>
-</div>
-                <!-- <img
-                  src="./assets/icons/HorizontalBlackArrow.svg"
-                  alt=""
-                  class="notification-icon"
-                /> -->
-              </div>
-            </div>
-          </article>
-          <?}
-          if($row['Id']=='exam_sec2_2'){
-            ?>
+        <div class="home-events">
+            <div class="events">NOTIFICATIONS</div>
+            <div class="eventsdiv">
+                <?php  if(mysqli_num_rows($result) > 0){
+                while ($row = $result->fetch_assoc()) { 
+                    //print_r($row);
+                     $notf_dbdate =new DateTime($row['date']);  // get the event date and set it to the variable $date 
+                    $month = $notf_dbdate->format('F');
+                    $notif_dt= $notf_dbdate->format('jS');
+                    $notif_yr= $notf_dbdate->format('y'); 
+                    
+                   ?>
+                <div class="notf_innrdiv">
+                    <div class="notf_title"><?php echo $row['title']; ?></div>
+                    <div class="notf_date"> <?php echo $notif_dt ." " . $month ." ". $notif_yr;  ?></div>
+                    <div class="eventarrow-dsktp elementnone-mbl">
+                        <a href="<?php echo $row['hlink'];?>" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2961_1144" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2"
+                                    y="-2" width="24" height="24">
+                                    <rect x="-2" y="-2" width="24" height="24" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_2961_1144)">
+                                    <path
+                                        d="M13.0849 10.8333H3.75V9.20833H13.0849L8.81731 4.94069L9.97915 3.75L16.25 10.0208L10.0208 16.25L8.85898 15.0593L13.0849 10.8333Z"
+                                        fill="#F2F1ED" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="div-notf_img" onclick="notifications()">
+                        <a href="<?php echo $row['hlink'];?>" target="_blank">
 
-          <article class="notification-card">
-            <div class="notification-content">
-              <div class="notification-details">
-              <div class="notification-text">
-  <p class="notification-description">
-    <?php echo $row['descr']; ?>
-  </p>
-  <time class="notification-date">
-    <?php
-    $dateString = $row['date'];
-    
-    $date = new DateTime($dateString);
-        $formattedDate = $date->format('jS M Y');
-    
-    echo $formattedDate;
-    ?>
-  </time>
-</div>
-                <!-- <img
-                  src="./assets/icons/HorizontalBlackArrow.svg"
-                  alt=""
-                  class="notification-icon"
-                /> -->
-              </div>
-            </div>
-          </article>
-          <?php
-          }
-          if($row['Id']=='exam_sec2_3'){
-            ?>
-          <article class="notification-card">
-            <div class="notification-content">
-              <div class="notification-details">
-              <div class="notification-text">
-  <p class="notification-description">
-    <?php echo $row['descr']; ?>
-  </p>
-  <time class="notification-date">
-    <?php
-    $dateString = $row['date'];
-    
-    $date = new DateTime($dateString);
-        $formattedDate = $date->format('jS M Y');
-    
-    echo $formattedDate;
-    ?>
-  </time>
-</div>
-                <!-- <img
-                  src="./assets/icons/HorizontalBlackArrow.svg"
-                  alt=""
-                  class="notification-icon"
-                /> -->
-              </div>
-            </div>
-          </article>
-          <?php
-          }
-          if($row['Id']=='exam_sec2_4'){
-            ?>
-          <article class="notification-card">
-            <div class="notification-content">
-              <div class="notification-details">
-              <div class="notification-text">
-  <p class="notification-description">
-    <?php echo $row['descr']; ?>
-  </p>
-  <time class="notification-date">
-    <?php
-    $dateString = $row['date'];
-    
-    $date = new DateTime($dateString);
-        $formattedDate = $date->format('jS M Y');
-    
-    echo $formattedDate;
-    ?>
-  </time>
-</div>
-                <!-- <img
-                  src="./assets/icons/HorizontalBlackArrow.svg"
-                  alt=""
-                  class="notification-icon"
-                /> -->
-              </div>
-            </div>
-          </article>
+                            <svg class="eventarrow" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2994_7519" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="18" height="18">
+                                    <rect width="18" height="18" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_2994_7519)">
+                                    <path
+                                        d="M11.136 14.2139L10.2822 13.3601L14.0379 9.60433H1.6687V8.36683H14.0523L10.2822 4.61106L11.136 3.7572L16.3644 8.98558L11.136 14.2139Z"
+                                        fill="black" />
+                                </g>
+                            </svg>
+
+                        </a>
+                    </div>
+
+                </div>
+                <?php } }?>
+
+                        </div>
         </div>
-      </div>
+        <div class="text_btnnew viewall-right" onclick="notifications()">
 
-      <?php
-    }}}?>
-      <!-- <div class="text_btnnew viewall-right">
-        
-          <span >View all</span>
-          <img
-            src="assets/icons/arrow_outward.svg"
-            alt=""
-            class="MiniArrow"
-          />
-        
-        <div class="Mini-Hyperlink-underline"></div>
-      </div>class="va" -->
-<div >
-  <div class="va" onclick="window.open('https://vignan.ac.in/notifications.php',  '_blank')">
-      <div class="text_btnnew viewall-right"  >
             <div class="text_btnnew_innrdiv">
                 <div class="text_btnnew_txt">
-                View all
+                    View All
                 </div>
                 <div>
-                    <img src="assets/icons/outwardarrow_brown.svg" loading="lazy" style="width: 16px;height: 16px;">
+                    <img src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;" />
                 </div>
             </div>
         </div>
-        </div>
-        
-    </section>
 
 
     <?php 
@@ -535,7 +442,7 @@ if ($result->num_rows > 0) {
     
    
 
-    <div class="text_btnnew viewall-right" >
+ <!--   <div class="text_btnnew viewall-right" >
             <div class="text_btnnew_innrdiv">
                 <div class="text_btnnew_txt">
                 <?php echo $row['btn_nm1']?>
@@ -544,12 +451,12 @@ if ($result->num_rows > 0) {
                     <img src="assets/icons/outwardarrow_brown.svg" loading="lazy" style="width: 16px;height: 16px;">
                 </div>
             </div>
-        </div>
+        </div>-->
     
         <div class="exam-div-bt ">
-        <button class="cta_button_secondary Secondary-btn_txt">
+        <button class="cta_button_secondary Secondary-btn_txt" onclick="window.open('exam.php','_blank')">
                
-        <?php echo $row['btn_nm2']?>
+       Apply for exam
 
                   <img
                     src="./assets/icons/arrow_forward2.svg"

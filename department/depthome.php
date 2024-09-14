@@ -618,7 +618,7 @@ $sqlquery7="SELECT * FROM  cards  where id='newpar_joincmpny'";
 $result=mysqli_query($conn, $sqlquery7);
 $joincmpny = $result->fetch_assoc();
 
-$sqlquery8="SELECT * FROM  cards  where id like 'newpar%' and sequence > 1 order by sequence limit 3 ";
+$sqlquery8="SELECT * FROM  cards  where id like 'newpar%' and sequence > 1 and dept='dum' order by sequence limit 3 ";
 
 $cards=mysqli_query($conn, $sqlquery8);
 //$cards = $result->fetch_assoc();

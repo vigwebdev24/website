@@ -154,18 +154,18 @@ body {
 }
 
 .top-nav {
-    height: 55px;
+    /* height: 55px; */
     width: 100%;
     /* padding-left: 39px; 
     padding-right: 39px;     
     padding-top: 3px;
     padding-bottom: 3px;  */
     background: #992E00;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     gap: 43px;
     display: inline-flex;
-    padding: 8.5px 17px 8.5px 39px;
+    padding: 0 17px 0 23px;
 }
 
 .topnav-ul {
@@ -177,13 +177,26 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background: #992E00;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 43px;
+    /* gap: 43px; */
     display: inline-flex;
     margin-bottom: 0;
 }
-
+.about-college{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+.college-info{
+    color: var(--Colors-Tone-Cool-1, #F7F8FF);
+    text-align: left;
+    font-family: Kohinoor Devanagari;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
 .active {
     color: #992E00 !important;
     border-bottom: 1px solid #992E00;
@@ -369,22 +382,24 @@ body {
 .footer {
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 61px;
     /*padding: 2% 100px;*/
-    padding-bottom: 80px;
-    flex-direction: column;
+    /* padding-bottom: 80px; */
+    /* flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 61px;
-    display: inline-flex;
+    display: inline-flex; */
     background-color: #F2F1ED !important;
     /* background: aliceblue; */
 }
 
 .footer_innrdiv {
-    align-self: stretch;
     justify-content: space-between;
-    align-items: flex-end;
-    display: inline-flex;
+    display: flex;
+    gap: 25px;
 }
 
 .ftr_col1 {
@@ -452,12 +467,15 @@ body {
 
 
 .ftrcontact_div {
-    width: 408px;
+    /* width: 408px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 25px;
-    display: inline-flex;
+    display: inline-flex; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
 }
 
 .ftrcontact_innrdiv {
@@ -522,17 +540,19 @@ body {
 
 
 .ftr_socialmediadivs {
-    justify-content: flex-start;
+    /* justify-content: flex-start;
     align-items: flex-end;
     gap: 12px;
-    display: inline-flex;
+    display: inline-flex; */
 }
 
 .ftr_row2 {
-    align-self: stretch;
+    /* align-self: stretch;
     justify-content: space-between;
     align-items: flex-start;
-    display: inline-flex;
+    display: inline-flex; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .ftr_row2_cols {
@@ -773,7 +793,7 @@ select:focus {
 .cross {
     position: absolute;
     right: 160px;
-    top: 46%;
+    top: 40%;
 }
 
 .search-dropdowndiv {
@@ -782,7 +802,7 @@ select:focus {
     gap: var(--Numbers-7, 20px);
     position: absolute;
     right: 38px;
-    top: 25%;
+    top: 10%;
 }
 
 .search-in {

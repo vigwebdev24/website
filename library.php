@@ -98,7 +98,7 @@
                         <?php echo $row['descr']?>
                     </div>
                     <div class="BillBoardNavButtons">
-                        <button class="cta_button_primary Ss-btn_txt" id="aplybt" onclick="window.open('exam.php',  '_blank')">
+                        <button class="cta_button_primary Ss-btn_txt" id="aplybt" onclick="window.open('<?php echo $row['btn1_hlink']; ?>',  '_blank')">
                             <div><?php echo $row['btn_nm1']?></div>
                             <img
                             class="BillBoardButtonArrows"
@@ -106,7 +106,7 @@
                             alt=""
                             />
                         </button>
-                        <button class="cta_button_secondary Secondary-btn_txt">
+                        <button class="cta_button_secondary Secondary-btn_txt" onclick="window.open('<?php echo $row['btn2_hlink']; ?>',  '_blank')">
                             <div> <?php echo $row['btn_nm2']?></div>
                             <img
                             class="BillBoardButtonArrows"

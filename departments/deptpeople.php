@@ -29,6 +29,12 @@ $branch = 'MBA';
 $branch = 'PHYSICS';
 }else if($dptnm == 'Chemistry'){
 $branch = 'CHEMISTRY';
+}else if($dptnm == 'CSE'){
+$branch = 'CSE';
+}else if($dptnm == 'BSH'){
+$branch = 'SSH';
+}else if($dptnm == 'FT'){
+$branch = 'FT';
 }
 
 ?>
@@ -133,6 +139,12 @@ $branch = 'CHEMISTRY';
                                             <div class="fac-name" id="facname"></div>
                                             <div id="facdesig"
                                                 style="align-self: stretch; color: black; font-size: 18px; font-family: Familjen Grotesk; font-weight: 400; line-height: 28px; word-wrap: break-word">
+                                                </div>
+											<div id="faccnt"
+                                                style="align-self: stretch; color: black; font-size: 16px; font-family: Familjen Grotesk; font-weight: 400; line-height: 28px; word-wrap: break-word">
+                                                </div>
+											<div id="facemail"
+                                                style="align-self: stretch; color: black; font-size: 16px; font-family: Familjen Grotesk; font-weight: 400; line-height: 28px; word-wrap: break-word">
                                                 </div>
                                         </div>
                                     </div>
@@ -345,7 +357,17 @@ $branch = 'CHEMISTRY';
                         var obj = JSON.parse(response);
 						console.log(obj);
 						 var intr = [];
-                           
+                           	if(obj.contact == ''){
+							var phn = 'Not Available';
+							}else{
+							var phn = obj.contact;
+							}
+							
+							if(obj.email == ''){
+							var email = 'Not Available';
+							}else{
+							var email = obj.email;
+							}
 						    // New code update from here...
 						/*if(obj['interests'].length >0 && obj['teachingengmnts'].length>0 && obj['expeirence'].length >0 &&
 						   obj['facultyeducation'].length >0 && obj['research'].length >0 && obj['awards'].length >0 &&
@@ -381,6 +403,8 @@ $branch = 'CHEMISTRY';
                             $("#facimg")[0].src = 'https://vignan.ac.in/Facultyprofiles/uploads/'+obj["empcode"]+'/'+obj["profilepic"];
                             $("#facname").text(obj['salutation']+' '+obj['name']);
                             $("#facdesig").html(obj.desig);
+								 $("#faccnt").html('PH: '+phn);
+						    $("#facemail").html('Email: '+email);
 							document.getElementById("modalmessage").innerHTML ="Profile need to be filled. Yet to update."; 
 							document.getElementById("modalmessage").style.display ="block"; 
 							
@@ -395,6 +419,8 @@ $branch = 'CHEMISTRY';
                             $("#facimg")[0].src = 'https://vignan.ac.in/Facultyprofiles/uploads/'+obj["empcode"]+'/'+obj["profilepic"];
                             $("#facname").text(obj['salutation']+' '+obj['name']);
                             $("#facdesig").html(obj.desig);
+							 $("#faccnt").html('PH: '+phn);
+						    $("#facemail").html('Email: '+email);
 						
 						    const elements = document.getElementsByClassName('prof-content_div');
 						

@@ -109,7 +109,7 @@ if ($result->num_rows > 0) {
                 </div>
                 <div class="aboutus-div-50">
                   <div class="aboutus-div-51">Dr. P. Nagabhushan</div>
-                  <div class="aboutus-div-52">Vice - Chancellor</div>
+                  <div class="aboutus-div-52">Col. Vice - Chancellor</div>
                 </div>
               </div>
             </div>
@@ -153,6 +153,17 @@ if ($result->num_rows > 0) {
                 />
                 <div class="aboutus-div-60">Dr. P. M. V. Rao</div>
                 <div class="admin_dean_dept">Dean, Academics, Assessment and Awards</div>
+              </div>
+            </div>
+			  <div class="column-9">
+              <div class="aboutus-div-59">
+                <img
+                  loading="lazy"
+                  srcset="assets/images/aboutus_img12.webp"
+                  class="img-12"
+                />
+                <div class="aboutus-div-60">Dr. Y. Ravi sekhar</div>
+				  <div class="admin_dean_dept">Dean, Technology Development</div>
               </div>
             </div>
             <div class="column-10">

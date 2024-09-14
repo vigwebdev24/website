@@ -183,7 +183,7 @@ if ($result->num_rows > 0) {
                 </div>
                 <div class="aboutus-div-50">
                   <div class="aboutus-div-51">Dr. P. Nagabhushan</div>
-                  <div class="aboutus-div-52">Vice - Chancellor</div>
+                  <div class="aboutus-div-52">Col. Vice - Chancellor</div>
                 </div>
               </div>
             </div>
@@ -202,7 +202,9 @@ if ($result->num_rows > 0) {
                   srcset="assets/images/aboutus_img11.webp"
                   class="img-11"
                 />
-                <div class="aboutus-div-56">D Vijaya Ramu</div>
+                <div class="aboutus-div-56">Dr. D Vijaya Ramu</div>
+				  <div  class="admin_dean_dept">Dean, Promotion, Collaborations & Faculty Affairs</div>
+				  
               </div>
             </div>
             <div class="column-8">
@@ -212,7 +214,8 @@ if ($result->num_rows > 0) {
                   srcset="assets/images/aboutus_img12.webp"
                   class="img-12"
                 />
-                <div class="aboutus-div-58">Y. Ravi sekhar</div>
+                <div class="aboutus-div-58">Dr. Y. Ravi sekhar</div>
+				  <div class="admin_dean_dept">Dean, Technology Development </div>
               </div>
             </div>
             <div class="column-9">
@@ -222,7 +225,8 @@ if ($result->num_rows > 0) {
                   srcset="assets/images/aboutus_img13.webp"
                   class="img-13"
                 />
-                <div class="aboutus-div-60">P. M. V. Rao</div>
+                <div class="aboutus-div-60">Dr. P. M. V. Rao</div>
+				  <div class="admin_dean_dept">Dean, Academics, Assessment and Awards</div>
               </div>
             </div>
             <div class="column-10">
@@ -232,7 +236,8 @@ if ($result->num_rows > 0) {
                   srcset="assets/images/aboutus_img14.webp"
                   class="img-14"
                 />
-                <div class="aboutus-div-62">G. Srinivasa Rao</div>
+                <div class="aboutus-div-62">Dr. G. Srinivasa Rao</div>
+				  <div class="admin_dean_dept">Dean, Research & Development</div>
               </div>
             </div>
           </div>
@@ -502,7 +507,81 @@ if ($result->num_rows > 0) {
       </div>
         </div>
 
+      <div class="81np">
+        <!-- Apex bodies -->
+
+   
+
+<section class="institutional-committees">
+  <h2 class="institutional-committees__title">Apex Bodies</h2>
+  <div class="institutional-committees__container">
+    <article class="committee-card">
+      <h3 class="committee-card__title">
+     Executive Council
+      </h3>
+      <div class="text_btnnew viewall-right" onclick="window.open('https://vignan.ac.in/apex.php', '_blank')" >
+            <div class="text_btnnew_innrdiv">
+                <div class="text_btnnew_txt">
+                <?php echo $row['btn_nm1'] ?>
+                </div>
+                <div>
+                    <img src="assets/icons/outwardarrow_brown.svg" loading="lazy" style="width: 16px;height: 16px;">
+                </div>
+            </div>
+        </div>
       
+    </article>
+    <article class="committee-card">
+      <h3 class="committee-card__title"> Academic Council</h3>
+      <div class="text_btnnew viewall-right" onclick="window.open('https://vignan.ac.in/apex.php', '_blank')" >
+            <div class="text_btnnew_innrdiv">
+                <div class="text_btnnew_txt">
+                <?php echo $row['btn_nm1'] ?>
+                </div>
+                <div>
+                  
+                    <img src="assets/icons/outwardarrow_brown.svg" loading="lazy" style="width: 16px;height: 16px;">
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="committee-card">
+      <h3 class="committee-card__title">Finance Committee</h3>
+       <div class="text_btnnew viewall-right" onclick="window.open('https://vignan.ac.in/apex.php', '_blank')">
+            <div class="text_btnnew_innrdiv">
+                <div class="text_btnnew_txt">
+                <?php echo $row['btn_nm1'] ?>
+                </div>
+                <div>
+                  
+                    <img src="assets/icons/outwardarrow_brown.svg" loading="lazy" style="width: 16px;height: 16px;">
+                </div>
+            </div>
+        </div>
+    </article>
+  </div>
+  
+</section>
+
+
+
+
+              <!--  <div class="aboutus-div-99 ">
+        <div class="cta_button_primary Ss-btn_txt explore width100" onclick="window.open('<?php echo $row['btn4_hlink'] ?>',  '_blank')">
+          <div class="aboutus-div-100"><?php echo $row['btn_nm4'] ?></div>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_2961_1144" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2" y="-2" width="24" height="24">
+                                        <rect x="-2" y="-2" width="24" height="24" fill="#D9D9D9"></rect>
+                                    </mask>
+                                    <g mask="url(#mask0_2961_1144)">
+                                        <path d="M13.0849 10.8333H3.75V9.20833H13.0849L8.81731 4.94069L9.97915 3.75L16.25 10.0208L10.0208 16.25L8.85898 15.0593L13.0849 10.8333Z" fill="#F2F1ED"></path>
+                                    </g>
+                                </svg>
+         
+        </div>
+      </div>-->
+        </div>
+
 <?php
     }
 if($row['id']=='aboutus_sec7'){

@@ -17,21 +17,15 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/u-life.css">
+    <link rel="stylesheet" href="css/media_query.css?<?php echo time();?>">
     <link rel="stylesheet" href="css/newstudent.css">
     <link rel="stylesheet" href="css/mblfooter.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 </head>
 <style>
 body {
     background-color: #F2F1ED !important;
 }
-.bsn1 {
+/* .bsn1 {
     display: flex;
     width: 170px;
     height: 52px;
@@ -50,10 +44,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    /* 20px */
-}
+} */
 
-.bsn2 {
+/* .bsn2 {
     display: inline-flex;
     padding: var(--Numbers-6, 16px) var(--Numbers-6, 16px) var(--Numbers-6, 16px) var(--Numbers-9, 31px);
     align-items: center;
@@ -63,14 +56,8 @@ body {
     position: absolute;
     top: 275px;
     left: 1040px;
-}
-.rot {
-    width: 1575px !important;
-    height: auto;
-    /* transform: rotate(-90deg); */
-    background: rgba(0, 0, 0, 0.56);
-    flex-shrink: 0;
-}
+} */
+
 /* @media (max-width: 768px) {
     .faqt1{
         font-size: 40px !important;
@@ -133,21 +120,21 @@ body {
     }
 } */
  /* Media query for screen size 1200px or less */
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     .rot {
-        width: 91% !important;
-        height: auto;
+        height: 100%;
+        width: 100% !important;
         /* transform: rotate(-90deg); */
         background: rgba(0, 0, 0, 0.56);
         flex-shrink: 0;
     }
     .faqt1{
         font-size: 60px !important;
-        margin-left: 230px;
     }
     .applytitle {
-        margin-top: 20px;
-        margin-left: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-family: "DM Serif Display";
         font-size: 20px;
         font-style: normal;
@@ -159,28 +146,39 @@ body {
         margin-left: 0px;
         margin-top: 30px;
     }
-    .applytitle .bsn1{
+    /* .applytitle .bsn1{
         margin-left: -150px !important;
     }
     .applytitle .bsn2{
         margin-left: -40px !important;
         margin-top: -50px !important;
+    } */
+}
+
+@media (min-width:1200px) {
+    .applytitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "DM Serif Display";
+        font-size: 20px;
+        font-style: normal;
     }
 }
 
 /* Media query for screen size 768px or less */
-@media (max-width: 768px) {
+@media (max-width: 575px) {
     .faqt1{
         font-size: 40px !important;
         margin-left: 200px;
     }
-    .applytitle {
+    /* .applytitle {
         margin-top: 20px;
         margin-left: 200px;
         font-family: "DM Serif Display";
         font-size: 20px;
         font-style: normal;
-    }
+    } */
     .appmed1 {
         flex-direction: column;
         align-items: flex-start;
@@ -188,18 +186,34 @@ body {
         margin-left: 0px;
         margin-top: 30px;
     }
-    .applytitle .bsn1{
+    .xyz{
+        height: 200px;
+    }
+    .applytitle-content {
+        top: 100px;
+        left: -160px;
+    }
+    .faqt1{
+        font-size: 26px !important;
+    }
+    .applytitle{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+    /* .applytitle .bsn1{
         margin-left: -1050px !important;
     }
     .applytitle .bsn2{
         margin-left: -840px !important;
         margin-top: -45px !important;
-    }
+    } */
 }
 
 
     /* adm end */
-    @media (max-width: 768px) {
+    @media (max-width: 575px) {
         .non-clk_brdr{
         flex: 0.8 1 0 !important;
         margin-right: -280px !important;
@@ -225,32 +239,22 @@ body {
 }
 
 .home-emational_div3_subdivtitle{
-  color: var(--Colors-Text-Color, #000);
-                        font-family: DM Serif Display;
-                        font-size: 40px !important;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 100%; /* 61px */
-                        margin-top: -100px !important;
+    color: var(--Colors-Text-Color, #000);
+    font-family: DM Serif Display;
+    font-size: 40px ;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 61px */
+    /* margin-top: -100px !important; */
 }
 
-@media (min-width: 320px) and (max-width: 575.98px) {
+/* @media (min-width: 320px) and (max-width: 575.98px) {
     .home-emational_div3_subdivtitle {
         color: var(--Colors-Text-Color, #000);
         font-family: DM Serif Display;
         font-size: 20px !important;
     }
-}
-
-.home-emational_div2img{
-  display: flex;
-                    width: 400px;
-                    height: 836px !important;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    /* margin-top: 50px !important; */
-}
+} */
 </style>
 
 <body>
@@ -279,13 +283,11 @@ body {
                     <div class="row" style="flex-shrink: 0;">
                         <!-- Content for the static slide -->
                         <div class="herosec-content">
-
-                            <div>
+                        <div>
                                 <h1 class="herosec-bigtxt">
                                     <!-- Encourages,&nbsp;challenges,you to be inquisitive -->
                                     <?php echo $goals1['title']?> 
-                                </h1>
-                            </div>
+                                </h1></div>
                         </div>
                         <div class="img-div">
                             <img loading="lazy" src="<?php echo $goals1['img1']; ?>" class="herosec-img" />
@@ -318,7 +320,7 @@ body {
             $goals2 = $result2->fetch_assoc();
         ?>
         <!-- <div class="newstudent-div-space"> -->
-        <div class="home-research">
+        <div class="home-research" style="width: 100%; max-width:1255px;">
             <div class="overview-main" style="margin-bottom:150px;">
                 <div class="ov-content">
                     <div class="ov-tnc">
@@ -346,67 +348,64 @@ body {
                         </div>
                     </div>
                 </div>
-                <div class="home-reseachcountdiv">
-
-                    <?php  $sqlquery2_1 ="SELECT * FROM  stats  where id='unires_pap'";
-                        $result2_1=mysqli_query($conn, $sqlquery2_1);
-                        $goals2_1 = $result2_1->fetch_assoc();
-                    ?>
-                    <div class="home-reseachcount_innrdiv">
-                        <div class="home-reseachcount">
-                        <?php echo $goals2_1['statvalue']?><small class="home-reseach_circle_small">+</small>
-                        </div>
-                        <div class="home-reseach_txt">
-                        <?php echo $goals2_1['descr']?>
-                        </div>
-                    </div>
-                    <div class="home-reseach_imgbdrdiv">
-                        <svg class="home-reseach_img" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                            viewBox="0 0 48 48" fill="none">
-                            <mask id="mask0_3079_9" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="48" height="48">
-                                <rect width="48" height="48" fill="#D9D9D9" />
-                            </mask>
-                            <g mask="url(#mask0_3079_9)">
-                                <path
-                                    d="M23.9839 40.1115C26.5048 40.1115 28.6647 39.2223 30.4635 37.4441C32.2623 35.6658 33.1617 33.5232 33.1617 31.0162C33.1617 28.4953 32.2675 26.3354 30.4789 24.5366C28.6904 22.7378 26.5353 21.8384 24.0135 21.8384C21.4918 21.8384 19.3406 22.7326 17.5598 24.5212C15.779 26.3097 14.8886 28.4648 14.8886 30.9866C14.8886 33.5083 15.7778 35.6595 17.556 37.4403C19.3343 39.2211 21.4769 40.1115 23.9839 40.1115ZM17.9886 21.4384C18.6464 20.9811 19.3615 20.6193 20.1339 20.3531C20.9063 20.0869 21.7233 19.882 22.5848 19.7384L18.0656 10.9153H12.7463L17.9886 21.4384ZM30.0117 21.4384L35.3425 10.9153H29.9348L25.7809 19.1961L26.1334 19.8648C26.8267 20.001 27.5041 20.2061 28.1656 20.48C28.8271 20.7538 29.4425 21.0733 30.0117 21.4384ZM14.3425 38.1769C14.3109 37.939 14.3177 37.6488 14.363 37.3065C14.4083 36.9641 14.5079 36.6165 14.6617 36.2637C14.0463 35.2186 13.622 34.0864 13.3886 32.8672C13.1553 31.6479 13.1271 30.4024 13.304 29.1307C13.304 28.1307 13.4771 27.1819 13.8232 26.2845C14.1694 25.3871 14.6502 24.5794 15.2655 23.8615C14.6373 23.8794 14.0553 24.0534 13.5194 24.3835C12.9835 24.7135 12.6386 25.1321 12.4848 25.6393C10.9976 26.1464 9.92581 27.1019 9.26944 28.5057C8.61304 29.9096 8.52203 31.3512 8.9964 32.8307C8.9964 34.3435 9.51561 35.6127 10.554 36.6384C11.5925 37.664 12.8553 38.1769 14.3425 38.1769ZM33.6579 38.1769C35.6194 38.1845 37.3188 37.4913 38.7559 36.0972C40.1931 34.703 40.9117 33.0088 40.9117 31.0145C40.9117 29.0202 40.1931 27.3211 38.7559 25.9172C37.3188 24.5134 35.6194 23.8025 33.6579 23.7845C33.5041 23.7845 33.3502 23.7973 33.1963 23.823C33.0425 23.8486 32.8887 23.8615 32.7348 23.8615C33.5271 24.8512 34.1611 25.9511 34.6367 27.1611C35.1124 28.3711 35.3502 29.6525 35.3502 31.0053C35.3502 32.3581 35.1124 33.6377 34.6367 34.8442C34.1611 36.0506 33.5271 37.1358 32.7348 38.0999C32.8887 38.1255 33.0425 38.1448 33.1963 38.1576C33.3502 38.1704 33.5041 38.1769 33.6579 38.1769ZM23.9949 42.2999C22.6627 42.2999 21.4145 42.1024 20.2503 41.7075C19.0861 41.3125 18.0233 40.7087 17.0617 39.8961C16.6216 40.0362 16.1538 40.1386 15.6585 40.2031C15.1632 40.2676 14.6771 40.2999 14.2002 40.2999C11.6279 40.2999 9.4432 39.4021 7.646 37.6064C5.8488 35.8107 4.9502 33.6279 4.9502 31.0578C4.9502 28.4804 5.85148 26.2835 7.65405 24.467C9.45661 22.6505 11.6528 21.7486 14.2425 21.7615C14.5246 21.7615 14.7938 21.7807 15.0502 21.8191C15.3066 21.8576 15.563 21.9025 15.8194 21.9538L9.19249 8.72681H19.4309L24.0002 17.8653L28.5694 8.72681H38.8579L32.3194 21.8153C32.5502 21.764 32.7874 21.7255 33.031 21.6999C33.2746 21.6743 33.5245 21.6615 33.7809 21.6615C36.363 21.6563 38.5617 22.5645 40.3771 24.386C42.1925 26.2075 43.1002 28.4121 43.1002 30.9999C43.1002 33.617 42.1961 35.8213 40.388 37.6128C38.5799 39.4042 36.3673 40.2999 33.7502 40.2999C33.2476 40.2999 32.7643 40.2704 32.3002 40.2115C31.8361 40.1525 31.3951 40.0474 30.9771 39.8961C30.0158 40.683 28.9448 41.2804 27.764 41.6882C26.5832 42.096 25.3268 42.2999 23.9949 42.2999ZM20.8271 35.6769L22.0152 31.7324L18.8232 29.4422H22.7826L24.0002 25.323L25.2436 29.4422H29.1771L26.004 31.7192L27.2233 35.6769L24.0077 33.2307L20.8271 35.6769Z"
-                                    fill="#C57654" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="home-reseach_div3">
-                    <div class="home-reseach_circle">
-                        <?php  $sqlquery2_2 ="SELECT * FROM  stats  where id='unires_fun'";
-                            $result2_2=mysqli_query($conn, $sqlquery2_2);
-                            $goals2_2 = $result2_2->fetch_assoc();
+                <div class="ov-number">
+                    <div class="home-reseachcountdiv">
+                        <?php  $sqlquery2_1 ="SELECT * FROM  stats  where id='unires_pap'";
+                            $result2_1=mysqli_query($conn, $sqlquery2_1);
+                            $goals2_1 = $result2_1->fetch_assoc();
                         ?>
-                        <div class="home-reseach_circle_txtdiv">
-                            <div class="home-reseach_circle_txt">
-                            <?php echo $goals2_2['statvalue']?><small class="home-reseach_circle_small">cr</small>
+                        <div class="home-reseachcount_innrdiv">
+                            <div class="home-reseachcount">
+                            <?php echo $goals2_1['statvalue']?><small class="home-reseach_circle_small">+</small>
                             </div>
-                            <div class="home-reseach_circle_title">
-                            <?php echo $goals2_2['descr']?>
+                            <div class="home-reseach_txt">
+                            <?php echo $goals2_1['descr']?>
                             </div>
                         </div>
+                        <div class="home-reseach_imgbdrdiv">
+                            <svg class="home-reseach_img" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 48 48" fill="none">
+                                <mask id="mask0_3079_9" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="48" height="48">
+                                    <rect width="48" height="48" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_3079_9)">
+                                    <path
+                                        d="M23.9839 40.1115C26.5048 40.1115 28.6647 39.2223 30.4635 37.4441C32.2623 35.6658 33.1617 33.5232 33.1617 31.0162C33.1617 28.4953 32.2675 26.3354 30.4789 24.5366C28.6904 22.7378 26.5353 21.8384 24.0135 21.8384C21.4918 21.8384 19.3406 22.7326 17.5598 24.5212C15.779 26.3097 14.8886 28.4648 14.8886 30.9866C14.8886 33.5083 15.7778 35.6595 17.556 37.4403C19.3343 39.2211 21.4769 40.1115 23.9839 40.1115ZM17.9886 21.4384C18.6464 20.9811 19.3615 20.6193 20.1339 20.3531C20.9063 20.0869 21.7233 19.882 22.5848 19.7384L18.0656 10.9153H12.7463L17.9886 21.4384ZM30.0117 21.4384L35.3425 10.9153H29.9348L25.7809 19.1961L26.1334 19.8648C26.8267 20.001 27.5041 20.2061 28.1656 20.48C28.8271 20.7538 29.4425 21.0733 30.0117 21.4384ZM14.3425 38.1769C14.3109 37.939 14.3177 37.6488 14.363 37.3065C14.4083 36.9641 14.5079 36.6165 14.6617 36.2637C14.0463 35.2186 13.622 34.0864 13.3886 32.8672C13.1553 31.6479 13.1271 30.4024 13.304 29.1307C13.304 28.1307 13.4771 27.1819 13.8232 26.2845C14.1694 25.3871 14.6502 24.5794 15.2655 23.8615C14.6373 23.8794 14.0553 24.0534 13.5194 24.3835C12.9835 24.7135 12.6386 25.1321 12.4848 25.6393C10.9976 26.1464 9.92581 27.1019 9.26944 28.5057C8.61304 29.9096 8.52203 31.3512 8.9964 32.8307C8.9964 34.3435 9.51561 35.6127 10.554 36.6384C11.5925 37.664 12.8553 38.1769 14.3425 38.1769ZM33.6579 38.1769C35.6194 38.1845 37.3188 37.4913 38.7559 36.0972C40.1931 34.703 40.9117 33.0088 40.9117 31.0145C40.9117 29.0202 40.1931 27.3211 38.7559 25.9172C37.3188 24.5134 35.6194 23.8025 33.6579 23.7845C33.5041 23.7845 33.3502 23.7973 33.1963 23.823C33.0425 23.8486 32.8887 23.8615 32.7348 23.8615C33.5271 24.8512 34.1611 25.9511 34.6367 27.1611C35.1124 28.3711 35.3502 29.6525 35.3502 31.0053C35.3502 32.3581 35.1124 33.6377 34.6367 34.8442C34.1611 36.0506 33.5271 37.1358 32.7348 38.0999C32.8887 38.1255 33.0425 38.1448 33.1963 38.1576C33.3502 38.1704 33.5041 38.1769 33.6579 38.1769ZM23.9949 42.2999C22.6627 42.2999 21.4145 42.1024 20.2503 41.7075C19.0861 41.3125 18.0233 40.7087 17.0617 39.8961C16.6216 40.0362 16.1538 40.1386 15.6585 40.2031C15.1632 40.2676 14.6771 40.2999 14.2002 40.2999C11.6279 40.2999 9.4432 39.4021 7.646 37.6064C5.8488 35.8107 4.9502 33.6279 4.9502 31.0578C4.9502 28.4804 5.85148 26.2835 7.65405 24.467C9.45661 22.6505 11.6528 21.7486 14.2425 21.7615C14.5246 21.7615 14.7938 21.7807 15.0502 21.8191C15.3066 21.8576 15.563 21.9025 15.8194 21.9538L9.19249 8.72681H19.4309L24.0002 17.8653L28.5694 8.72681H38.8579L32.3194 21.8153C32.5502 21.764 32.7874 21.7255 33.031 21.6999C33.2746 21.6743 33.5245 21.6615 33.7809 21.6615C36.363 21.6563 38.5617 22.5645 40.3771 24.386C42.1925 26.2075 43.1002 28.4121 43.1002 30.9999C43.1002 33.617 42.1961 35.8213 40.388 37.6128C38.5799 39.4042 36.3673 40.2999 33.7502 40.2999C33.2476 40.2999 32.7643 40.2704 32.3002 40.2115C31.8361 40.1525 31.3951 40.0474 30.9771 39.8961C30.0158 40.683 28.9448 41.2804 27.764 41.6882C26.5832 42.096 25.3268 42.2999 23.9949 42.2999ZM20.8271 35.6769L22.0152 31.7324L18.8232 29.4422H22.7826L24.0002 25.323L25.2436 29.4422H29.1771L26.004 31.7192L27.2233 35.6769L24.0077 33.2307L20.8271 35.6769Z"
+                                        fill="#C57654" />
+                                </g>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="home-reseach_square">
-                        <div class="home-reseach_square_innrdiv">
-                            <div class="home-reseach_square_content">
-                                <?php  $sqlquery2_3 ="SELECT * FROM  stats  where id='unires_pat'";
-                                    $result2_3=mysqli_query($conn, $sqlquery2_3);
-                                    $goals2_3 = $result2_3->fetch_assoc();
-                                ?>
-                                <div class="home-reseach_square_txt">
-                                <?php echo $goals2_3['statvalue']?><small class="home-reseach_circle_small">+</small>
-                                </div>
-                                <div class="home-reseach_square_title">
-                                <?php echo $goals2_3['descr']?>
-                                </div>
+                    <div class="home-reseach_div3">
+                        <div class="home-reseach_circle">
+                            <?php  $sqlquery2_2 ="SELECT * FROM  stats  where id='unires_fun'";
+                                $result2_2=mysqli_query($conn, $sqlquery2_2);
+                                $goals2_2 = $result2_2->fetch_assoc();
+                            ?>
+                            <div class="home-reseach_circle_txtdiv">
+                                <div class="home-reseach_circle_txt"><?php echo $goals2_2['statvalue']?><small class= "home-reseach_circle_small">cr</small></div>
+                                <div class="home-reseach_circle_title"><?php echo $goals2_2['descr']?></div>
                             </div>
-                            <div class="home-reseach_squareimgbdrdiv">
-                                <img src="assets/svgicons/circlestar.svg" />
-                                <div class="non-clk_brdr"></div>
+                        </div>
+                        <div class="home-reseach_square">
+                            <div class="home-reseach_square_innrdiv">
+                                <div class="home-reseach_square_content">
+                                    <?php  $sqlquery2_3 ="SELECT * FROM  stats  where id='unires_pat'";
+                                        $result2_3=mysqli_query($conn, $sqlquery2_3);
+                                        $goals2_3 = $result2_3->fetch_assoc();
+                                    ?>
+                                    <div class="home-reseach_square_txt">
+                                    <?php echo $goals2_3['statvalue']?><small class="home-reseach_circle_small">+</small>
+                                    </div>
+                                    <div class="home-reseach_square_title">
+                                    <?php echo $goals2_3['descr']?>
+                                    </div>
+                                </div>
+                                <div class="home-reseach_squareimgbdrdiv">
+                                    <img src="assets/svgicons/circlestar.svg" />
+                                    <div class="non-clk_brdr"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -607,68 +606,21 @@ body {
             <div class="profmain">
                 <div class="prof">
                     <!-- all cards in this div  -->
+                    <?php  
+                    $query3 ="SELECT * FROM  cards  where id LIKE 'unires_sec4_c%' LIMIT 4";
+                    $result = $conn->query($query3);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                    ?>
                     <div class="profcard">
-                            <?php  $sqlquery4c1 ="SELECT * FROM  cards  where id='unires_sec4_c1'";
-                                $result4c1=mysqli_query($conn, $sqlquery4c1);
-                                $goals4c1 = $result4c1->fetch_assoc();
-                            ?>
-                        <div class="profcard-image"><img src="assets/images/profl.webp" alt="Description of the image">
+                        <div class="profcard-image" style="width: 100%;"><img src="<?php echo $row['img']?>" alt="Description of the image">
                         </div>
                         <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals4c1['title']?></div>
-                            <!-- <div class="profcard-lead">Best Motivator</div> -->
+                            <div class="profcard-name"><?php echo $row['title']?></div>
                         </div>
                     </div>
-                    <div class="profcard">
-                            <?php  $sqlquery4c2 ="SELECT * FROM  cards  where id='unires_sec4_c2'";
-                                $result4c2=mysqli_query($conn, $sqlquery4c2);
-                                $goals4c2 = $result4c2->fetch_assoc();
-                            ?>
-                        <img src="assets/images/prof2.webp" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals4c2['title']?></div>
-                            <!-- <div class="profcard-lead">Best Leader</div> -->
-                        </div>
-
-                    </div>
-                    <div class="profcard">
-                            <?php  $sqlquery4c3 ="SELECT * FROM  cards  where id='unires_sec4_c3'";
-                                $result4c3=mysqli_query($conn, $sqlquery4c3);
-                                $goals4c3 = $result4c3->fetch_assoc();
-                            ?>
-                        <img src="assets/images/prof3.webp" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals4c3['title']?></div>
-                            <!-- <div class="profcard-lead">Best Leader</div> -->
-                        </div>
-
-                    </div>
-                    <div class="profcard">
-                            <?php  $sqlquery4c4 ="SELECT * FROM  cards  where id='unires_sec4_c4'";
-                                $result4c4=mysqli_query($conn, $sqlquery4c4);
-                                $goals4c4 = $result4c4->fetch_assoc();
-                            ?>
-                        <img src="assets/images/prof4.webp" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals4c4['title']?></div>
-                            <!-- <div class="profcard-lead">Best Leader</div> -->
-                        </div>
-
-                    </div>
-
-
-
+                    <?php }} ?>
                 </div>
-                <!-- </div> -->
-                <!-- <div class="col-lg-offset-10" style="margin-top: -50px;">
-                <button class="cta_button_primary Ss-btn_txt">view all<img
-                        src="assets/icons/Button_forwardarrow_small.png" /></button>
-            </div> -->
-                <!-- <div class="col-lg-offset-10" style="margin-top: -50px;">
-                    <button class="cta_button_primary Ss-btn_txt"
-                        onclick="window.open('https://vignan.ac.in/bshresearch.php', '_blank')">view all<img
-                            src="assets/icons/Button_forwardarrow.png" /></button>
-                </div> -->
 
                 <div class="div-w">
                     <button class="cta_button_primary Ss-btn_txt unire-btn"
@@ -692,84 +644,37 @@ body {
         <!-- -----------------Start  section Awards & Appreciations-section 6 --------------------->
 
         <div class="home-researchdiv1" style="margin-bottom:150px;">
-                    <?php  $sqlquery6 ="SELECT * FROM  sections  where id='unires_sec6'";
-                        $result6=mysqli_query($conn, $sqlquery6);
-                        $goals6 = $result6->fetch_assoc();
-                    ?>
-            <div class="home-researchtitle">
-            <?php echo $goals6['title']?>
-            </div>
+            <?php  $sqlquery6 ="SELECT * FROM  sections  where id='unires_sec6'";
+                $result6=mysqli_query($conn, $sqlquery6);
+                $goals6 = $result6->fetch_assoc();
+            ?>
+            <div class="home-researchtitle"> <?php echo $goals6['title']?></div>
             <div class="profmain">
-                <!-- <div class="home-researchtxt"> -->
                 <div class="prof">
                     <!-- all cards in this div  -->
-                            <?php  $sqlquery6c1 ="SELECT * FROM  cards  where id='unires_sec6_c1'";
-                                $result6c1=mysqli_query($conn, $sqlquery6c1);
-                                $goals6c1 = $result6c1->fetch_assoc();
-                            ?>
+                    <?php  
+                    $query3 ="SELECT * FROM  cards  where id LIKE 'unires_sec6_c%' LIMIT 4";
+                    $result = $conn->query($query3);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                    ?>
                     <div class="profcard">
-                        <img src="<?php echo $goals6c1['img']?>" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals6c1['title']?></div>
-                            <div class="profcard-lead"><?php echo $goals6c1['subtitle']?></div>
+                        <div class="profcard-image"><img src="<?php echo $row['img']?>" alt="Description of the image">
                         </div>
-
-                    </div>
-                    <div class="profcard">
-                            <?php  $sqlquery6c2 ="SELECT * FROM  cards  where id='unires_sec6_c2'";
-                                $result6c2=mysqli_query($conn, $sqlquery6c2);
-                                $goals6c2 = $result6c2->fetch_assoc();
-                            ?>
-                        <img src="<?php echo $goals6c2['img']?>" class="profcard-image" alt="Description of the image">
                         <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals6c2['title']?></div>
-                            <div class="profcard-lead"><?php echo $goals6c2['subtitle']?></div>
+                            <div class="profcard-name"><?php echo $row['title']?></div>
+                            <div class="profcard-lead"><?php echo $row['subtitle']?></div>
                         </div>
-
                     </div>
-                    <div class="profcard">
-                            <?php  $sqlquery6c3 ="SELECT * FROM  cards  where id='unires_sec6_c3'";
-                                $result6c3=mysqli_query($conn, $sqlquery6c3);
-                                $goals6c3 = $result6c3->fetch_assoc();
-                            ?>
-                        <img src="<?php echo $goals6c3['img']?>" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals6c3['title']?></div>
-                            <div class="profcard-lead"><?php echo $goals6c3['subtitle']?></div>
-                        </div>
-
-                    </div>
-                    <div class="profcard">
-                    <?php  $sqlquery6c4 ="SELECT * FROM  cards  where id='unires_sec6_c4'";
-                                $result6c4=mysqli_query($conn, $sqlquery6c4);
-                                $goals6c4 = $result6c4->fetch_assoc();
-                            ?>
-                        <img src="<?php echo $goals6c4['img']?>" class="profcard-image" alt="Description of the image">
-                        <div class="profcard-content">
-                            <div class="profcard-name"><?php echo $goals6c4['title']?></div>
-                            <div class="profcard-lead"><?php echo $goals6c4['subtitle']?></div>
-                        </div>
-
-                    </div>
-
-
-
+                    <?php }} ?>
                 </div>
-                <!-- </div> -->
-                <!-- <div class="col-lg-offset-10" style="margin-top: -50px;">
-                <button class="cta_button_primary Ss-btn_txt">view all<img
-                        src="assets/icons/Button_forwardarrow_small.png" /></button>
-            </div> -->
-                <!-- <div class="col-lg-offset-10" style="margin-top: -50px;">
-                    <button class="cta_button_primary Ss-btn_txt"
-                        onclick="window.open('https://vignan.ac.in/itachieve.php', '_blank')">view all<img
-                            src="assets/icons/Button_forwardarrow.png" /></button>
-                </div> -->
+
                 <div class="div-w">
                     <button class="cta_button_primary Ss-btn_txt unire-btn"
-                        onclick="window.open('<?php echo $goals6['btn1_hlink']?>', '_blank')"><?php echo $goals6['btn_nm1']?><img
+                        onclick="window.open('<?php echo $goals4['btn1_hlink']?>', '_blank')"><?php echo $goals4['btn_nm1']?><img
                             src="assets/icons/Button_forwardarrow.png" /></button>
                 </div>
+
             </div>
         </div>
 
@@ -777,7 +682,7 @@ body {
         <!-- -----------------End  section Awards & Appreciations --------------------->
         <!-- -----------------Start  section Events --------------------->
 
-        <div class="eventsmainframe" style="margin-bottom:20px;">
+        <div class="eventsmainframe" style="margin-bottom:150px;">
                             <?php  $sqlquery7 ="SELECT * FROM  sections  where id='unires_sec7'";
                                 $result7=mysqli_query($conn, $sqlquery7);
                                 $goals7 = $result7->fetch_assoc();
@@ -840,32 +745,28 @@ body {
 
         <!-- Emotional and Physiological Development starts here CoExAMMPC -->
         <?php
- $sqlquery15="SELECT * FROM  sections  where id='uni_exe'";
-
-$result=mysqli_query($conn, $sqlquery15);
-$emotional = $result->fetch_assoc();
-?>
-
-
-    <div class="home-emational_div" style="margin-bottom: 150px;">
-        <div class="home-emational_div3_subdivtitle btnnone-mbl">
+        $sqlquery15="SELECT * FROM  sections  where id='uni_exe'";
+        $result=mysqli_query($conn, $sqlquery15);
+        $emotional = $result->fetch_assoc();
+        ?>
+    <div class="home-emational_div" style="margin-bottom: 150px;width: 100%;max-width: 1255px;">
+        <!-- <div class="home-emational_div3_subdivtitle btnnone-mbl">
             <?php echo $emotional['title'] ?>
 
-        </div>
+        </div> -->
         <div class="home-emational_div1">
-            <div class="home-emational_subdv_txt1">
+            <div class="home-emational_subdv_txt1 w-50">
                 <?php echo $emotional['descr']; ?>
             </div>
-            <div class="home-emational_subdv2">
+            <div class="home-emational_subdv2 w-50">
                 <div class="home-emational_subdv2_title">
                     <?php echo $emotional['subsec1_title']; ?>
 
                 </div>
                 <div class="home-emational_subdv2_txt">
                     <?php echo $emotional['subsec1_desc']; ?>
-
                 </div>
-                <div>
+                <div class="md-button">
                     <button class="cta_button_primary Ss-btn_txt btnnone"
                         onclick="window.open('<?php echo $emotional['btn1_hlink']; ?>',  '_blank')">
                         <?php echo $emotional['btn_nm1'] ?>
@@ -912,11 +813,11 @@ $emotional = $result->fetch_assoc();
         </div>
         <div class="home-emational_div3">
             <div class="home-emational_div3_subdiv">
-                <div class="home-emational_div3_subdivtitle btnnone">
+                <div class="home-emational_div3_subdivtitle">
                     <?php echo $emotional['title'] ?>
-
                 </div>
-                <div class="home-emational_div3_subdiv2">
+                <div class="home-emational_div3_subdiv2 flex-row">
+                <div class="coexammpc-subtitle1">
                     <div class="home-emational_div3_subdiv2_hdng">
                         <?php echo $emotional['subsec2_title'] ?>
 
@@ -924,9 +825,7 @@ $emotional = $result->fetch_assoc();
                     <div class="home-emational_div3_subdiv2_txt">
                         <?php echo $emotional['subsec2_desc'] ?>
                     </div>
-
-
-                    <div>
+                    <div class="md-button">
                         <button class="cta_button_primary Ss-btn_txt btnnone"
                             onclick="window.open('<?php echo $emotional['btn2_hlink']; ?>',  '_blank')">
                             <?php echo $emotional['btn_nm2'] ?>
@@ -942,21 +841,20 @@ $emotional = $result->fetch_assoc();
                                         fill="#F2F1ED" />
                                 </g>
                             </svg>
-                            <!--   <img src="assets/icons/Button Icons.svg" class="btn_arrow" />-->
+                            
                         </button>
                     </div>
-
-
+                    </div>
                     <!--
-                                        <div class="width100 btnnone-mbl">
+                    <div class="width100 btnnone-mbl">
             <button class="cta_button_primary Ss-btn_txt  explore" onclick="holistic()">Explore More
                 <img src="assets/icons/Button Icons.svg" class="explore-icon" /></button>
         </div>-->
+                    <div class="coexammpc-image1">
+                        <img src="<?php echo  $emotional['img2'];?>" class="home-emational_subdivimg2" />
+                    </div>
                 </div>
 
-            </div>
-            <div>
-                <img src="<?php echo  $emotional['img2'];?>" class="home-emational_subdivimg2" />
             </div>
 
             <div class="btnnone-mbl">
@@ -995,12 +893,13 @@ $emotional = $result->fetch_assoc();
                 <?php echo  $goals8['title']; ?>
             </div>
             <div class="mainresearch">
-
+                <?php
+                    $query = "SELECT * FROM  cards  where id LIKE 'unires_sec8_c%';";
+                    $result = $conn->query($query);
+                    if ($result->num_rows > 0) {
+                        while($goals81 = $result->fetch_assoc()) {
+                ?>
                 <div class="patentsbox">
-                            <?php  $sqlquery81 ="SELECT * FROM  cards  where id='unires_sec8_c1'";
-                                $result81=mysqli_query($conn, $sqlquery81);
-                                $goals81 = $result81->fetch_assoc();
-                            ?>
                     <div class="patentyear">
                         <?php echo  $goals81['caption']; ?>
                     </div>
@@ -1020,92 +919,10 @@ $emotional = $result->fetch_assoc();
                         </div>
                     </div>
                 </div>
-
-                <div class="patentsbox">
-                            <?php  $sqlquery82 ="SELECT * FROM  cards  where id='unires_sec8_c2'";
-                                $result82=mysqli_query($conn, $sqlquery82);
-                                $goals82= $result82->fetch_assoc();
-                            ?>
-                    <div class="patentyear" style="margin-top: -80px;">
-                        <?php echo  $goals82['caption']; ?>
-                    </div>
-                    <div class="patentssec">
-                        <?php echo  $goals82['title']; ?>
-                    </div>
-                    <div class="resemiddlepat">
-                    <?php echo  $goals82['descr']; ?>
-                    </div>
-                    <div class="text_btnnew viewall-right" onclick="window.open('your_link_here', '_blank')">
-                        <div class="text_btnnew_innrdiv">
-                            <div class="text_btnnew_txt"><?php echo  $goals82['btn_nm']; ?></div>
-                            <div>
-                                <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg"
-                                    style="width: 16px;height: 16px;" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="patentsbox">
-                            <?php  $sqlquery83 ="SELECT * FROM  cards  where id='unires_sec8_c3'";
-                                $result83=mysqli_query($conn, $sqlquery83);
-                                $goals83= $result83->fetch_assoc();
-                            ?>
-                    <div class="patentyear" style="margin-top: -100px;">
-                        <?php echo  $goals83['caption']; ?>
-                    </div>
-                    <div class="patentssec">
-                        <?php echo  $goals83['title']; ?>
-                    </div>
-                    <div class="resemiddlepat">
-                        <?php echo  $goals83['descr']; ?>
-                    </div>
-                    <div class="text_btnnew viewall-right" onclick="window.open('your_link_here', '_blank')">
-                        <div class="text_btnnew_innrdiv">
-                            <div class="text_btnnew_txt"><?php echo  $goals83['btn_nm']; ?></div>
-                            <div>
-                                <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg"
-                                    style="width: 16px;height: 16px;" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="patentsbox">
-                            <?php  $sqlquery84 ="SELECT * FROM  cards  where id='unires_sec8_c4'";
-                                $result84=mysqli_query($conn, $sqlquery84);
-                                $goals84= $result84->fetch_assoc();
-                            ?>
-                    <div class="patentyear" style="margin-top: -80px;">
-                        <?php echo  $goals84['caption']; ?>
-                    </div>
-                    <div class="patentssec">
-                        <?php echo  $goals84['title']; ?>
-                    </div>
-                    <div class="resemiddlepat">
-                        <?php echo  $goals84['descr']; ?>
-                    </div>
-                    <div class="text_btnnew viewall-right" onclick="window.open('your_link_here', '_blank')">
-                        <div class="text_btnnew_innrdiv">
-                            <div class="text_btnnew_txt"><?php echo  $goals84['btn_nm']; ?></div>
-                            <div>
-                                <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg"
-                                    style="width: 16px;height: 16px;" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- <div class="col-lg-offset-10">
-                    <button class="cta_button_primary Ss-btn_txt">Explore Patents<img
-                            src="assets/icons/Button_forwardarrow_small.png" /></button>
-                </div> -->
-                <div class="col-lg-offset-10">
-                    <button class="cta_button_primary Ss-btn_txt"
-                        onclick="window.open('<?php echo  $goals8['btn1_hlink']; ?>', '_blank')"><?php echo  $goals8['btn_nm1']; ?><img
-                            src="assets/icons/Button_forwardarrow.png" /></button>
-                </div>
+                <?php }} ?>
+            </div>
+            <div class="col-lg-offset-10">
+                <button class="cta_button_primary Ss-btn_txt" onclick="window.open('<?php echo  $goals8['btn1_hlink']; ?>', '_blank')"><?php echo  $goals8['btn_nm1']; ?><img src="assets/icons/Button_forwardarrow.png" /></button>
             </div>
         </div>
 
@@ -1122,6 +939,7 @@ $emotional = $result->fetch_assoc();
                 $goals91= $result91->fetch_assoc();
             ?>
             <div class="restitle"><?php echo  $goals91['title']; ?></div>
+            <div class="rescontent">
             <div class="home-researchdiv1">
                 <div class="restatsub">
                     <div class="restatsub2con">
@@ -1172,11 +990,6 @@ $emotional = $result->fetch_assoc();
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
             <div class="home-researchdiv1">
                 <div class="restatsub2">
@@ -1230,7 +1043,7 @@ $emotional = $result->fetch_assoc();
 
                 </div>
             </div>
-
+            </div>
         </div>
 
         <!-- -----------------End  section Research statistics --------------------->
@@ -1277,7 +1090,7 @@ $emotional = $result->fetch_assoc();
                                 </div>
                                 <div class="non-clk_title"><?php echo  $goals10_1['title']; ?></div>
                             </div>
-                            <div class="non-clk_imgbrdr">
+                            <div class="non-clk_imgbrdr" style="width: 100% !important; ">
                                 <img src="assets/svgicons/circlestar.svg" />
                                 <div class="non-clk_brdr bord"></div>
                             </div>
@@ -1585,38 +1398,23 @@ $emotional = $result->fetch_assoc();
         <!----------------------End Section downloads--------------------------------------->
                 <!-- Admissions apply -->
 
-                <div class="xyz" style="margin-bottom:150px;">
-                    <?php  $sqlquery13 ="SELECT * FROM  sections  where id='unires_sec13'";
+        <div class="xyz" style="margin-bottom:150px;overflow:hidden;">
+            <?php  $sqlquery13 ="SELECT * FROM  sections  where id='unires_sec13'";
                         $result13=mysqli_query($conn, $sqlquery13);
                         $goals13= $result13->fetch_assoc();
                     ?>
             <img src="assets/images/applynew.png" alt="image" class="rot">
-            <div class="faqt1">
-                <?php echo  $goals13['title']; ?>
-            </div>
-            <div class="applytitle">
-                <?php echo  $goals13['descr']; ?>
-                <button class="cta_button_primary Ss-btn_txt bsn1" onclick="window.open('<?php echo  $goals13['btn1_hlink']; ?>', '_blank')"><?php echo  $goals13['btn_nm1']; ?> <img
-                                src="assets/icons/Button_forwardarrow.png" /></button>
-                <button class="mblbutton_secondary mblbtn_txt bsn2" onclick="window.open('<?php echo  $goals13['btn1_hlink']; ?>', '_blank')"><?php echo  $goals13['btn_nm2']; ?></button>
-            </div>
-            <div class="appmed1">
-                <div class="col-lg-2" style="">
-                    <!-- <a href="https://vignan.ac.in/v-sat/?type=individual"> -->
-                        <!-- <button class="cta_button_primary Ss-btn_txt bsn1">Apply Now <img
-                                src="assets/icons/Button_forwardarrow.png" /></button> -->
-                            <!-- </a> -->
-                    <!-- <div class="cta_button_primary">
-                                <div class="Ss-btn_txt">Button  </div>
-                                <img src="assets/icons/Button_forwardarrow.png" />
-                            </div> -->
+            <div class="applytitle-content">
+                <div class="faqt1">
+                    <?php echo  $goals13['title']; ?>
                 </div>
-
-                <div class="col-lg-2" style="">
-                    <!-- <a href="https://vignan.ac.in/v-sat/?type=individual"> -->
-                        <!-- <button class="mblbutton_secondary mblbtn_txt bsn2">Sign in</button> -->
-                    <!-- </a> -->
-
+                <div class="applytitle" >
+                    <div><?php echo  $goals13['descr']; ?></div>
+                    <div style="display: flex;gap:20px; align-items: center;">
+                    <button class="cta_button_primary Ss-btn_txt bsn1" onclick="window.open('<?php echo  $goals13['btn1_hlink']; ?>', '_blank')"><?php echo  $goals13['btn_nm1']; ?> <img
+                                    src="assets/icons/Button_forwardarrow.png" /></button>
+                    <button class="mblbutton_secondary mblbtn_txt bsn2" onclick="window.open('<?php echo  $goals13['btn1_hlink']; ?>', '_blank')"><?php echo  $goals13['btn_nm2']; ?></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1631,7 +1429,7 @@ $emotional = $result->fetch_assoc();
         <div class="faq" style="margin-bottom:150px;">
 
             <div class="faqt">
-                Frequently <br> Asked <br>Questions
+                Frequently Asked Questions
             </div>
 
             <div class="container mbcon">
@@ -1725,53 +1523,13 @@ $emotional = $result->fetch_assoc();
             </div>
         </div>
         <!----------------------End Section FAQ--------------------------------------->
-
-
-
-
-        <!-- write code below here -->
-        <!-- </div> --  Removed this??>
-
-
-<!-- Footer -->
-	
-
-	<div class="footer-margin-top"></div>
-
-  <?php
-   include('footer.php');
-?>
-
-
-
-   <div id="mblftr" style="padding: 6px;">
-<?php
-    
-   include_once  'mblfooter.php';
-    ?>
-</div>
-<div id="ftr" style="padding: 110px;">
-<?php
-    
-   include_once  'footer.php';
-    ?>
-</div>
-
-<!-- Footer -->
-
-
-
-
-
-
-
-
-
-
-
-    <!-- End -->
-
-      
+	    <div class="footer-margin-top"></div>
+        <div id="mblftr" style="margin-top: 150px;">
+            <?php include_once  'mblfooter.php';?>
+        </div>
+        <div id="ftr" style="margin-top: 150px;">
+        <?php include_once  'footer.php';?>
+        </div>
     </div>
 
     <!-- jQuery -->
@@ -1784,11 +1542,11 @@ $emotional = $result->fetch_assoc();
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/common.js"></script> -->
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
     //New news carousel
-
     const photosparent = document.querySelector('.photos');
 
     $(document).ready(function() {
@@ -1807,7 +1565,19 @@ $emotional = $result->fetch_assoc();
     var setIntervalId;
 
 
-
+    function toggleDivContent() {
+        var smallScreenDiv = document.querySelector("#mblftr");
+        var largeScreenDiv = document.querySelector("#ftr");
+        if (window.innerWidth <= 700) {
+            largeScreenDiv.style.display = 'none';
+            smallScreenDiv.style.display = 'block';
+        } else {
+            smallScreenDiv.style.display = 'none';
+            largeScreenDiv.style.display = 'block';
+        }
+    }
+    window.addEventListener("resize", toggleDivContent);
+    toggleDivContent();
 
 
 

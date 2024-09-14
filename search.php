@@ -16,9 +16,10 @@
             }
         }
         $levenshteinDistance = $matrix[$len1][$len2];
-        $similarity = 1 - ($levenshteinDistance / max($len1, $len2));
+        $similarity = 1 - (floatval($levenshteinDistance) / max($len1, $len2));
         return $similarity;
     }
+
     function isAcronym($searchTerm,$isShortName) {
         global $conn;
         $colName = $isShortName?"dept_short_name": "dept_name";
@@ -36,6 +37,7 @@
             return false;
         }
     }
+
     function filterAcronym($acronym){
         $desiredColumns = ['id', 'dept_name', 'dept_short_name', 'schl_id'];
         $filteredAcronym = array_intersect_key($acronym, array_flip($desiredColumns));
@@ -57,70 +59,74 @@
     }
 ?>
 
+
 <?php
+/* STEPS INCLUDED WHILE IMPLEMENTING SITE SEARCHING 
+    1. CHECK FOR ACRONYMS. (CALL isAcronym())
+    2. IF ACRONYM FOUND, FILTER THE ACRONYM. (CALL filterAcronym())
+    3. IF ACRONYM NOT FOUND, SEARCH FOR ALL THE QUERY IN DATABASE.
+    4. IF DB QUERY IS 60% SIMILIAR TO SEARCHED QUERY, ADD IT TO THE RESULTS.  (CALL similiarity())
+    5. SORT THE RESULT BASED ON SIMILIARITY.
+    5. MAKE THE RESULT UNIQUE (REMOVE DUPLICATE TITLES).
+    6. LIMIT THE RESULTS TO 10.
+    7. RETURN THE RESULTS.
+*/
 header('Content-Type: application/json');
 error_reporting(0);
 ini_set('display_errors', '0');
 include_once 'connect.php';
 
 $searchTerm = isset($_GET['query']) ? $conn->real_escape_string($_GET['query']) : '';
-$sql = "SELECT distinct page_title, query_search, page_url
-        FROM search_queries
-        WHERE query_search LIKE '%$searchTerm%'
-      
-        ORDER BY page_title";
- // GROUP BY page_title
-$result = $conn->query($sql);
-
-if (!$result) {
-    echo json_encode(['error' => 'SQL error: ' . $conn->error]);
-    $conn->close();
-    exit();
-}
-
+$searchTerm = strtolower($searchTerm);
 $pages = [];
-/* direct searching with search_index. */
-if ($result->num_rows > 0) {
+
+$acronyms = isAcronym($searchTerm,true); 
+if(!$acronyms) $acronyms = isAcronym($searchTerm,false); 
+if ($acronyms) {
+    foreach($acronyms as $acronym){
+        $pages[] = filterAcronym($acronym);
+    }
+}else{
+    $sql = "SELECT query_search, page_url, page_title FROM search_queries;";
+    $result = $conn->query($sql);
+    $tempPages = [];
     while ($row = $result->fetch_assoc()) {
-        $pages[] = array_merge($row, ['match_count' => 0]);
+        $querySearch = $row['query_search'];
+        $matchCount = similarity($querySearch,$searchTerm);
+        if ($matchCount >= 0.6 || strpos($querySearch, $searchTerm) !== false) {
+            $tempPages[] = ['match_count' => $matchCount, 'data' => $row];
+        }
     }
-} else {
-    /* Checking if entered query is an acronym or full name of department. For example: CSE: computer science */
-    $acronyms = isAcronym($searchTerm,true);  /* cheking for dept_short_name */
-    if(!$acronyms) $acronyms = isAcronym($searchTerm,false); /* cheking for department full name */
-    if ($acronyms) {
-        foreach($acronyms as $acronym){
-            $pages[] = filterAcronym($acronym);
-        }
-    }else{
-        $sql = "SELECT query_search, page_url, page_title
-                FROM search_queries";
-        $result = $conn->query($sql);
-        if (!$result) {
-            echo json_encode(['error' => 'SQL error: ' . $conn->error]);
-            $conn->close();
-            exit();
-        }
-        $tempPages = [];
-        while ($row = $result->fetch_assoc()) {
-            $matchLength = strlen($searchTerm);
-            $querySearch = $row['query_search'];
-            $matchCount = similarity($querySearch,$searchTerm);
-            if ($matchCount >= 0.4) {
-                $tempPages[] = ['match_count' => $matchCount, 'data' => $row];
-            }
-        }
-        usort($tempPages, function($a, $b) {
-            return $b['match_count'] - $a['match_count'];
-        });
-        
-        $pages = array_map(function($page) {
-            return array_merge($page['data'], ['match_count' => $page['match_count']]);
-        }, $tempPages);
-        $pages = array_slice($pages, 0, 10); 
-    }
+    
+    $pages = array_map(function($page) {
+        return array_merge($page['data'], ['match_count' => $page['match_count']]);
+    }, $tempPages);
 }
-/* Add Code to make $pages array unique. */
+
+// ****** Testing Code *****//
+// $sql = "SELECT query_search, page_url, page_title FROM search_queries WHERE query_search LIKE '%$searchTerm%' ";
+
+// $result = $conn->query($sql);
+// if (!$result) {
+    //     echo json_encode(['error' => 'SQL error: ' . $conn->error]);
+    //     $conn->close();
+    //     exit();
+    // }
+    // if ($result->num_rows > 0) {
+    //     while ($row = $result->fetch_assoc()) {
+    //         $pages[] = array_merge($row, ['match_count' => 0]);
+    //     }
+    // }
+    
+usort($pages, function($a, $b) { return $b['match_count'] - $a['match_count'];});
+$pages = array_reduce($pages, function ($carry, $item) {
+    if (!isset($carry[$item['page_title']])) {
+        $carry[$item['page_title']] = $item;
+    }
+    return $carry;
+}, []);
+$pages = array_values($pages);
+$pages = array_slice($pages, 0, 10); 
 echo json_encode($pages);
 $conn->close();
 ?>

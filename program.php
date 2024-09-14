@@ -49,16 +49,18 @@ body {
     <?php
 include_once 'connect.php';
 include_once  'navbar.php';
-$sql = "SELECT * FROM programs where page='' and program_type ='ug' or program_type ='pg' or program_type ='phd'";
+$sql = "SELECT * FROM programs where page='' and program_type ='ug' or program_type ='pg' or program_type ='phd' or program_type ='dip'";
 
 $result=mysqli_query($conn, $sql);
 	$result1=mysqli_query($conn, $sql);
 $data = mysqli_fetch_all($result1, MYSQLI_ASSOC);
 $ug = array();
+	$dip = array();
 $pg = array();
 $phd = array();
 
 $ugc=0;
+$dipc=0;
 $pgc=0;
 $phdc=0;
 
@@ -68,8 +70,11 @@ if (mysqli_num_rows($result) > 0) {
       if($row['program_type']=='ug'){
         $ug[] = $row;
         $ugc=$ugc+1;
+      }else  if($row['program_type']=='dip'){
+        $dip[] = $row;
+        $dipc=$dipc+1;
       }
-      else if($row['program_type']=='pg'){
+           else if($row['program_type']=='pg'){
         $pg[] = $row;
         $pgc=$pgc+1;
       }
@@ -181,6 +186,40 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 </div>
 
+	
+	   <div class="program-div-36 ug-prog">
+            <div class="program-div-37">Diploma Program</div>
+            <div class="program-div-38">
+              <div class="program-div-39" onclick="ufee()" >Fee Details</div>
+              <div class="program-div-40" onclick="uapply()">Apply Now</div>
+            </div>
+          </div>
+
+          <div class="margin-top"></div>
+        
+     
+
+
+  <div class="course-cards">
+  <?php foreach ($dip as $row) { ?>
+    <div class="course-card">
+      <div class="course-name"><?php echo  $row["title"] ?></div>
+      <div class="course-details">
+      <?php echo  $row["descr"] ?>
+        <br />
+        <?php echo  $row["duration"] ?>
+      </div>
+      <div class="course-cta">
+      <a class="a" href=<?php echo $row['btn_hlink']?> target="_blank"><div class="course-cta-text"><?php echo $row['btn_nm']?></div></a>
+        <img src="assets/images/arrow.svg" alt="Arrow icon" class="course-cta-icon" />
+      </div>
+      <div class="course-cta-divider"></div>
+    </div>
+    <?php } ?>
+  </div>
+
+
+       
 
 <div class="sep"></div>
 

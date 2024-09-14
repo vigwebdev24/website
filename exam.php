@@ -97,7 +97,7 @@
           <div class="text_btnnew" onclick="window.open('https://vignan.ac.in/prephd.php', '_blank')">
             <div class="text_btnnew_innrdiv">
               <div class="text_btnnew_txt">
-                Read More
+                Apply Now
               </div>
               <div>
                 <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;" />
@@ -110,7 +110,7 @@
           <div class="text_btnnew" onclick="window.open('https://vignan.ac.in/examinstructions.php',  '_blank')">
             <div class="text_btnnew_innrdiv">
               <div class="text_btnnew_txt">
-                Read More
+                 Apply Now
               </div>
               <div>
                 <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;" />
@@ -123,7 +123,7 @@
           <div class="text_btnnew" onclick="window.open('https://vignan.ac.in/examinstructions.php',  '_blank')">
             <div class="text_btnnew_innrdiv">
               <div class="text_btnnew_txt">
-                Read More
+                 Apply Now
               </div>
               <div>
                 <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;" />
@@ -136,7 +136,7 @@
           <div class="text_btnnew" onclick="window.open('https://vignan.ac.in/revalretot.php',  '_blank')">
             <div class="text_btnnew_innrdiv">
               <div class="text_btnnew_txt">
-                Read More
+                 Apply Now
               </div>
               <div>
                 <img loading="lazy" src="assets/svgicons/outwardarrow_brown.svg" style="width: 16px;height: 16px;" />

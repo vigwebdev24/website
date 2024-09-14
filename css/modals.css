@@ -242,7 +242,7 @@ word-wrap: break-word
 
 .profile-pic{
     width: 100%; 
-	    height: 400px;
+	    height: 350px;
     object-fit: cover;
 }
 
@@ -257,6 +257,7 @@ flex-direction: column;
 justify-content: flex-start; 
 align-items: flex-start; 
 gap: 16px; 
+	    gap: 0px;
 display: flex;
 }
 

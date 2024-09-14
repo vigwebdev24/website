@@ -1,0 +1,187 @@
+/* Media Query for uniresearch.php */
+@media screen and (min-width:576px) and (max-width:875px) {
+    .prof,.mainresearch,.eventscardframe,.pabframe,.downb{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .faq{
+        flex-direction: column !important;
+    }
+    .me2container{
+        display: none !important;
+    }
+    .eri-tnc {
+        width: 72% !important;
+    }
+    .eri-images{
+       width: 28% !important;
+    }
+    .me1container{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .overview-main{
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .home-emational_div{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: flex-start !important;
+    }
+    .home-emational_div3_subdiv{
+        width: 100% !important;
+    }
+    .flex-row{
+        flex-direction: row !important;
+        gap: 4% !important;
+    }
+    .coexammpc-subtitle1{
+        width: 48% !important;
+        display: flex !important;
+        gap: 10px !important;
+        flex-direction: column !important;
+    }
+    .coexammpc-image1{
+        width: 48% !important;
+    }
+    .coexammpc-image1 img{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+    .home-emational_div3_subdiv2_txt {
+        width: auto !important;
+        text-align: justify !important;
+    }
+    .home-emational_div3{
+        height: auto !important;
+    }
+    .home-emational_div1{
+        width: 100% !important;
+        flex-direction: row-reverse !important;
+        gap: 25px !important;
+        text-align: justify !important;
+    }
+    .w-50{
+        width: 50% !important;
+    }
+    .md-button{
+        display: none !important;
+    }
+    .home-goals_innrdiv{
+        gap: 5px !important;
+    }
+    .home_goals{
+        width: 67% !important;
+    }
+    .non-clk_carddiv{
+        height: 100% !important;
+        width: 33% !important;
+    }
+    .non-clk_imgbrdr {
+        width: 100% !important;
+    }
+    .home-emational_div2img{
+        display: none !important;
+    }
+    .scholarshipAndFeesDetails{
+        flex-direction: column;
+    }
+    .scholarship-section{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px){
+    .me2container{
+        width: 90%;
+        height: 100%;
+    }
+    .me2container img {
+        width: 50%;
+        height: 50%;
+    }
+    .downb{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pabframe,.eventscardframe{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .non-clk_carddiv{
+        width: 100% !important;
+    }
+    .rescontent{
+        flex-direction: column;
+    }
+    .eri-mainframe{
+        width: 95vw;
+    }
+    .eri-tnc{
+        width: auto;
+    }
+    .eventstitle{
+        font-size: 31px !important;
+    }
+    .home-emational_div3_subdivtitle{
+        font-size: 31px !important;
+    }
+    .home-emational_div{
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+    .home-emational_div {
+        gap: var(--Spacing-Spacing-xl, 55px);
+    }
+    .home-emational_div2img{
+        display: none !important;
+    }
+    .home-emational_div3 {
+        margin-bottom: 70px;
+    }
+}
+
+
+/* Media Query for admissions.php */
+@media screen and (min-width:576px) and (max-width:875px){
+    .BillBoardTop {
+        width: 100%;
+    }
+    .BillBoardTop {
+        display: none;
+    }
+
+    .BillBoardBottom {
+        display: flex;
+    }
+    .BillboardTabplane2TitleText {
+        font-size: 61px;
+    }
+    .programs-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .admission-container{
+        flex-direction: column;
+    }
+    .admission-column,.admission-content,.dates-content{
+        width: 100%;
+    }
+    .admission-content{text-align: justify;}
+    .dates-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+    .section-title,.admission-title,.goals-journey-heading,.scholarship-title,.fee-details-title,.bank-loans-heading,.accreditationComponentHeader,.testimonials-title,.Frequently-asked-questions-component-title,.placement-stats-percentage,.date-day{
+        font-size: 41px;
+    }
+    .date-description,.date-month {
+        font-size: 22px;
+    }
+    .goals-journey-text{
+        width: 70%;
+    }
+    .scholarship-text{
+        /* text-align: justify; */
+    }
+}

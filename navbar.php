@@ -21,6 +21,7 @@ maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/navbar.css?<?php echo time()?>">
 		 <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/media_query.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,15 +66,12 @@ maximum-scale=1.0, user-scalable=no" />
 
 <body>
     <div class="top-nav">
-        <div style="width:90%;display:flex;flex-direction:column;">
-<div style="color: var(--Colors-Tone-Cool-1, #F7F8FF);text-align: left;font-family: Kohinoor Devanagari;font-size: 14px;
-font-style: normal;font-weight: 400;line-height: 140%; /* 16.8px */">
-విజ్ఞాన శాస్త్ర సాంకేతిక పరిశోధనా సంస్థ / विज्ञान शास्त्र प्रौद्योगिकी और परिशोधन संगठन
-</div>
-        <span class="deemed">
-        (Deemed to be university - Estd. u/s 3 of UGC Act 1956)
-</span>
-
+        <div class="about-college">
+            <div class="college-info"> విజ్ఞాన శాస్త్ర సాంకేతిక పరిశోధనా సంస్థ / विज्ञान शास्त्र प्रौद्योगिकी और परिशोधन संगठन
+            </div>
+           <!-- <span class="deemed">
+            (Deemed to be university - Estd. u/s 3 of UGC Act 1956)
+            </span>-->
         </div>
      
         <ul class="topnav-ul elementnone-mbl">
@@ -140,9 +138,9 @@ font-style: normal;font-weight: 400;line-height: 140%; /* 16.8px */">
                                 </g>
                             </svg>
                             <div class="dropdown-content">
-  <a href="https://vignan.ac.in/hyd/" target="_blank">Hyd (Off Campus)</a>
-  <a href="https://outlook.office.com/" target="_blank">Webmail</a>
-  <a href="iqac.php">IQAC</a>
+    <a href="https://vignan.ac.in/hyd/" target="_blank">Hyd (Off Campus)</a>
+    <a href="https://outlook.office.com/" target="_blank">Webmail</a>
+    <a href="iqac.php">IQAC</a>
   </div>
 </div>
                             </div>
@@ -180,7 +178,7 @@ font-style: normal;font-weight: 400;line-height: 140%; /* 16.8px */">
 
             </div>
             <div class="navbar-header" id="desktopheader">
-                <img src="assets/images/logo.svg" class="vignan-logo" />
+                <img src="assets/images/Logo with Deemed.svg" class="vignan-logo desktop-logo" />
                 <!-- <img src="assets/images/logonew.png" class="vignan-logo" />
                 <a class="navbar-brand clz-name" href="#" id="clznm"> <b class="vignan">VIGNAN'S</b><br>UNIVERSITY</a>-->
             </div>
@@ -329,12 +327,12 @@ font-style: normal;font-weight: 400;line-height: 140%; /* 16.8px */">
 
 </li>
 </ul>
-                <hr class="btnnone-mbl" style="
+                <!-- <hr class="btnnone-mbl" style="
                     margin-top: 20px;
                     margin-bottom: 20px;
                     border: 0;
                     border-top: 0.5px solid #cfc6c6;
-                ">
+                "> -->
                 <ul class="top-nav btnnone-mbl top-navmblbg">
                     <li onclick="window.open('https://vignan.ac.in/hyd/',  '_blank')">
                         <div class="dropdown">

@@ -1,0 +1,10 @@
+<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icons">
+<mask id="mask0_3284_12038" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="49">
+<rect id="Bounding box" y="0.600098" width="48" height="48" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_3284_12038)">
+<path id="gite" d="M5 37.8973V21.8429L12.5719 13.9077H15.2788V10.6001H17.7617V13.9077H34.4604L42 21.8429V37.8973H5ZM29.9039 35.4144H39.5171V22.9388L34.7478 17.8436L29.9039 23.0134V35.4144ZM7.4829 35.4144H27.4209V24.898H7.4829V35.4144Z" fill="#1C1B1F"/>
+</g>
+</g>
+</svg>

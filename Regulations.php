@@ -112,7 +112,7 @@ include_once  'navbar.php';?>
             else if($row['program_type']=='bdr22'){
 				
               $bd[] = $row;
-				print_r(count($bd));
+				//print_r(count($bd));
               $bdc=$bdc+1;
             }
             else if ($row['program_type']=='mdr22'){
@@ -129,7 +129,7 @@ include_once  'navbar.php';?>
 ?>
 
 
-<div class="course-cards-container">
+<!--<div class="course-cards-container">
   <div class="course-cards">
   <?php foreach ($com as $row) { ?>
     <div class="course-card com">
@@ -145,7 +145,7 @@ include_once  'navbar.php';?>
   </div>
 </div>
 
-<div class="sep"></div>
+<div class="sep"></div>-->
 
           
 
@@ -203,7 +203,7 @@ include_once  'navbar.php';?>
       <a class="a" href=<?php echo $row['btn_hlink']?> target="_blank"><div class="course-cta-text"><?php echo $row['btn_nm']?></div></a>
         <img src="assets/images/arrow.svg" alt="Arrow icon" class="course-cta-icon" />
       </div>
-      <div class="course-cta-divider"></div>
+      <div class="course-cta-divider com1"></div>
     </div>
     <?php } ?>
   </div>

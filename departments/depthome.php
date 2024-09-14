@@ -76,6 +76,8 @@ $dptnm =  $_GET['deptnm'];
 	}
 	else 	if($dptnm == 'FT'){
 	$branch = 'FT';
+	}else 	if($dptnm == 'BSH'){
+	$branch = 'SSH';
 	}
 //echo $dptnm;
 $sqlquery1 ="SELECT dd.*, d.dept_name FROM  dept_data dd
@@ -719,9 +721,22 @@ $sqlquery7="SELECT * FROM  cards  where id='newpar_joincmpny_".$dptnm."'";
 $result=mysqli_query($conn, $sqlquery7);
 $joincmpny = $result->fetch_assoc();
 
-$sqlquery8="SELECT * FROM  cards  where id like 'newpar%' and dept ='".$dptnm."'and sequence > 1 order by sequence ";
-
+$sqlquery8="SELECT c.*, m.* FROM cards c join modals m on c.btn_hlink = m.modal_id where c.id like 'newpar%' and c.dept ='FT'and sequence > 1 order by sequence";
+				
+$uniname_sql="SELECT * FROM uninames where dept='".$dptnm."'";
+				//echo $uniname_sql;
+$uniname_res=mysqli_query($conn, $uniname_sql);
+ if(mysqli_num_rows($uniname_res) > 0){
+    while ($uninamesdata = $uniname_res->fetch_assoc()) {    
+		$uninames[] = $uninamesdata;
+	}
+	// print_r($uninames);
+ }
+													   
+													   
 $cards=mysqli_query($conn, $sqlquery8);
+$cards_modal=mysqli_query($conn, $sqlquery8);
+				 
 //$cards = $result->fetch_assoc();
 ?>
             <div class="whr_do_stu_go">
@@ -786,7 +801,7 @@ $cards=mysqli_query($conn, $sqlquery8);
 
                 <div class="whr_do_stu_go_lowerdiv">
                     <?php  if(mysqli_num_rows($cards) > 0){
-                while ($info = $cards->fetch_assoc()) {  ?>
+                while ($info = $cards->fetch_assoc()) {    $crd_mdl[] = $info;?>
                     <div class="whr_do_stu_go_crd_outrdiv">
                         <div class="whr_do_stu_go_crd_innrdiv">
 
@@ -803,7 +818,8 @@ $cards=mysqli_query($conn, $sqlquery8);
                                 </div>
                             </div>
 
-                            <div class="text_btnnew" data-toggle="modal" data-target="#heoverlay">
+							<!--data-toggle="modal" data-target="#heoverlay"-->
+                            <div class="text_btnnew" onclick="showmodal('<?php echo $info['modal_id']; ?>')">
                                 <div class="text_btnnew_innrdiv">
                                     <div class="text_btnnew_txt">
                                         Read More
@@ -926,7 +942,64 @@ $cards=mysqli_query($conn, $sqlquery8);
 
             <!-- Explore facilities starts here -->
 
-            <div class="explore_facilidiv">
+				   <?php
+ $exploresql="SELECT dd.*, d.dept_name FROM  dept_data dd
+left join department d
+ on dd.dept_id = d.id
+ where dd.id ='exp_faci' and  dd.dept_id ='".$deptid."' and dd.schl_id ='".$school."'";
+
+$expresult=mysqli_query($conn, $exploresql);
+$explore = $expresult->fetch_assoc();
+				if($explore){
+?>
+				 <div class="explore_facilidiv">
+
+                <div class="explore_facili_leftdiv">
+
+                    <div class="explore_facili_leftupprdiv">
+                        <div class="hdng"><?php echo $explore['title'];?></div>
+                        <div class="contnt"><?php echo $explore['descr'];?></div>
+                    </div>
+
+                    <div class="explore_facili_leftlwrdiv">
+                        <img class="explore_facili_leftlwrdiv_img1" src="<?php echo $explore['img1'];?>" alt=""
+                            srcset="">
+                        <img class="explore_facili_leftlwrdiv_img2" src="<?php echo $explore['img2'];?>" alt=""
+                            srcset="">
+                    </div>
+
+
+                </div>
+
+                <div class="explore_facili_rightdiv">
+                    <img class="explore_facili_rightdiv_img" src="<?php echo $explore['img3'];?>" alt=""
+                        srcset="">
+                    <div class="explore_facili_right_imgbtndiv">
+                        <img class="explore_facili_rightdiv_img2" src="<?php echo $explore['img4'];?>" alt=""
+                            srcset="">
+                        <button class="cta_button_primary Ss-btn_txt btnnone">Explore All
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_2961_1144" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2"
+                                    y="-2" width="24" height="24">
+                                    <rect x="-2" y="-2" width="24" height="24" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_2961_1144)">
+                                    <path
+                                        d="M13.0849 10.8333H3.75V9.20833H13.0849L8.81731 4.94069L9.97915 3.75L16.25 10.0208L10.0208 16.25L8.85898 15.0593L13.0849 10.8333Z"
+                                        fill="#F2F1ED" />
+                                </g>
+                            </svg>
+
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+				
+				<?php }else{?>
+				 <div class="explore_facilidiv">
 
                 <div class="explore_facili_leftdiv">
 
@@ -976,15 +1049,52 @@ $cards=mysqli_query($conn, $sqlquery8);
 
             </div>
 
+			<?php	} ?>
+           
             <!-- Explore facilities ends here -->
 
             <!-- typical week starts here -->
 
 
             <?php 
-  
-  $sqlquery2 ="SELECT * FROM  sections  where id='newstu_frst6days'";
+  $frst6sql ="SELECT dd.*, d.dept_name FROM  dept_data dd
+left join department d
+ on dd.dept_id = d.id
+ where dd.id ='6day_jrny' and  dd.dept_id ='".$deptid."' and dd.schl_id ='".$school."'";
+//echo $frst6sql;
+$frst6res=mysqli_query($conn, $frst6sql);
+$frst6day = $frst6res->fetch_assoc();
+				//print_r($frst6day);
+					if($frst6day){?>
+					          <div class="frst6daysoutdiv">
 
+                <div class="frst6days-picsdiv">
+
+                    <div class="frst6days-pics1-2">
+                        <img loading="lazy" src="<?php echo $frst6day['img1'];?>" alt="" srcset="">
+                        <img loading="lazy" src="<?php echo $frst6day['img2'];?>" alt="" srcset="">
+
+                    </div>
+                    <img class="frst6days-picsdiv_img3" loading="lazy" src="<?php echo $frst6day['img3'];?>" alt=""
+                        srcset="">
+
+                </div>
+
+                <div class="frst6days-contentoutrdiv">
+
+                    <div class="frst6days-title">
+                        <?php echo $frst6day['title'];?>
+                    </div>
+                    <p class="frst6days-desc">
+                        <?php echo $frst6day['descr'];?>
+
+                    </p>
+
+                </div>
+
+            </div>
+					<?php }else{
+$sqlquery2 ="SELECT * FROM  sections  where id='newstu_frst6days'";
 $result=mysqli_query($conn, $sqlquery2);
 $frst6days = $result->fetch_assoc();
 
@@ -1017,7 +1127,7 @@ $frst6days = $result->fetch_assoc();
 
             </div>
 
-
+<?php } ?>
             <!-- typical week ends here -->
 
 
@@ -1543,9 +1653,7 @@ $alumni = $result->fetch_assoc();
                             <div class="ulife-column">
                                 <div class="dept_hoddiv">
                                     <div class="ulife-div-22">HOD Message</div>
-                                    <div class="vm_desc">
-                                 
-                                    <?php echo $hod_msg;?>
+                                    <div class="vm_desc"><?php echo $hod_msg;?>
                                     </div>
                                 </div>
                             </div>
@@ -1585,11 +1693,11 @@ $alumni = $result->fetch_assoc();
                         <img src="../assets/icons/cross_big.png">
                         <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
-                    <h4 class="filter-modaltitle" id="modalLabel">For Higher Education</h4>
+                    <h4 class="filter-modaltitle" id="whr_mdl"></h4>
                 </div>
                 <div class="modal-body heoverlaymodal-body">
                     <div class="cnt_div">
-                        <p class="heoverlay_desc">
+                        <p class="heoverlay_desc" id="heoverlay_desc">
                             Approximately 10-15% of students opt to pursue higher education after completing their
                             undergraduate studies at university. This subset of students demonstrates a commitment to
                             furthering their academic and professional development, often seeking specialised knowledge
@@ -1600,12 +1708,12 @@ $alumni = $result->fetch_assoc();
                             innovation across various disciplines, shaping the future of society through their
                             dedication to continuous learning and intellectual growth.
                         </p>
-                        <p class="heoverlay_desc">
+                       <!-- <p class="heoverlay_desc">
                             Key universities where student’s have gone for higher education
-                        </p>
+                        </p>-->
 
 
-                        <div style="display: flex;flex-direction: column;align-items: flex-start;gap: 44px;">
+                        <div style="display: flex;flex-direction: column;align-items: flex-start;gap: 44px;" id="universities">
                             <div class="heoverlay_hlnkdiv">
                                 <img src="dep_assets/images/dept_logo.webp" alt="" srcset="">
                                 <div class="heoverlay_hlnk_innrdiv">
@@ -1625,82 +1733,26 @@ $alumni = $result->fetch_assoc();
                                     </div>
                                 </div>
                             </div>
-                            <div class="heoverlay_hlnkdiv">
-                                <img src="dep_assets/images/stanford.webp" alt="" srcset="">
+                          <!--  <div class="heoverlay_hlnkdiv">
+                                <img id='unilogo' src="dep_assets/images/stanford.webp" alt="" srcset="">
                                 <div class="heoverlay_hlnk_innrdiv">
-                                    <div class="heoverlay_hlnknm">
-                                    Stanford University
+                                    <div class="heoverlay_hlnknm" id="heoverlay_hlnknm">
+                                   
                                     </div>
-                                    <div class="text_btnnew">
+                                    <div class="text_btnnew"  id="text_btnnew">
                                         <div class="text_btnnew_innrdiv">
                                             <div class="text_btnnew_txt">
                                                 Visit website
                                             </div>
                                             <div>
-                                                <img src="../assets/svgicons/outwardarrow_brown.svg"
+                                                <img  src="../assets/svgicons/outwardarrow_brown.svg"
                                                     style="width: 16px;height: 16px;">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="heoverlay_hlnkdiv">
-                                <img src="dep_assets/images/stanford.webp" alt="" srcset="">
-                                <div class="heoverlay_hlnk_innrdiv">
-                                    <div class="heoverlay_hlnknm">
-                                    University of Cambridge
-                                    </div>
-                                    <div class="text_btnnew">
-                                        <div class="text_btnnew_innrdiv">
-                                            <div class="text_btnnew_txt">
-                                                Visit website
-                                            </div>
-                                            <div>
-                                                <img src="../assets/svgicons/outwardarrow_brown.svg"
-                                                    style="width: 16px;height: 16px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="heoverlay_hlnkdiv">
-                                <img src="dep_assets/images/stanford.webp" alt="" srcset="">
-                                <div class="heoverlay_hlnk_innrdiv">
-                                    <div class="heoverlay_hlnknm">
-                                    Indian Institute of Technology, Bombay
-                                    </div>
-                                    <div class="text_btnnew">
-                                        <div class="text_btnnew_innrdiv">
-                                            <div class="text_btnnew_txt">
-                                                Visit website
-                                            </div>
-                                            <div>
-                                                <img src="../assets/svgicons/outwardarrow_brown.svg"
-                                                    style="width: 16px;height: 16px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="heoverlay_hlnkdiv">
-                                <img src="dep_assets/images/stanford.webp" alt="" srcset="">
-                                <div class="heoverlay_hlnk_innrdiv">
-                                    <div class="heoverlay_hlnknm">
-                                    Indian Institute of Technology, Madras
-                                    </div>
-                                    <div class="text_btnnew">
-                                        <div class="text_btnnew_innrdiv">
-                                            <div class="text_btnnew_txt">
-                                                Visit website
-                                            </div>
-                                            <div>
-                                                <img src="../assets/svgicons/outwardarrow_brown.svg"
-                                                    style="width: 16px;height: 16px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>-->
+                        
                         </div>
 
 
@@ -1723,7 +1775,61 @@ $alumni = $result->fetch_assoc();
     <script src="../js/deptnewscarousel.js"></script>
     <script src="../js/common.js"></script>
     <script>
+    function showmodal(modalid){
+	console.log(modalid);
+	     var news = [];
+            <?php  $json = json_encode($crd_mdl); ?>
+            var json = <?=$json?>;
+			
+			<?php  $json_uninm = json_encode($uninames); ?>
+			 var json_uninm = <?=$json_uninm?>;
+			//console.log(json_uninm);
+            //console.log(json);
+              for (i = 0; i < json.length; i++) {
+                if (modalid == json[i].btn_hlink) {
+					console.log(json[i]);
+					  $('#heoverlay').modal({
+                       show: 'true'
+                        });
+					$('#whr_mdl').html(json[i].mdl_title);
+					 $('#heoverlay_desc').html(json[i].mdl_descr);
+					//heoverlay_hlnkdiv2
+					//$('#heoverlay_hlnknm1').html(json[i].uni1_nm);
+					
+				}
+			  }
+		
+		
+		 for (i = 0; i < json_uninm.length; i++) {
+                if (modalid == json_uninm[i].modal_id) {
+					//console.log(json_uninm[i]);
+					$('#universities').append(					
+					` <div class="heoverlay_hlnkdiv">
+                                <img  src="`+json_uninm[i].img+`" alt="" srcset="">
+                                <div class="heoverlay_hlnk_innrdiv">
+                                    <div class="heoverlay_hlnknm" id="heoverlay_hlnknm">
+                                   `+json_uninm[i].uni_nm+`
+                                    </div>
+                                    <div class="text_btnnew"  onclick="window.open('`+json_uninm[i].hlink+`', '_blank')">
+                                        <div class="text_btnnew_innrdiv">
+                                            <div class="text_btnnew_txt">
+                                                Visit website
+                                            </div>
+                                            <div>
+                                                <img  src="../assets/svgicons/outwardarrow_brown.svg"
+                                                    style="width: 16px;height: 16px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`);
+				
 
+				}
+			  }
+		
+
+	}
     </script>
 </body>
 
